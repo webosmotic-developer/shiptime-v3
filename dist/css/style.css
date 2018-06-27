@@ -310,6 +310,27 @@ input.select-dropdown {
 .btn-select {
   margin-left: -30px !important;
 }
+
+.show-more {
+  display: block;
+  width: 40px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  opacity: 0.5;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.row-hover:hover {
+  background-color: #80808026;
+  cursor: pointer;
+}
+
+.
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
   cursor: pointer;
