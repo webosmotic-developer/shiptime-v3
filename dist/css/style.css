@@ -427,6 +427,15 @@ input.select-dropdown {
   /*margin-top: -6px !important;*/
 }
 
+.checkbox-info-filled [type="checkbox"][class*='filled-in']:checked+label:after {
+  border-color: #17a2b8;
+  background-color: #17a2b8;
+}
+
+.bill-row {
+  color: #000000
+}
+
 @media only screen and (max-width: 1440px) {
   .side-nav.fixed {
     -webkit-transform: translateX(0%);
