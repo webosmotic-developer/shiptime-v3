@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ShipTime</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/steps.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        main {
+            margin-top: 66px;
+        }
+    </style>
+</head>
+
+<body class="grey lighten-5">
+
+<!--Main Navigation-->
+<header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top white fixed">
+
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="hm-btn">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn mr-auto">
+            <img src="img/logo-horizontal-en.png" width="165" height="50"/>
+        </div>
+
+        <!-- Links -->
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-dark">
+                    <i class="fa fa-envelope"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark">
+                    <i class="fa fa-gear"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Settings</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark " href="#" id="navbarDropdownMenuLink"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Account</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav blue-gradient darken-2">
+        <ul class="custom-scrollbar list-unstyled">
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="waves-effect arrow-r" href="index.html">
+                            <i class="fa fa-tachometer fa-ws"></i> <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="quote-ship.html">
+                            <i class="fa fa-dropbox fa-ws"></i> <span class="nav-text">Quote & Ship</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r active" href="quick-quote.html">
+                            <i class="fa fa-fighter-jet fa-ws"></i> <span class="nav-text">Quick Quote</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="new-quick-quote.html">
+                            <i class="fa fa-fighter-jet fa-ws"></i> <span class="nav-text">New Quick Quote</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </ul>
+    </div>
+    <!--/. Sidebar navigation -->
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main>
+    <div class="main-conainter">
+
+        <div class="main-content">
+            <div class="container-fluid pt-3">
+                <!--Card-->
+                <div class="card narrower grey lighten-3 pb-2">
+
+                    <!--Card header-->
+
+                    <div class="card-body step-main-body border">
+                        <!-- First Step -->
+                        <form role="form" action="" method="post">
+                            <div class="row" id="step-1">
+                                <div class="col-sm-12">
+                                    <!--Accordion wrapper-->
+                                    <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <!-- Accordion card -->
+                                                <div class="card mb-2">
+
+                                                    <!-- Card header -->
+                                                    <div class="card-header" role="tab" id="headingOne">
+
+                                                        <!-- Heading -->
+                                                        <a id="folder-1" data-toggle="collapse"
+                                                           data-parent="#accordionEx" href="#collapseOne"
+                                                           aria-expanded="true" aria-controls="collapseOne">
+                                                            <h5 class="mt-2 mb-0 text-dark">
+                                                                <span>Ship From:</span>
+                                                                <i class="fa fa-angle-down fa-lg rotate-icon"></i>
+                                                            </h5>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <!-- Card body -->
+                                                    <div id="collapseOne" class="collapse show" role="tabpanel"
+                                                         aria-labelledby="headingOne">
+                                                        <div class="card-body pt-2">
+                                                            <div class="mt-0">
+                                                                <!-- Material form group -->
+                                                                <form>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <div class="md-form form-group m-0">
+                                                                                <input type="text" class="form-control"
+                                                                                       placeholder="Search by Name, Address or Zip"
+                                                                                       aria-label="Search by Name, Address or Zip"
+                                                                                       aria-describedby="basic-addon2">
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <!-- Material input -->
+                                                                        <div class="col-sm-6">
+                                                                            <div class="md-form form-group m-0">
+                                                                                <input type="text" class="form-control"
+                                                                                       placeholder="City">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="md-form form-group m-0">
+                                                                                <input type="text" class="form-control"
+                                                                                       placeholder="Postal">
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Material input -->
+                                                                        <!-- Material input -->
+                                                                        <div class="col-sm-6">
+                                                                            <select class="mdb-select colorful-select dropdown-orange">
+                                                                                <option value="" disabled selected>Province
+                                                                                </option>
+                                                                                <option value="1">Ontario</option>
+                                                                                <option value="2">California</option>
+                                                                                <option value="3">Arizona</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <select class="mdb-select colorful-select dropdown-orange" id="fromCountry">
+                                                                                <option value="" disabled selected>Country
+                                                                                </option>
+                                                                                <option value="1">Canada</option>
+                                                                                <option value="2">USA</option>
+                                                                                <option value="3">India</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <!-- Material input -->
+                                                                        <!-- Material input -->
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-6">
+
+                                                                                </div>
+                                                                                <div class="col-sm-6">
+                                                                                    <div class="rounded-bottom lighten-5 text-center">
+                                                                                        <button class="btn btn-sm orange darken-3  btn-rounded  float-right"
+                                                                                                type="button">clear
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Material input -->
+
+                                                                    </div>
+
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Accordion card -->
+                                            </div>
+                                            <div class="col-6">
+                                                <!-- Accordion card -->
+                                                <div class="card mb-2">
+
+                                                    <!-- Card header -->
+                                                    <div class="card-header" role="tab" id="headingTwo">
+
+                                                        <!-- Heading -->
+                                                        <a id="folder-2" data-toggle="collapse"
+                                                           data-parent="#accordionEx" href="#collapseTwo"
+                                                           aria-expanded="true" aria-controls="collapseOne">
+                                                            <h5 class="mt-2 mb-0 text-dark">
+                                                                <span>Ship To:</span>
+                                                                <i class="fa fa-angle-down fa-lg rotate-icon"></i>
+                                                            </h5>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <!-- Card body -->
+                                                    <div id="collapseTwo" class="collapse show" role="tabpanel"
+                                                         aria-labelledby="headingTwo">
+                                                        <div class="card-body pt-2">
+                                                            <div class="mt-0">
+                                                                <!-- Material form group -->
+                                                                <form>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <div class="md-form form-group m-0">
+                                                                                <input type="text" class="form-control"
+                                                                                       placeholder="Search by Name, Address or Zip"
+                                                                                       aria-label="Search by Name, Address or Zip"
+                                                                                       aria-describedby="basic-addon2">
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div class="col-sm-6">
+                                                                            <div class="md-form form-group m-0">
+                                                                                <input type="text" class="form-control"
+                                                                                       placeholder="City">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="md-form form-group m-0">
+                                                                                <input type="text" class="form-control"
+                                                                                       placeholder="Postal">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-6">
+                                                                            <select class="mdb-select colorful-select dropdown-orange">
+                                                                                <option value="" disabled selected>Province
+                                                                                </option>
+                                                                                <option value="1">Ontario</option>
+                                                                                <option value="2">California</option>
+                                                                                <option value="3">Arizona</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <select class="mdb-select colorful-select dropdown-orange" id="fromCountry">
+                                                                                <option value="" disabled selected>Country
+                                                                                </option>
+                                                                                <option value="1">Canada</option>
+                                                                                <option value="2">USA</option>
+                                                                                <option value="3">India</option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-6">
+
+                                                                                </div>
+                                                                                <div class="col-sm-6">
+                                                                                    <div class="rounded-bottom lighten-5 text-center">
+                                                                                        <button class="btn btn-sm orange darken-3  btn-rounded  float-right"
+                                                                                                type="button">clear
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card mt-2" style="box-shadow: none">
+                                <div class="line m-lg-2 p-1 border-bottom">
+                                    <div class="row text-dark">
+                                        <div class="col col-12 ">
+                                            <h5 class="m-0" style="font-size: 1.1rem !important">Shipment Item</h5>
+                                            <h6 class="grey-text" style="display: block">Enter the items you would like
+                                                to ship</h6></div>
+                                        <div class="col">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body pt-0 ml-3 mr-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-2">
+                                                    <label class="m-0">Package Type</label>
+                                                    <select class="mdb-select colorful-select dropdown-orange">
+                                                        <option value="1">My Own Packaging</option>
+                                                        <option value="2">Courier Envelope</option>
+                                                        <option value="3">Courier Pak</option>
+                                                        <option value="4">My Own Envelope</option>
+                                                        <option value="5">LTL Freight (Pallet)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-2">
+                                                    <label class="m-0">Weight (kg)</label>
+                                                    <input class="form-control text-center" type="text"
+                                                           placeholder="Wt">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="m-0">Dimensions (Cm)</label>
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <input class="form-control text-center" type="text"
+                                                                   placeholder="l"></div>
+                                                        <div class="col-1 mt-2 text-center p-0">X</div>
+                                                        <div class="col-3">
+                                                            <input class="form-control text-center" type="text"
+                                                                   placeholder="b">
+                                                        </div>
+                                                        <div class="col-1 mt-2 text-center p-0">X</div>
+                                                        <div class="col-3">
+                                                            <input class="form-control text-center" type="text"
+                                                                   placeholder="h"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="m-0"> Ins. Value </label>
+                                                    <input class="form-control text-center" type="text"
+                                                           placeholder="Ins. Val">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-md-12 mb-2">
+                                                    <label class="m-0">Description</label>
+                                                    <textarea class="form-control h-100"
+                                                              row="10"
+                                                              placeholder="Description"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-md-3 mb-2">
+                                             <label class="m-0">Package Type</label>
+                                             <select class="mdb-select colorful-select dropdown-orange">
+                                                 <option value="1">My Own Packaging</option>
+                                                 <option value="2">Courier Envelope</option>
+                                                 <option value="3">Courier Pak</option>
+                                                 <option value="4">My Own Envelope</option>
+                                                 <option value="5">LTL Freight (Pallet)</option>
+                                             </select>
+                                         </div>
+                                         <div class="col-md-3 mb-2">
+                                             <label class="m-0">Weight (kg)</label>
+                                             <input class="form-control text-center" type="text"
+                                                    placeholder="Wt">
+                                         </div>
+
+                                         <div class="col-md-3">
+                                             <label class="m-0">Dimensions (Cm)</label>
+                                             <div class="row">
+                                                 <div class="col-3">
+                                                     <input class="form-control text-center" type="text"
+                                                            placeholder="l"></div>
+                                                 <div class="col-1 mt-2 text-center p-0">X</div>
+                                                 <div class="col-3">
+                                                     <input class="form-control text-center" type="text"
+                                                            placeholder="b">
+                                                 </div>
+                                                 <div class="col-1 mt-2 text-center p-0">X</div>
+                                                 <div class="col-3">
+                                                     <input class="form-control text-center" type="text"
+                                                            placeholder="h"></div>
+                                             </div>
+                                         </div>
+                                         <div class="col-md-3">
+                                             <label class="m-0"> Ins. Value </label>
+                                             <input class="form-control text-center" type="text"
+                                                    placeholder="Ins. Val">
+                                         </div>-->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Third Step -->
+                            <div class="row">
+                                <div class="rounded-bottom lighten-5 text-center col-12 mt-2">
+                                    <button class="btn orange darken-3  btn-rounded float-right mr-0"
+                                            type="button" id="getQuoteBtn">Get Quote
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <div class="card mt-2 d-none" style="box-shadow: none" id="quoteListDiv">
+                                <div class="line m-lg-2 p-1 border-bottom">
+                                    <div class="row text-dark">
+                                        <div class="col col-12 ">
+                                            <h5 class="m-0" style="font-size: 1.1rem !important">Choose Carrier And Service</h5>
+                                            <h6 class="grey-text" style="display: block">Choose the
+                                            best courier for you based on price, delivery time and reliability</h6>
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body pt-0 ml-3 mr-3">
+                                    <table class="table table-striped">
+
+                                        <!--Table head-->
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Delivery Time</th>
+                                            <th>Rating</th>
+                                            <th>Service Option</th>
+                                            <th>Carrier</th>
+                                            <th>Service</th>
+                                            <th>Total Cost</th>
+                                        </tr>
+                                        </thead>
+                                        <!--Table head-->
+
+                                        <!--Table body-->
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                1 day
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </td>
+                                            <td>
+                                                <div><i class="fa fa-suitcase orange-text fa-lg mr-2"
+                                                        aria-hidden="true"></i>Drop-off
+                                                </div>
+                                                <div><i class="fa fa-truck cyan-text fa-lg mr-2"
+                                                        aria-hidden="true"></i>Free Pickup
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="irc_mi"
+                                                     src="http://www.canshave.com/images/FEx-Logo-PNG-Transparent.png"
+                                                     alt="Image result for fedex png logo"
+                                                     onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"
+                                                     width="100" style="margin-top: 0px;">
+                                            </td>
+                                            <td>Standard Overnight</td>
+                                            <td>
+                                                $63
+                                                <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                                                <a type="button"
+                                                   class="btn orange darken-3 btn-md btn-sm btn-rounded mt-1"
+                                                   href="../../quote-ship.html">Select</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>
+                                                4 day
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </td>
+                                            <td>
+                                                <div><i class="fa fa-suitcase orange-text fa-lg mr-2"
+                                                        aria-hidden="true"></i>Drop-off
+                                                </div>
+                                                <div><i class="fa fa-truck cyan-text fa-lg mr-2"
+                                                        aria-hidden="true"></i>Free Pickup
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="irc_mi"
+                                                     src="http://www.utilitygarments.ca/img/customers/CANPAR.png"
+                                                     alt="Image result for fedex png logo"
+                                                     onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"
+                                                     width="100" style="margin-top: 0px;">
+                                            </td>
+                                            <td>Express</td>
+                                            <td>
+                                                $15
+                                                <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                                                <a type="button"
+                                                   class="btn orange darken-3 btn-md btn-sm btn-rounded mt-1"
+                                                   href="../../quote-ship.html">Select</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>
+                                                2 day
+                                            </td>
+                                            <td>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </td>
+                                            <td>
+                                                <div><i class="fa fa-suitcase orange-text fa-lg mr-2"
+                                                        aria-hidden="true"></i>Drop-off
+                                                </div>
+                                                <div><i class="fa fa-truck cyan-text fa-lg mr-2"
+                                                        aria-hidden="true"></i>Free Pickup
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <img class="irc_mi"
+                                                     src="http://www.canshave.com/images/FEx-Logo-PNG-Transparent.png"
+                                                     alt="Image result for fedex png logo"
+                                                     onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"
+                                                     width="100" style="margin-top: 0px;">
+                                            </td>
+                                            <td>Priority Overnight</td>
+                                            <td>
+                                                $63
+                                                <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                                                <a type="button"
+                                                   class="btn orange darken-3 btn-md btn-sm btn-rounded mt-1"
+                                                   href="../../quote-ship.html">Select</a>
+
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                        <!--Table body-->
+
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!--<div class="row p-3 d-none" id="quoteListDiv">
+                              <div class="col-md-12 white">
+
+                                <div class="row text-dark border-bottom">
+                                  <div class="col col-12">Choose Carrier And Service</div>
+                                  <div class="col col-12 "><h6 class="grey-text" style="display: block">Choose the best courier for you based on price, delivery time and reliability</h6></div>
+                                </div>
+                                &lt;!&ndash;Table&ndash;&gt;
+
+                                &lt;!&ndash;Table&ndash;&gt;
+                              </div>
+                            </div>-->
+                        </form>
+
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+        </div>
+
+    </div>
+</main>
+<!--Main layout-->
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/custom/main.js"></script>
+<script type="text/javascript" src="js/custom/steps.js"></script>
+
+<!-- Initializations -->
+<script>
+
+
+    // SideNav Initialization
+    $(".button-collapse").sideNav();
+    $(".hm-btn").click(function () {
+        if ($("body").hasClass("fixed-sn")) {
+            $("body").removeClass('fixed-sn');
+            if ($('.sidenav-overlay')) {
+                $('.sidenav-overlay').remove();
+            }
+        } else {
+            $("body").addClass('fixed-sn');
+            if ($(window).width() <= 1200) {
+                $('body').append('<div class="sidenav-overlay"></div>')
+                $('.sidenav-overlay').click(function () {
+                    console.log('test', $(".hm-btn"));
+                    $(".hm-btn").trigger("click");
+                })
+            }
+        }
+    });
+
+    if ($(window).width() > 1200) {
+        $(".side-nav").hover(function () {
+            $(".side-nav").addClass('fixed');
+        }, function () {
+            $(".side-nav").removeClass('fixed');
+
+        })
+    } else {
+        $(".side-nav").addClass('fixed');
+    }
+
+
+    $(window).resize(function () {
+        if ($(window).width() > 1200) {
+            $(".side-nav").removeClass('fixed');
+        } else {
+            $(".side-nav").addClass('fixed');
+        }
+    });
+</script>
+</body>
+
+</html>

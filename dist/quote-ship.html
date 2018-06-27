@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ShipTime</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/steps.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="grey lighten-5">
+
+<!--Main Navigation-->
+<header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light white fixed">
+
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="hm-btn">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn mr-auto">
+            <img src="img/logo-horizontal-en.png" width="165" height="50"/>
+        </div>
+
+        <!-- Links -->
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fa fa-envelope"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fa fa-gear"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Settings</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Account</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav blue-gradient darken-2">
+        <ul class="custom-scrollbar list-unstyled">
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="waves-effect arrow-r" href="index.html">
+                            <i class="fa fa-tachometer fa-ws"></i> <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r active" href="quote-ship.html">
+                            <i class="fa fa-dropbox fa-ws"></i> <span class="nav-text">Quote & Ship</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="quick-quote.html">
+                            <i class="fa fa-fighter-jet fa-ws"></i> <span class="nav-text">Quick Quote</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="new-quick-quote.html">
+                            <i class="fa fa-fighter-jet fa-ws"></i> <span class="nav-text">New Quick Quote</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </ul>
+    </div>
+    <!--/. Sidebar navigation -->
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main>
+    <div class="main-conainter">
+
+        <div class="main-content">
+            <div class="container-fluid">
+                <br>
+                <!--Section: Modals-->
+                <section>
+
+                    <!--Modal: modalConfirmDelete-->
+                    <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-sm modal-notify modal-danger" role="document">
+                            <!--Content-->
+                            <div class="modal-content text-center">
+                                <!--Header-->
+                                <div class="modal-header d-flex justify-content-center">
+                                    <p class="heading">Are you sure?</p>
+                                </div>
+
+                                <!--Body-->
+                                <div class="modal-body">
+
+                                    <i class="fa fa-times fa-4x animated rotateIn"></i>
+
+                                </div>
+
+                                <!--Footer-->
+                                <div class="modal-footer flex-center">
+                                    <a href="https://mdbootstrap.com/product/material-design-for-bootstrap-pro/"
+                                       class="btn  btn-outline-secondary-modal">Yes</a>
+                                    <a type="button" class="btn  btn-primary-modal waves-effect"
+                                       data-dismiss="modal">No</a>
+                                </div>
+                            </div>
+                            <!--/.Content-->
+                        </div>
+                    </div>
+                    <!--Modal: modalConfirmDelete-->
+
+                </section>
+                <!--Section: Modals-->
+
+                <!--Section: Table-->
+                <section class="mb-3">
+
+
+                    <!--Card-->
+                    <div class="card mt-4 grey lighten-5 pb-2 z-depth-0">
+
+                        <!--Card header-->
+                        <div id="steps-header"
+                             class="view py-3 gradient-card-header mx-4 d-flex justify-content-between align-items-center">
+                            <!-- Stepper -->
+                            <div class="col-8 mx-auto pb-2" style="z-index: 12">
+                                <div class="steps-form-2">
+                                    <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
+                                        <div class="steps-step-2">
+                                            <a href="#step-1" type="button"
+                                               class="btn btn-amber btn-circle-2 waves-effect ml-0"
+                                               data-toggle="tooltip" data-placement="bottom" title="Address Details">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="steps-step-2">
+                                            <a href="#step-2" type="button"
+                                               class="btn btn-blue-grey btn-circle-2 waves-effect"
+                                               data-toggle="tooltip" data-placement="bottom" title="Shipment Details">
+                                                <i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="steps-step-2">
+                                            <a href="#step-3" type="button"
+                                               class="btn btn-blue-grey btn-circle-2 waves-effect"
+                                               data-toggle="tooltip" data-placement="bottom" title="Choose Carrier">
+                                                <i class="fa fa-truck" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="steps-step-2">
+                                            <a href="#step-4" type="button"
+                                               class="btn btn-blue-grey btn-circle-2 waves-effect mr-0"
+                                               data-toggle="tooltip" data-placement="bottom" title="Finalize & Pay">
+                                                <i class="fa fa-credit-card" aria-hidden="true"></i></a>
+                                        </div>
+                                        <!-- <div class="steps-step-2">
+                                           <a href="#step-5" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect mr-0"
+                                              data-toggle="tooltip" data-placement="bottom" title="International Details">
+                                             <i class="fa fa-globe" aria-hidden="true"></i></a>
+                                         </div>-->
+                                        <div class="steps-step-2">
+                                            <a href="#step-5" type="button"
+                                               class="btn btn-blue-grey btn-circle-2 waves-effect mr-0"
+                                               data-toggle="tooltip" data-placement="bottom" title="Print Labels">
+                                                <i class="fa fa-print" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--/Card header-->
+                        <!--/.Card content-->
+                        <div class="rounded-bottom lighten-5 text-center step-btn">
+                            <button class="btn btn-sm light-blue darken-2 prevBtn-2 btn-rounded float-left"
+                                    type="button">Previous
+                            </button>
+                            <button class="btn btn-sm light-blue darken-2 nextBtn-2 btn-rounded float-right"
+                                    type="button">Next
+                            </button>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body step-main-body">
+                            <form role="form" action="" method="post">
+                                <!-- First Step -->
+                                <div class="row setup-content-2" id="step-1">
+                                    <div class="col-sm-12">
+                                        <!-- <div class="my-2">
+                                             <div class="card-header white border-bottom-0 grey lighten-5">
+                                                 <h5 class="mb-0">Shipping From<span class="small ml-1 font-weight-bold">69 Warwick Ave, ghuy, Ontario, L1Z 1L6,Canada</span></h5>
+                                                 <div class="small">
+                                                     <span class="grey-text">Shipping rates are calculated according to your default sender address.</span>
+                                                     <span>
+                                                         <a  data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalCart"><i class="fa fa-pencil-square-o ml-1"></i></a>
+                                                     </span>
+                                                 </div>
+                                             </div>
+                                         </div>-->
+                                        <div class="card">
+                                            <!--<div class="card-header white">
+                                                <h5 class="mb-0">Shipping From<span class="small ml-1 font-weight-bold">69 Warwick Ave, ghuy, Ontario, L1Z 1L6,Canada</span></h5>
+                                                <div class="small">
+                                                    <span class="grey-text">Shipping rates are calculated according to your default sender address.</span>
+                                                <span>
+                                                    <a data-toggle="tooltip" data-placement="right" title="you can change it by click here"><i class="fa fa-pencil-square-o ml-1"></i></a>
+                                                </span>
+                                                </div>
+                                            </div>-->
+                                            <!-- Card header -->
+                                            <div class="card-header white border-bottom-0">
+                                                <h5 class="mb-0 font-weight-bold">Shipping From<span class="small ml-1 grey-text">Ontario, L1Z 1L6,Canada</span></h5>
+                                                <div class="small">
+                                                    <span class="grey-text">Shipping rates are calculated according to your default sender address.</span>
+                                                    <span>
+                                                        <a  data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalCart"><i class="fa fa-pencil-square-o ml-1"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="card-header white pb-1" role="tab" id="headingTwo">
+                                                <!-- Heading -->
+                                                <a id="folder-2" data-toggle="collapse" data-parent="#accordionEx"
+                                                   href="#collapseTwo"
+                                                   aria-expanded="true" aria-controls="collapseOne">
+                                                    <h5 class="my-auto">
+                                                        <span class="text-dark">Ship To:</span>
+                                                        <!--     <i class="fa fa-angle-down fa-lg rotate-icon"></i>-->
+                                                    </h5>
+                                                </a>
+
+                                            </div>
+
+                                            <!-- Card body -->
+                                            <div class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="card-body pt-2">
+                                                    <div class="mt-0">
+                                                        <!-- Material form group -->
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Search by Name, Address or Zip"
+                                                                               aria-label="Search by Name, Address or Zip"
+                                                                               aria-describedby="basic-addon2">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <div class="switch orange-switch pull-right">
+                                                                        <label>
+                                                                            <input type="checkbox">
+                                                                            <span class="lever"></span>
+                                                                            Residential
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Company Name">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Material input -->
+                                                                <div class="col-sm-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="First Name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Last Name">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Material input -->
+                                                                <!-- Material input -->
+                                                                <div class="col-sm-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Email">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Phone">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Material input -->
+                                                                <!-- Material input -->
+                                                                <div class="col-sm-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Street">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Apt. Unit, P.O. Box etc.">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Material input -->
+                                                                <!-- Material input -->
+                                                                <div class="col-sm-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="City">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               id="toPostal"
+                                                                               placeholder="Postal">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Material input -->
+                                                                <!-- Material input -->
+                                                                <div class="col-sm-3">
+                                                                    <select class="mdb-select colorful-select dropdown-orange">
+                                                                        <option value="" disabled selected>Province
+                                                                        </option>
+                                                                        <option value="1">Ontario</option>
+                                                                        <option value="2">California</option>
+                                                                        <option value="3">Arizona</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <select class="mdb-select colorful-select dropdown-orange"
+                                                                            id="toCountry">
+                                                                        <option value="" disabled selected>Country
+                                                                        </option>
+                                                                        <option value="1">Canada</option>
+                                                                        <option value="2">USA</option>
+                                                                        <option value="3">India</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- Material input -->
+                                                                <!-- Material input -->
+                                                                <div class="col-sm-12">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-6">
+                                                                                    <div class="switch orange-switch">
+                                                                                        <label>
+                                                                                            <input type="checkbox">
+                                                                                            <span class="lever"></span>
+                                                                                            Confirm Delivery
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-6">
+                                                                                    <div class="switch orange-switch">
+                                                                                        <label>
+                                                                                            <input type="checkbox">
+                                                                                            <span class="lever"></span>
+                                                                                            Save to address book
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="rounded-bottom lighten-5 text-center">
+                                                                                <button class="btn btn-sm orange darken-3 float-right btn-rounded"
+                                                                                        type="button">clear
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Material input -->
+
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Second Step -->
+                                <div class="row setup-content-2" id="step-2">
+                                    <div class="col-md-12">
+                                        <div class="card pb-2">
+                                            <div class="card-header white border-bottom" role="tab">
+                                                <h5 class="font-weight-bold text-dark m-0">
+                                                    What Are You Shipping?</h5>
+                                                <h6 class="grey-text m-0">Enter the items you would like to ship</h6>
+                                            </div>
+
+                                            <div class="card-body mt-2 pt-0 pb-0">
+                                                <!-- Switch -->
+                                                <div class="row">
+                                                    <div class="col-3 my-auto">
+                                                        <label class="m-0">Measurement Unit</label>
+                                                        <select class="mdb-select colorful-select dropdown-orange">
+                                                            <option value="1">Metric</option>
+                                                            <option value="2">Imperial</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <label class="m-0">Insurance</label>
+                                                        <div class="switch orange-switch mt-2">
+                                                            <label>
+                                                                Carrier
+                                                                <input type="checkbox" checked="checked">
+                                                                <span class="lever"></span>
+                                                                Shiptime
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <label class="m-0">Tax & Duty Paid By</label>
+                                                        <div class="switch orange-switch mt-2">
+                                                            <label>
+                                                                Consignee
+                                                                <input type="checkbox" checked="checked">
+                                                                <span class="lever"></span>
+                                                                Shipper
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mt-2">
+                                            <div class="line m-lg-2 p-1 border-bottom">
+                                                <div class="row text-dark">
+                                                    <div class="col">#1</div>
+                                                    <div class="col">
+                                                        <i class="fa fa-trash float-right mt-1  c-pointer"
+                                                           aria-hidden="true"></i>
+                                                        <i class="fa fa-copy float-right mt-1 mr-2 c-pointer"
+                                                           aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Card content -->
+                                            <div class="card-body pt-0 ml-3 mr-3">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="row">
+                                                            <div class="col-md-6 mb-2">
+                                                                <label class="m-0">Package Type</label>
+                                                                <select class="mdb-select colorful-select dropdown-orange">
+                                                                    <option value="1">My Own Packaging</option>
+                                                                    <option value="2">Courier Envelope</option>
+                                                                    <option value="3">Courier Pak</option>
+                                                                    <option value="4">My Own Envelope</option>
+                                                                    <option value="5">LTL Freight (Pallet)</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-6 mb-2">
+                                                                <label class="m-0">Weight (kg)</label>
+                                                                <input class="form-control text-center" type="text"
+                                                                       placeholder="Wt">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="m-0">Dimensions (Cm)</label>
+                                                                <div class="row">
+                                                                    <div class="col-3">
+                                                                        <input class="form-control text-center" type="text"
+                                                                               placeholder="l"></div>
+                                                                    <div class="col-1 mt-2 text-center p-0">X</div>
+                                                                    <div class="col-3">
+                                                                        <input class="form-control text-center" type="text"
+                                                                               placeholder="b">
+                                                                    </div>
+                                                                    <div class="col-1 mt-2 text-center p-0">X</div>
+                                                                    <div class="col-3">
+                                                                        <input class="form-control text-center" type="text"
+                                                                               placeholder="h"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="m-0"> Ins. Value </label>
+                                                                <input class="form-control text-center" type="text"
+                                                                       placeholder="Ins. Val">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="row">
+                                                            <div class="col-md-12 mb-2">
+                                                                <label class="m-0">Description</label>
+                                                                <textarea class="form-control h-100"
+                                                                          row="10"
+                                                                          placeholder="Description"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="col-md-3 mb-2">
+                                                         <label class="m-0">Package Type</label>
+                                                         <select class="mdb-select colorful-select dropdown-orange">
+                                                             <option value="1">My Own Packaging</option>
+                                                             <option value="2">Courier Envelope</option>
+                                                             <option value="3">Courier Pak</option>
+                                                             <option value="4">My Own Envelope</option>
+                                                             <option value="5">LTL Freight (Pallet)</option>
+                                                         </select>
+                                                     </div>
+                                                     <div class="col-md-3 mb-2">
+                                                         <label class="m-0">Weight (kg)</label>
+                                                         <input class="form-control text-center" type="text"
+                                                                placeholder="Wt">
+                                                     </div>
+
+                                                     <div class="col-md-3">
+                                                         <label class="m-0">Dimensions (Cm)</label>
+                                                         <div class="row">
+                                                             <div class="col-3">
+                                                                 <input class="form-control text-center" type="text"
+                                                                        placeholder="l"></div>
+                                                             <div class="col-1 mt-2 text-center p-0">X</div>
+                                                             <div class="col-3">
+                                                                 <input class="form-control text-center" type="text"
+                                                                        placeholder="b">
+                                                             </div>
+                                                             <div class="col-1 mt-2 text-center p-0">X</div>
+                                                             <div class="col-3">
+                                                                 <input class="form-control text-center" type="text"
+                                                                        placeholder="h"></div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-md-3">
+                                                         <label class="m-0"> Ins. Value </label>
+                                                         <input class="form-control text-center" type="text"
+                                                                placeholder="Ins. Val">
+                                                     </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn m-lg-3 btn-md btn-rounded orange darken-3"><i
+                                            class="fa fa-plus mr-1 mt-0"></i>Add
+                                        Item</a>
+                                </div>
+
+                                <!-- Third Step -->
+                                <div class="row setup-content-2" id="step-3">
+                                    <div class="col-md-12">
+                                        <div class="card pb-2">
+                                            <div class="card-header white border-bottom" role="tab">
+                                                <h5 class="font-weight-bold text-dark m-0">
+                                                    Choose Carrier And Service</h5>
+                                                <h6 class="grey-text m-0">Choose the best courier for you based on
+                                                    price,
+                                                    delivery time and reliability</h6>
+                                            </div>
+
+                                            <div class="card-body mt-2 pt-0 pb-0">
+                                                <!-- Switch -->
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <table class="table table-striped">
+
+                                                            <!--Table head-->
+                                                            <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Delivery Time</th>
+                                                                <th>Rating</th>
+                                                                <th>Service Option</th>
+                                                                <th>Carrier</th>
+                                                                <th>Service</th>
+                                                                <th>Total Cost</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <!--Table head-->
+
+                                                            <!--Table body-->
+                                                            <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>
+                                                                    1 day
+                                                                </td>
+                                                                <td>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <i class="fa fa-suitcase orange-text fa-lg mr-2"
+                                                                           aria-hidden="true"></i>Drop-off
+                                                                    </div>
+                                                                    <div><i class="fa fa-truck cyan-text fa-lg mr-2"
+                                                                            aria-hidden="true"></i>Free Pickup
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img class="irc_mi"
+                                                                         src="http://www.canshave.com/images/FEx-Logo-PNG-Transparent.png"
+                                                                         alt="Image result for fedex png logo"
+                                                                         onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"
+                                                                         width="100" style="margin-top: 0px;">
+                                                                </td>
+                                                                <td>Standard Overnight</td>
+                                                                <td>
+                                                                    $63
+                                                                    <i class="fa fa-info-circle fa-lg"
+                                                                       aria-hidden="true"></i>
+                                                                    <a type="button"
+                                                                       class="btn orange darken-3 btn-md btn-sm btn-rounded mt-1"
+                                                                       onclick="fnSelect()">Select</a>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td>
+                                                                    4 day
+                                                                </td>
+                                                                <td>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <i class="fa fa-suitcase orange-text fa-lg mr-2"
+                                                                           aria-hidden="true"></i>Drop-off
+                                                                    </div>
+                                                                    <div><i class="fa fa-truck cyan-text fa-lg mr-2"
+                                                                            aria-hidden="true"></i>Free Pickup
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img class="irc_mi"
+                                                                         src="http://www.utilitygarments.ca/img/customers/CANPAR.png"
+                                                                         alt="Image result for fedex png logo"
+                                                                         onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"
+                                                                         width="100" style="margin-top: 0px;">
+                                                                </td>
+                                                                <td>Express</td>
+                                                                <td>
+                                                                    $15
+                                                                    <i class="fa fa-info-circle fa-lg"
+                                                                       aria-hidden="true"></i>
+                                                                    <a type="button"
+                                                                       class="btn orange darken-3 btn-md btn-sm btn-rounded mt-1"
+                                                                       onclick="fnSelect()">Select</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td>
+                                                                    2 day
+                                                                </td>
+                                                                <td>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <i class="fa fa-suitcase orange-text fa-lg mr-2"
+                                                                           aria-hidden="true"></i>Drop-off
+                                                                    </div>
+                                                                    <div><i class="fa fa-truck cyan-text fa-lg mr-2"
+                                                                            aria-hidden="true"></i>Free Pickup
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img class="irc_mi"
+                                                                         src="http://www.canshave.com/images/FEx-Logo-PNG-Transparent.png"
+                                                                         alt="Image result for fedex png logo"
+                                                                         onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"
+                                                                         width="100" style="margin-top: 0px;">
+                                                                </td>
+                                                                <td>Priority Overnight</td>
+                                                                <td>
+                                                                    $63
+                                                                    <i class="fa fa-info-circle fa-lg"
+                                                                       aria-hidden="true"></i>
+                                                                    <a type="button"
+                                                                       class="btn orange darken-3 btn-md btn-sm btn-rounded mt-1"
+                                                                       onclick="fnSelect()">Select</a>
+
+                                                                </td>
+                                                            </tr>
+
+                                                            </tbody>
+                                                            <!--Table body-->
+
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mt-2">
+                                            <form class="form-inline border-bottom m-3">
+                                                <i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="group20" type="radio"
+                                                           id="radio120" checked="checked"
+                                                           onclick="showPickUp();">
+                                                    <label class="form-check-label" for="radio120">Pick Up</label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="group20" type="radio"
+                                                           id="radio121"
+                                                           onclick="hidePickUp();">
+                                                    <label class="form-check-label mr-2" for="radio121">Drop-off</label>
+                                                    <span class="grey-text" id="drop-msg" style="display: none">(You chose to drop off your package at a Canpar authorized location.
+                                                        <a>Click here to find one near you.)</a></span>
+                                                </div>
+                                            </form>
+                                            <!-- Card content -->
+                                            <div class="card-body pt-0 ml-3 mr-3">
+                                                <div class="row">
+                                                    <div class="col-3 pickup-container">
+                                                        <div class="md-form m-0">
+                                                            <input placeholder="Selected date" type="text"
+                                                                   id="date-picker-example"
+                                                                   class="form-control datepicker">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3 pickup-container">
+                                                        <select class="mdb-select colorful-select dropdown-orange mb-0">
+                                                            <option value="1" disabled selected>PickUp Location</option>
+                                                            <option value="2">Back Door</option>
+                                                            <option value="3">Basement</option>
+                                                            <option value="4">Front Door</option>
+                                                            <option value="5">Service Counter</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="md-form form-group m-0">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="#Reference 1"
+                                                                   aria-label="#Reference 1"
+                                                                   aria-describedby="basic-addon2">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="md-form form-group m-0">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="#Reference 2"
+                                                                   aria-label="#Reference 2"
+                                                                   aria-describedby="basic-addon2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <div class="col-md-12 white mt-4 p-4" style="height: 200px;">
+                                         <form class="form-inline border-bottom">
+                                             <i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+                                             <div class="form-check">
+                                                 <input class="form-check-input" name="group20" type="radio"
+                                                        id="radio120" checked="checked"
+                                                        onclick="showPickUp();">
+                                                 <label class="form-check-label" for="radio120">Pick Up</label>
+                                             </div>
+
+                                             <div class="form-check">
+                                                 <input class="form-check-input" name="group20" type="radio"
+                                                        id="radio121"
+                                                        onclick="hidePickUp();">
+                                                 <label class="form-check-label" for="radio121">Drop-off</label>
+                                             </div>
+                                         </form>
+                                         <div class="row mt-4 ml-2" id="pickup-container">
+                                             <div class="col-2 ml-4">
+                                                 <div class="md-form">
+                                                     <input placeholder="Selected date" type="text"
+                                                            id="date-picker-example"
+                                                            class="form-control datepicker pt-3">
+                                                 </div>
+                                             </div>
+                                             <div class="col-2">
+                                                 <select class="mdb-select colorful-select dropdown-orange mb-0">
+                                                     <option value="1" disabled selected>PickUp Location</option>
+                                                     <option value="2">Back Door</option>
+                                                     <option value="3">Basement</option>
+                                                     <option value="4">Front Door</option>
+                                                     <option value="5">Service Counter</option>
+                                                 </select>
+                                             </div>
+                                         </div>
+                                         <div class="row mt-1">
+                                             <div class="col-3 ml-5">
+                                                 <div class="md-form form-group m-0">
+                                                     <input type="text" class="form-control"
+                                                            placeholder="#Reference 1"
+                                                            aria-label="#Reference 1"
+                                                            aria-describedby="basic-addon2">
+                                                 </div>
+                                             </div>
+                                             <div class="col-3">
+                                                 <div class="md-form form-group m-0">
+                                                     <input type="text" class="form-control"
+                                                            placeholder="#Reference 2"
+                                                            aria-label="#Reference 2"
+                                                            aria-describedby="basic-addon2">
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>-->
+                                </div>
+
+                                <!-- Fourth Step -->
+                                <div class="row setup-content-2" id="step-4">
+                                    <div class="card mx-auto col-9">
+                                        <div class="row">
+                                            <div class="col-lg-8 order-md-1">
+                                                <div class="card-body p-3">
+                                                    <h4 class="text-center">Payment Method</h4>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col-lg-8 my-auto">
+                                                            Credit Balance :
+                                                            <span class="ml-2">$100</span>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <button class="btn btn-sm btn-rounded light-blue darken-2 float-right"
+                                                                    id="addCardBtn">Add Card
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-12 card z-depth-0 mt-2 mb-3 pt-2 rounded border invisible"
+                                                             id="addCardDiv">
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Card Number">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Expiry Month">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Expiry Year">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="CVV">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="md-form form-group m-0">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Name on the Card">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="rounded-bottom lighten-5 text-center">
+                                                                        <button
+                                                                                class="btn btn-sm btn-rounded light-blue darken-2 float-right waves-effect waves-light"
+                                                                                type="button">Submit
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 text-center">
+                                                            <button
+                                                                    class="btn waves-effect waves-light  btn-rounded orange darken-3"
+                                                                    type="button">Make Payment
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 order-md-0 p-0">
+                                                <div class="card-body contact light-blue darken-3 h-100 white-text">
+                                                    <h4 class=" text-center">Shipment Details</h4>
+                                                    <div>
+                                                        <div>
+                                                            <h5 class="mb-0">
+                                                                Shipping From:</h5>
+                                                            <hr class="mt-2 mb-2">
+                                                            <div class="mb-3 small">
+                                                                <p class="mb-0">S C M P Test</p>
+                                                                <p class="mb-0">69 Warwick Ave, ghuy, Ontario, L1Z
+                                                                    1L6,</p>
+                                                                <p class="mb-0">Canada</p>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="mb-0">Shipping To:</h5>
+                                                            <hr class="mt-2 mb-2">
+                                                            <div class="mb-2 small">
+                                                                <p class="mb-0">S C M P Test</p>
+                                                                <p class="mb-0">69 Warwick Ave, ghuy, Ontario, L1Z
+                                                                    1L6,</p>
+                                                                <p class="mb-0">Canada</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fifth Dtep -->
+                                <div class="row setup-content-2" id="step-5">
+                                    <div class="card mx-auto col-9">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="card-body p-3">
+                                                    <h4 class="text-center">Label Preview</h4>
+                                                    <hr class="mb-0">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 my-auto">
+                                                            <object height="330px" width="100%"
+                                                                    data="Pdf/Canpar%20Label.pdf"></object>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 p-0">
+                                                <div class="card-body contact light-blue darken-3 h-100 white-text">
+                                                    <div class="rounded-bottom lighten-5 text-center">
+                                                        <button
+                                                                class="btn btn-mdb-color btn-rounded btn-md w-100 float-right waves-effect waves-light orange darken-3"
+                                                                type="button">Print Label
+                                                        </button>
+                                                    </div>
+                                                    <div class="rounded-bottom lighten-5 text-center">
+                                                        <button
+                                                                class="btn btn-mdb-color btn-rounded btn-md w-100 float-right waves-effect waves-light orange darken-3"
+                                                                type="button">Email Label
+                                                        </button>
+                                                    </div>
+                                                    <div class="rounded-bottom lighten-5 text-center">
+                                                        <button
+                                                                class="btn btn-mdb-color btn-rounded btn-md w-100 float-right waves-effect waves-light orange darken-3"
+                                                                type="button">Cancel Shipment
+                                                        </button>
+                                                    </div>
+                                                    <div class="rounded-bottom lighten-5 text-center">
+                                                        <button
+                                                                class="btn btn-mdb-color btn-rounded w-100 btn-md float-right waves-effect waves-light orange darken-3"
+                                                                type="button">Repeat Shipment
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-lg-10">
+                                         <div class="row">
+                                             <object height="370px" width="100%"
+                                                     data="Pdf/Canpar%20Label.pdf"></object>
+                                         </div>
+                                     </div>
+                                     <div class="col-sm-2">
+                                         <div class="rounded-bottom lighten-5 text-center">
+                                             <button
+                                                     class="btn btn-mdb-color btn-rounded btn-md w-100 float-right waves-effect waves-light orange darken-3"
+                                                     type="button">Print Label
+                                             </button>
+                                         </div>
+                                         <div class="rounded-bottom lighten-5 text-center">
+                                             <button
+                                                     class="btn btn-mdb-color btn-rounded btn-md w-100 float-right waves-effect waves-light orange darken-3"
+                                                     type="button">Email Label
+                                             </button>
+                                         </div>
+                                         <div class="rounded-bottom lighten-5 text-center">
+                                             <button
+                                                     class="btn btn-mdb-color btn-rounded btn-md w-100 float-right waves-effect waves-light orange darken-3"
+                                                     type="button">Cancel Shipment
+                                             </button>
+                                         </div>
+                                         <div class="rounded-bottom lighten-5 text-center">
+                                             <button
+                                                     class="btn btn-mdb-color btn-rounded w-100 btn-md float-right waves-effect waves-light orange darken-3"
+                                                     type="button">Repeat Shipment
+                                             </button>
+                                         </div>
+
+                                     </div>-->
+                                </div>
+
+
+                                <!--  &lt;!&ndash; sixth Step &ndash;&gt;
+                                  <div class="row setup-content-2" id="step-6">
+                                    <div class="col-md-12">
+                                      <h3 class="font-weight-bold pl-0 my-4"><strong>Finish</strong></h3>
+                                      <h2 class="text-center font-weight-bold my-4">Registration completed-6!</h2>
+                                      <button class="btn btn-mdb-color prevBtn-2 float-left" type="button">Previous</button>
+                                      <button class="btn btn-success float-right" type="submit">Submit</button>
+                                    </div>
+                                  </div>-->
+                            </form>
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </section>
+                <!--Section: Table-->
+            </div>
+        </div>
+
+    </div>
+
+</main>
+<!--Main layout-->
+
+<!-- Button trigger modal-->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCart">Launch modal</button>-->
+
+<!-- Modal: modalCart -->
+<div class="modal fade" style="z-index: 10000;" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Your Addresses</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body border-0">
+                <div class="card z-depth-0">
+                    <div class="row border-bottom">
+                        <div class="col-9 small my-auto">69 Warwick Ave, ghuy, Ontario, L1Z 1L6,Canada</div>
+                        <div class="col-3">
+                            <button class="btn btn-sm btn-cyan addr-select">Select</button>
+                        </div>
+                    </div>
+                    <div class="row border-bottom">
+                        <div class="col-9 small my-auto">69 Warwick Ave, ghuy, Ontario, L1Z 1L6,Canada</div>
+                        <div class="col-3">
+                            <button class="btn btn-sm btn-cyan addr-select">Select</button>
+                        </div>
+                    </div>
+                    <div class="row border-bottom">
+                        <div class="col-9 small my-auto">69 Warwick Ave, ghuy, Ontario, L1Z 1L6,Canada</div>
+                        <div class="col-3">
+                            <button class="btn btn-sm btn-cyan addr-select">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<!--<footer class="page-footer center-on-small-only">
+
+  &lt;!&ndash;Copyright&ndash;&gt;
+  <div class="footer-copyright">
+    <div class="container-fluid">
+      © 2018 Copyright:
+      <a href="https://www.MDBootstrap.com"> ShipTime. All Rights Reserved. </a>
+
+    </div>
+  </div>
+  &lt;!&ndash;/.Copyright&ndash;&gt;
+
+</footer>-->
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/custom/main.js"></script>
+<script type="text/javascript" src="js/custom/steps.js"></script>
+
+<!-- Initializations -->
+<script>
+    $('.step-main-body').height($(window).height() - 175)
+    $('.step-main-body').css('overflow-y', 'auto')
+    $('body').css('overflow-y', 'hidden');
+
+    // SideNav Initialization
+    $(".button-collapse").sideNav();
+    $(".hm-btn").click(function () {
+        if ($("body").hasClass("fixed-sn")) {
+            $("body").removeClass('fixed-sn');
+            if ($('.sidenav-overlay')) {
+                $('.sidenav-overlay').remove();
+            }
+        } else {
+            $("body").addClass('fixed-sn');
+            if ($(window).width() <= 1200) {
+                $('body').append('<div class="sidenav-overlay"></div>')
+                $('.sidenav-overlay').click(function () {
+                    console.log('test', $(".hm-btn"));
+                    $(".hm-btn").trigger("click");
+                })
+            }
+        }
+    });
+
+    if ($(window).width() > 1200) {
+        $(".side-nav").hover(function () {
+            $(".side-nav").addClass('fixed');
+        }, function () {
+            $(".side-nav").removeClass('fixed');
+
+        })
+    } else {
+        $(".side-nav").addClass('fixed');
+    }
+
+
+    $(window).resize(function () {
+        $('.step-main-body').height($(window).height() - 215)
+        $('.step-main-body').css('overflow-y', 'auto')
+        $('body').css('overflow-y', 'hidden');
+
+        if ($(window).width() > 1200) {
+            $(".side-nav").removeClass('fixed');
+        } else {
+            $(".side-nav").addClass('fixed');
+        }
+    });
+    /* -----------Jaydeep---------*/
+
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.datepicker').pickadate();
+
+    function showPickUp() {
+        $('.pickup-container').css('display', 'inline-block');
+        $('#drop-msg').css('display', 'none');
+    }
+
+    function hidePickUp() {
+        $('.pickup-container').css('display', 'none');
+        $('#drop-msg').css('display', 'inline-block');
+    }
+    $(document).ready(function() {
+        $('.addr-select').on('click', function(){
+            $('.modal').trigger('click');
+        });
+    });
+    function fnSelect() {
+        $("a[href='#step-4']").trigger('click');
+    }
+</script>
+</body>
+
+</html>
