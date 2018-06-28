@@ -330,7 +330,22 @@ input.select-dropdown {
   cursor: pointer;
 }
 
-.
+.store-card {
+  width: 200px;
+  height: 78px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: box-shadow .2s cubic-bezier(.4,0,.2,1);
+/*  margin: 0 15px 30px;*/
+}
+
+.img-plugin-card {
+  height: 40px;
+  width: 40px;
+}
+
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
   cursor: pointer;
