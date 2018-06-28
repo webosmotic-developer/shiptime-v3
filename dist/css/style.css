@@ -488,3 +488,7 @@ input.select-dropdown {
     z-index: 999;
   }
 }
+
+.classic-tabs li a {
+  font-size: 11px !important;
+}

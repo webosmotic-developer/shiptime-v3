@@ -64,6 +64,7 @@
                     <i class="fa fa-user"></i>
                     <span class="clearfix d-none d-sm-inline-block">Account</span>
                 </a>
+
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
@@ -119,141 +120,416 @@
 <main>
     <div class="main-conainter">
         <div class="main-content p-3">
-                <div class="card">
-                    <div class="card-body">
-                        <!--<h5 class="grey-text">Shipping to certain areas may incur a surcharge, enter the postal code to get a more accurate quote.</h5>-->
-                        <div class="row">
-                            <div class="pl-3">
-                                You're shipping from: Ontario, L1Z 1L6,Canada
-                                <!--<i class="fa fa-question-circle ml-2 my-auto grey-text"></i>-->
+            <div class="card">
+                <div class="card-body">
+                    <!--<h5 class="grey-text">Shipping to certain areas may incur a surcharge, enter the postal code to get a more accurate quote.</h5>-->
+                    <div class="row">
+                        <div class="pl-3">
+                            You're shipping from: Ontario, L1Z 1L6,Canada
+                            <!--<i class="fa fa-question-circle ml-2 my-auto grey-text"></i>-->
                                 <span class="grey-text">
-                                    <a  data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalCart"><i class="fa fa-pencil-square-o ml-1"></i></a>
+                                    <a data-placement="right" title="you can change it by click here"
+                                       data-toggle="modal" data-target="#modalCart"><i
+                                            class="fa fa-pencil-square-o ml-1"></i></a>
                                 </span>
-                            </div>
                         </div>
-                        <hr>
-                        <div class="row mt-1">
-                            <div class="col-md-10">
-                                <h5 class="text-dark mb-0">
-                                    <span>Ship To:</span>
-                                </h5>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control"
-                                               placeholder="Search by Name, Address or Zip">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <select class="mdb-select colorful-select dropdown-info" id="fromCountry">
-                                            <option value="" disabled selected>Country</option>
-                                            <option value="1">Canada</option>
-                                            <option value="2">USA</option>
-                                            <option value="3">India</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="md-form form-group m-0">
-                                            <input type="text" class="form-control" placeholder="Postal">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row ml-0 mt-2">
-                            <div class="col pl-0 pt-3">
-                                <h6 class="grey-text mb-0">Enter the items you would like to ship</h6>
-                            </div>
-                            <div class="col text-right">
+                    </div>
+                    <hr>
+                    <div class="row mt-1">
+                        <div class="col-md-10">
+                            <h5 class="text-dark mb-0">
+                                <span>Ship To:</span>
+                            </h5>
 
-                                <label class="pt-2 mr-3 font-bold">Insurance :</label>
-                                <div class="switch blue-white-switch mt-2 d-inline-block">
-                                    <label class="small">
-                                        Carrier
-                                        <input type="checkbox" checked="checked">
-                                        <span class="lever"></span>
-                                        Shiptime
-                                    </label>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control"
+                                           placeholder="Search by Name, Address or Zip">
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row border border-gray small m-0">
-                           <div class="col-sm-2 border-right">
-                               <div class="mt-5 text-center">
-                                   Shipment Item
-                               </div>
-                           </div>
-                            <div class="col-sm-10 p-3">
-                                <div class="row">
-                                    <div class="col-7">
-                                        <div class="row">
-                                            <div class="col-8">
-                                                <div class="row">
-                                                    <div class="col-5 mt-2">
-                                                        <span class="float-right">Package Type</span>
-                                                    </div>
-                                                    <div class="col-7 ">
-                                                        <select class="mdb-select colorful-select dropdown-info">
-                                                            <option value="1">My Own Packaging</option>
-                                                            <option value="2">Courier Envelope</option>
-                                                            <option value="3">Courier Pak</option>
-                                                            <option value="4">My Own Envelope</option>
-                                                            <option value="5">LTL Freight (Pallet)</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-5 mt-2">
-                                                        <span class="float-right">Dimensions (Cm)</span>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <input class="form-control text-center" type="text" placeholder="l">
-                                                    </div>
-                                                    <span class="mt-2">x</span>
-                                                    <div class="col-2">
-                                                        <input class="form-control text-center" type="text" placeholder="b">
-                                                    </div>
-                                                    <span class="mt-2">x</span>
-                                                    <div class="col-2">
-                                                        <input class="form-control text-center" type="text" placeholder="h">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="row">
-                                                    <div class="col-7 mt-2 "><span class="float-right">Weight (kg)</span></div>
-                                                    <div class="col-5 pl-0">
-                                                        <input class="form-control text-center " type="text"
-                                                               placeholder="Wt">
-                                                    </div>
-                                                    <div class="col-7 mt-2 "><span class="float-right">Ins. Value</span>
-                                                    </div>
-                                                    <div class="col-5 pl-0">
-                                                        <input class="form-control text-center" type="text"
-                                                               placeholder="Ins. Val">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    <div class="col-5">
-                                        <textarea class="form-control h-100" row="10" placeholder="Description"></textarea>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <select class="mdb-select colorful-select dropdown-info" id="fromCountry">
+                                        <option value="" disabled selected>Country</option>
+                                        <option value="1">Canada</option>
+                                        <option value="2">USA</option>
+                                        <option value="3">India</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="md-form form-group m-0">
+                                        <input type="text" class="form-control" placeholder="Postal">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="rounded-bottom lighten-5 text-center col-12 mt-2">
-                                <button class="btn btn-blue-grey  "
-                                        type="button" id="getQuoteBtn">Get Quote
-                                </button>
                             </div>
                         </div>
                     </div>
+                    <div class="row ml-0 mt-2">
+                        <div class="col pl-0 pt-3">
+                            <h6 class="grey-text mb-0">Enter the items you would like to ship</h6>
+                        </div>
+                        <div class="col text-right">
+
+                            <label class="pt-2 mr-3 font-bold">Insurance :</label>
+
+                            <div class="switch blue-white-switch mt-2 d-inline-block">
+                                <label class="small">
+                                    Carrier
+                                    <input type="checkbox" checked="checked">
+                                    <span class="lever"></span>
+                                    Shiptime
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classic tabs -->
+                    <div class="classic-tabs">
+                        <div class="col-12">
+                            <div class="row">
+
+                                <!-- Nav tabs -->
+                                <div class="tabs-wrapper w-100">
+                                    <ul class="nav tabs-blue-grey" role="tablist">
+                                        <li class="nav-item ml-0">
+                                            <a class="nav-link waves-light active p-2" data-toggle="tab"
+                                               href="#panel1011"
+                                               role="tab">
+                                                <i class="fa fa-user pr-1" aria-hidden="true"></i>
+                                                My Own Packaging</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link waves-light p-2" data-toggle="tab" href="#panel1012"
+                                               role="tab">
+                                                <i class="fa fa-heart pr-1" aria-hidden="true"></i>
+                                                Courier Envelope</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link waves-light p-2" data-toggle="tab" href="#panel1013"
+                                               role="tab">
+                                                <i class="fa fa-envelope pr-1" aria-hidden="true"></i>
+                                                Courier Pak</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link waves-light p-2" data-toggle="tab" href="#panel1014"
+                                               role="tab">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                My Own Envelope</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link waves-light p-2" data-toggle="tab" href="#panel1015"
+                                               role="tab">
+                                                <i class="fa fa-star pr-1" aria-hidden="true"></i>
+                                                LTL Freight (Pallet)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Tab panels -->
+                                <div class="tab-content w-100 card p-0">
+
+                                    <!--Panel 1-->
+                                    <div class="tab-pane fade in show active" id="panel1011" role="tabpanel">
+                                        <div class="row border border-gray small m-0">
+                                            <!--<div class="col-sm-2 border-right">
+                                                <div class="mt-5 text-center">
+                                                    Shipment Item
+                                                </div>
+                                            </div>-->
+                                            <div class="col-sm-12 p-3">
+                                                <div class="row">
+                                                    <div class="col-7 my-2">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="row">
+                                                                    <div class="col-5 mt-2">
+                                                                        <span class="float-right">Dimensions (Cm)</span>
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="l">
+                                                                    </div>
+                                                                    <span class="mt-2">x</span>
+
+                                                                    <div class="col-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="b">
+                                                                    </div>
+                                                                    <span class="mt-2">x</span>
+
+                                                                    <div class="col-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="h">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="row">
+                                                                    <div class="col-3 mt-2 "><span
+                                                                            class="float-right">Weight (kg)</span></div>
+                                                                    <div class="col-3 pl-0">
+                                                                        <input class="form-control text-center "
+                                                                               type="text"
+                                                                               placeholder="Wt">
+                                                                    </div>
+                                                                    <div class="col-3 mt-2 "><span class="float-right">Ins. Value</span>
+                                                                    </div>
+                                                                    <div class="col-3 pl-0">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="Ins. Val">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5 pr-5">
+                                                    <textarea class="form-control h-100 mb-1" row="10"
+                                                              placeholder="Description"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.Panel 1-->
+
+                                    <!--Panel 2-->
+                                    <div class="tab-pane fade" id="panel1012" role="tabpanel">
+                                        <div class="row border border-gray small m-0">
+                                            <!--<div class="col-sm-2 border-right">
+                                                <div class="mt-5 text-center">
+                                                    Shipment Item
+                                                </div>
+                                            </div>-->
+                                            <div class="col-sm-12 p-3">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-2 mt-2">
+                                                                <div class="row left">
+                                                                    <div class="col-6 mt-2 "><span class="float-right">Ins. Value</span>
+                                                                    </div>
+                                                                    <div class="col-6 pl-0">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="Ins. Val">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <textarea class="form-control h-100 mb-1" row="10"
+                                                                          placeholder="Description"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.Panel 2-->
+
+                                    <!--Panel 3-->
+                                    <div class="tab-pane fade" id="panel1013" role="tabpanel">
+                                        <div class="row border border-gray small m-0">
+                                            <!--<div class="col-sm-2 border-right">
+                                                <div class="mt-5 text-center">
+                                                    Shipment Item
+                                                </div>
+                                            </div>-->
+                                            <div class="col-sm-12 p-3">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-2 mt-2">
+                                                                <div class="row left">
+                                                                    <div class="col-6 mt-2 "><span class="float-right">Ins. Value</span>
+                                                                    </div>
+                                                                    <div class="col-6 pl-0">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="Ins. Val">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2 mt-2">
+                                                                <div class="row left">
+                                                                    <div class="col-6 mt-2 "><span class="float-right">Weight (kg)</span>
+                                                                    </div>
+                                                                    <div class="col-6 pl-0">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="Wt">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <textarea class="form-control h-100 mb-1" row="10"
+                                                                          placeholder="Description"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.Panel 3-->
+
+                                    <!--Panel 4-->
+                                    <div class="tab-pane fade" id="panel1014" role="tabpanel">
+                                        <div class="row border border-gray small m-0">
+                                            <div class="col-sm-12 p-3">
+                                                <div class="row">
+                                                    <div class="col-7 my-2">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="row">
+                                                                    <div class="col-5 mt-2">
+                                                                        <span class="float-right">Dimensions (Cm)</span>
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="l">
+                                                                    </div>
+                                                                    <span class="mt-2">x</span>
+
+                                                                    <div class="col-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="b">
+                                                                    </div>
+                                                                    <span class="mt-2">x</span>
+
+                                                                    <div class="col-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="h">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="row">
+                                                                    <div class="col-3 mt-2 "><span
+                                                                            class="float-right">Weight (kg)</span></div>
+                                                                    <div class="col-3 pl-0">
+                                                                        <input class="form-control text-center "
+                                                                               type="text"
+                                                                               placeholder="Wt">
+                                                                    </div>
+                                                                    <div class="col-3 mt-2 "><span class="float-right">Ins. Value</span>
+                                                                    </div>
+                                                                    <div class="col-3 pl-0">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="Ins. Val">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                    <textarea class="form-control h-100 mb-1" row="10"
+                                                              placeholder="Description"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!--/.Panel 4-->
+
+                                    <!--Panel 5-->
+                                    <div class="tab-pane fade" id="panel1015" role="tabpanel">
+                                        <div class="row border border-gray small m-0">
+                                            <div class="col-sm-12 p-3">
+                                                <div class="row">
+                                                    <div class="col-7 my-2">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="row">
+                                                                    <div class="col-5 mt-2">
+                                                                        <span class="float-right">Dimensions (Cm)</span>
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="l">
+                                                                    </div>
+                                                                    <span class="mt-2">x</span>
+
+                                                                    <div class="col-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="b">
+                                                                    </div>
+                                                                    <span class="mt-2">x</span>
+
+                                                                    <div class="col-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="h">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="row">
+                                                                    <div class="col-3 mt-2 "><span
+                                                                            class="float-right">Weight (kg)</span></div>
+                                                                    <div class="col-3 pl-0">
+                                                                        <input class="form-control text-center "
+                                                                               type="text"
+                                                                               placeholder="Wt">
+                                                                    </div>
+                                                                    <div class="col-3 mt-2 "><span class="float-right">Ins. Value</span>
+                                                                    </div>
+                                                                    <div class="col-3 pl-0">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="Ins. Val">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                    <textarea class="form-control h-100 mb-1" row="10"
+                                                              placeholder="Description"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select class="select-dropdown "></select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!--/.Panel 5-->
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Classic tabs -->
+
+                    <div class="row">
+                        <div class="rounded-bottom lighten-5 text-center col-12 mt-2">
+                            <button class="btn btn-blue-grey  "
+                                    type="button" id="getQuoteBtn">Get Quote
+                            </button>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
             <div class="card mt-3 d-none" id="quoteListDiv">
                 <div class="card-body">
-                    <h5 class="grey-text">Choose the best courier for you based on price, delivery time and reliability</h5>
+                    <h5 class="grey-text">Choose the best courier for you based on price, delivery time and
+                        reliability</h5>
                     <table class="table table-striped">
 
                         <!--Table head-->
@@ -392,7 +668,8 @@
     </div>
 </main>
 <!--Main layout-->
-<div class="modal fade" style="z-index: 10000;" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" style="z-index: 10000;" id="modalCart" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <!--Header-->
@@ -486,15 +763,16 @@
         }
     });
 
-    $('.carrier-row').mouseover(function() {
+    $('.carrier-row').mouseover(function () {
         $(this).find('.btn-select, .trash-btn').removeClass('d-none');
 
-    });$('.carrier-row').mouseout(function() {
+    });
+    $('.carrier-row').mouseout(function () {
         $(this).find('.btn-select, .trash-btn').addClass('d-none');
 
     });
-    $(document).ready(function() {
-        $('.addr-select').on('click', function(){
+    $(document).ready(function () {
+        $('.addr-select').on('click', function () {
             $('.modal').trigger('click');
         });
     });
