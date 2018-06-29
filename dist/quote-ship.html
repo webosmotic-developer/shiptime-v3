@@ -266,7 +266,7 @@
                                                                                aria-describedby="basic-addon2">
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-2">
+                                                                <div class="col-sm-2 my-auto">
                                                                     <div class="form-check checkbox-info-filled p-0">
                                                                         <input type="checkbox"
                                                                                class="filled-in form-check-input"
@@ -357,7 +357,7 @@
                                                                 </div>
                                                                 <!-- Material input -->
                                                                 <div class="col-sm-12">
-                                                                    <div class="row">
+                                                                    <div class="row mt-1">
                                                                         <div class="col-sm-6">
                                                                             <div class="row">
                                                                                 <div class="col-sm-6">
@@ -439,36 +439,43 @@
                                                 <h6 class="grey-text m-0">Enter the items you would like to ship</h6>
                                             </div>
 
-                                            <div class="card-body mt-2 pt-0 pb-0">
-                                                <!-- Switch -->
+                                            <div class="card-body pb-0">
                                                 <div class="row">
-                                                    <div class="col-3 my-auto">
-                                                        <label class="m-0">Measurement Unit</label>
-                                                        <select class="mdb-select colorful-select dropdown-orange">
-                                                            <option value="1">Metric</option>
-                                                            <option value="2">Imperial</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <label class="m-0">Insurance</label>
-                                                        <div class="switch orange-switch mt-2">
-                                                            <label>
-                                                                Carrier
+                                                    <div class="col-sm-4">
+                                                        <label class="pt-2 mr-3 font-bold">Measurement Unit:</label>
+                                                        <div class="switch blue-white-switch mt-2 d-inline-block">
+                                                            <label class="small">
+                                                                Metric
                                                                 <input type="checkbox" checked="checked">
                                                                 <span class="lever"></span>
-                                                                Shiptime
+                                                                Imperial
                                                             </label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-3">
-                                                        <label class="m-0">Tax & Duty Paid By</label>
-                                                        <div class="switch orange-switch mt-2">
-                                                            <label>
-                                                                Consignee
-                                                                <input type="checkbox" checked="checked">
-                                                                <span class="lever"></span>
-                                                                Shipper
-                                                            </label>
+                                                    <div class="col-sm-4">
+                                                        <div class="float-right">
+                                                            <label class="pt-2 mr-3 font-bold">Tax & Duty Paid By:</label>
+                                                            <div class="switch blue-white-switch mt-2 d-inline-block">
+                                                                <label class="small">
+                                                                    Consignee
+                                                                    <input type="checkbox" checked="checked">
+                                                                    <span class="lever"></span>
+                                                                    Shipper
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="float-right">
+                                                            <label class="pt-2 mr-3 font-bold">Insurance:</label>
+                                                            <div class="switch blue-white-switch mt-2 d-inline-block">
+                                                                <label class="small">
+                                                                    Carrier
+                                                                    <input type="checkbox" checked="checked">
+                                                                    <span class="lever"></span>
+                                                                    Shiptime
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -492,7 +499,7 @@
                                                                 <li class="nav-item">
                                                                     <a class="nav-link waves-light p-2" data-toggle="tab" href="#panel1012"
                                                                        role="tab">
-                                                                        <i class="fa fa-heart pr-1 pb-1" aria-hidden="true"></i>
+                                                                        <i class="fa fa-envelope-o pr-1 pb-1" aria-hidden="true"></i>
                                                                         <br> Courier Envelope</a>
                                                                 </li>
                                                                 <li class="nav-item">
@@ -523,8 +530,8 @@
                                                             <div class="tab-pane fade in show active" id="panel1011"
                                                                  role="tabpanel">
                                                                 <div class="row border border-gray small m-0">
-                                                                    <div class="col-sm-12 p-3">
-                                                                        <div class="row my-auto">
+                                                                    <div class="col-sm-12 p-3 item-container">
+                                                                        <div class="row my-auto item-row">
                                                                             <div class="col-7 my-2">
                                                                                 <div class="row">
                                                                                     <div class="px-2 my-auto border-right">
@@ -580,7 +587,7 @@
                                                                             </div>
                                                                             <div class="col-5 pl-0">
                                                                                 <div class="row">
-                                                                                    <div class="col-10">
+                                                                                    <div class="col-10 border-right">
                                                                                     <textarea class="form-control h-100 mb-1 mt-0" row="10"
                                                                                               placeholder="Description"></textarea>
                                                                                     </div>
@@ -591,6 +598,11 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <a href="#" class="btn m-0 ml-5 mb-3 btn-md orange darken-3"><i
+                                                                                class="fa fa-plus mr-1 mt-0"></i>Add
+                                                                            Item</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -637,7 +649,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-2 my-auto">
                                                                                         <div class="row left">
-                                                                                            <div class="col-6 mt-2 ">
+                                                                                            <div class="col-6 my-auto ">
                                                                                                 <span class="float-right">Ins. Value</span>
                                                                                             </div>
                                                                                             <div class="col-6 pl-0">
@@ -732,7 +744,7 @@
                                                                             </div>
                                                                             <div class="col-5 pl-0">
                                                                                 <div class="row">
-                                                                                    <div class="col-10">
+                                                                                    <div class="col-10 border-right">
                                                                                     <textarea class="form-control h-100 mb-1 mt-0" row="10"
                                                                                               placeholder="Description"></textarea>
                                                                                     </div>
@@ -743,6 +755,11 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <a href="#" class="btn m-0 ml-5 mb-3 btn-md orange darken-3"><i
+                                                                                class="fa fa-plus mr-1 mt-0"></i>Add
+                                                                            Item</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -755,7 +772,7 @@
                                                                         <div class="row my-2">
                                                                             <div class="col-7 my-2">
                                                                                 <div class="row">
-                                                                                    <div class="my-auto pl-2">
+                                                                                    <div class="my-auto pl-2 pr-2 border-right">
                                                                                         #1
                                                                                     </div>
                                                                                     <div class="col-6">
@@ -823,14 +840,14 @@
                                                                                             </option>
                                                                                         </select>
                                                                                     </div>
-                                                                                    <div class="col-md-1">
+                                                                                    <div class="col-md-1 pl-0">
                                                                                         <a><i class="fa fa-calculator fa-2x mt-2 grey-text"></i></a>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-5 pr-5 pl-4">
                                                                                 <div class="row h-100">
-                                                                                    <div class="col-10">
+                                                                                    <div class="col-10  border-right">
                                                                                         <textarea class="form-control h-100 mb-1 mt-0" row="10"
                                                                                                   placeholder="Description"></textarea>
                                                                                     </div>
@@ -842,8 +859,8 @@
 
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row my-auto">
-                                                                            <div class="col-md-3 ml-5">
+                                                                        <div class="row mt-3 pt-3 border-top">
+                                                                            <div class="col-md-3 offset-6">
                                                                                 <div class="row">
                                                                                     <div class="col-3 my-auto">
                                                                                         <span>Lift gate</span>
@@ -869,7 +886,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-3 ml-3 pl-0">
+                                                                            <div class="col-md-3 text-md-right pl-0">
                                                                                 <label class="pt-2 mr-3 font-bold">Delivery
                                                                                     Apt. :</label>
 
@@ -885,8 +902,12 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="col-md-12">
+                                                                        <a href="#" class="btn m-0 ml-5 mb-3 btn-md orange darken-3"><i
+                                                                                class="fa fa-plus mr-1 mt-0"></i>Add
+                                                                            Item</a>
+                                                                    </div>
                                                                 </div>
-
                                                             </div>
                                                             <!--/.Panel 5-->
 
@@ -898,9 +919,6 @@
                                             <!-- Classic tabs -->
                                         </div>
                                     </div>
-                                    <a href="#" class="btn m-lg-3 btn-md btn-rounded orange darken-3"><i
-                                            class="fa fa-plus mr-1 mt-0"></i>Add
-                                        Item</a>
                                 </div>
 
                                 <!-- Third Step -->
@@ -937,7 +955,7 @@
 
                                                             <!--Table body-->
                                                             <tbody>
-                                                            <tr>
+                                                            <tr class="carrier-row">
                                                                 <th scope="row">1</th>
                                                                 <td>
                                                                     1 day
@@ -950,9 +968,8 @@
                                                                     <span class="fa fa-star"></span>
                                                                 </td>
                                                                 <td>
-                                                                    <div>
-                                                                        <i class="fa fa-suitcase orange-text fa-lg mr-2"
-                                                                           aria-hidden="true"></i>Drop-off
+                                                                    <div><i class="fa fa-suitcase orange-text fa-lg mr-2"
+                                                                            aria-hidden="true"></i>Drop-off
                                                                     </div>
                                                                     <div><i class="fa fa-truck cyan-text fa-lg mr-2"
                                                                             aria-hidden="true"></i>Free Pickup
@@ -963,20 +980,19 @@
                                                                          src="http://www.canshave.com/images/FEx-Logo-PNG-Transparent.png"
                                                                          alt="Image result for fedex png logo"
                                                                          onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"
-                                                                         width="100" style="margin-top: 0px;">
+                                                                         style="margin-top: 0px;height: 20px; width: 70px;">
                                                                 </td>
                                                                 <td>Standard Overnight</td>
                                                                 <td>
-                                                                    $63
-                                                                    <i class="fa fa-info-circle fa-lg"
-                                                                       aria-hidden="true"></i>
+                                                                    <span class="position-static">$33</span>
                                                                     <a type="button"
-                                                                       class="btn orange darken-3 btn-md btn-sm btn-rounded mt-1"
+                                                                       class="btn btn-light-green waves-effect btn-md d-none btn-select"
                                                                        onclick="fnSelect()">Select</a>
+                                                                    <i class="fa fa-info-circle fa-lg float-right mt-auto" aria-hidden="true"></i>
                                                                 </td>
                                                             </tr>
 
-                                                            <tr>
+                                                            <tr class="carrier-row">
                                                                 <th scope="row">2</th>
                                                                 <td>
                                                                     4 day
@@ -989,9 +1005,8 @@
                                                                     <span class="fa fa-star"></span>
                                                                 </td>
                                                                 <td>
-                                                                    <div>
-                                                                        <i class="fa fa-suitcase orange-text fa-lg mr-2"
-                                                                           aria-hidden="true"></i>Drop-off
+                                                                    <div><i class="fa fa-suitcase orange-text fa-lg mr-2"
+                                                                            aria-hidden="true"></i>Drop-off
                                                                     </div>
                                                                     <div><i class="fa fa-truck cyan-text fa-lg mr-2"
                                                                             aria-hidden="true"></i>Free Pickup
@@ -1002,19 +1017,18 @@
                                                                          src="http://www.utilitygarments.ca/img/customers/CANPAR.png"
                                                                          alt="Image result for fedex png logo"
                                                                          onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"
-                                                                         width="100" style="margin-top: 0px;">
+                                                                         style="margin-top: 0px;height: 20px; width: 70px;">
                                                                 </td>
                                                                 <td>Express</td>
                                                                 <td>
-                                                                    $15
-                                                                    <i class="fa fa-info-circle fa-lg"
-                                                                       aria-hidden="true"></i>
+                                                                    <span>$15</span>
                                                                     <a type="button"
-                                                                       class="btn orange darken-3 btn-md btn-sm btn-rounded mt-1"
+                                                                       class="btn  btn-light-green waves-effect btn-md d-none btn-select"
                                                                        onclick="fnSelect()">Select</a>
+                                                                    <i class="fa fa-info-circle fa-lg float-right mt-auto" aria-hidden="true"></i>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
+                                                            <tr class="carrier-row">
                                                                 <th scope="row">3</th>
                                                                 <td>
                                                                     2 day
@@ -1027,9 +1041,8 @@
                                                                     <span class="fa fa-star"></span>
                                                                 </td>
                                                                 <td>
-                                                                    <div>
-                                                                        <i class="fa fa-suitcase orange-text fa-lg mr-2"
-                                                                           aria-hidden="true"></i>Drop-off
+                                                                    <div><i class="fa fa-suitcase orange-text fa-lg mr-2"
+                                                                            aria-hidden="true"></i>Drop-off
                                                                     </div>
                                                                     <div><i class="fa fa-truck cyan-text fa-lg mr-2"
                                                                             aria-hidden="true"></i>Free Pickup
@@ -1040,23 +1053,20 @@
                                                                          src="http://www.canshave.com/images/FEx-Logo-PNG-Transparent.png"
                                                                          alt="Image result for fedex png logo"
                                                                          onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"
-                                                                         width="100" style="margin-top: 0px;">
+                                                                         style="margin-top: 0px;height: 20px; width: 70px;">
                                                                 </td>
                                                                 <td>Priority Overnight</td>
-                                                                <td>
-                                                                    $63
-                                                                    <i class="fa fa-info-circle fa-lg"
-                                                                       aria-hidden="true"></i>
+                                                                <td style="width: 170px">
+                                                                    <span>$63</span>
                                                                     <a type="button"
-                                                                       class="btn orange darken-3 btn-md btn-sm btn-rounded mt-1"
+                                                                       class="btn  btn-light-green waves-effect btn-md d-none btn-select"
                                                                        onclick="fnSelect()">Select</a>
-
+                                                                    <i class="fa fa-info-circle fa-lg float-right mt-auto" aria-hidden="true"></i>
                                                                 </td>
                                                             </tr>
 
                                                             </tbody>
                                                             <!--Table body-->
-
                                                         </table>
                                                     </div>
                                                 </div>
@@ -1482,6 +1492,14 @@
     });
     $('.bill-row').on('mouseout',function() {
         $(this).removeClass('blue-grey lighten-3 z-depth-1');
+    });
+    $('.carrier-row').mouseover(function () {
+        $(this).find('.btn-select, .trash-btn').removeClass('d-none');
+
+    });
+    $('.carrier-row').mouseout(function () {
+        $(this).find('.btn-select, .trash-btn').addClass('d-none');
+
     });
 </script>
 </body>

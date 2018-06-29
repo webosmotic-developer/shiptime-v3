@@ -491,9 +491,17 @@ input.select-dropdown {
 }
 
 .classic-tabs li a {
-  font-size: 11px !important;
+  font-size: 12px !important;
 }
 
 .classic-tabs {
   overflow-x: unset !important;
+}
+
+.classic-tabs .btn {
+  font-size: .8rem;
+}
+
+.classic-tabs li a {
+  text-transform: unset !important;
 }
