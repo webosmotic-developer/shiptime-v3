@@ -174,24 +174,51 @@
                     <div class="card ml-0 mt-3">
                         <div class="card-header">Quick Quote</div>
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <label class="mb-0 grey-text">Ship From</label>
-                                    <input type="text" class="form-control mt-0"
-                                           placeholder="Search by Name, Address or Zip">
-                                </div>
-                                <div class="col-sm-2 text-center">
-                                    <i class="fa fa-2x fa-long-arrow-right p-4 grey-text"></i>
-                                </div>
-                                <div class="col-sm-5">
-                                    <label class="mb-0 grey-text">Ship To</label>
-                                    <input type="text" class="form-control mt-0"
-                                           placeholder="Search by Name, Address or Zip">
+                            <div class="row mx-auto">
+                                You're shipping from: Ontario, L1Z 1L6,Canada
+                                <span class="grey-text">
+                                    <a data-placement="right" title="you can change it by click here"
+                                       data-toggle="modal" data-target="#modalCart">
+                                        <i class="fa fa-pencil-square-o ml-1"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <hr>
+                            <div class="row mt-1">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-2 my-auto">
+                                            <h5 class="text-dark mb-0">
+                                                <span>Ship To:</span>
+                                            </h5>
+                                        </div>
+                                        <div class="col-sm-10 my-auto">
+                                            <input type="text" class="form-control"
+                                                   placeholder="Search by Name, Address or Zip">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="offset-sm-2 col-sm-5">
+                                            <select class="mdb-select colorful-select dropdown-info" id="fromCountry">
+                                                <option value="" disabled selected>Country</option>
+                                                <option value="1">Canada</option>
+                                                <option value="2">USA</option>
+                                                <option value="3">India</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control" placeholder="Postal">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-blue-grey mr-0" data-toggle="tooltip"
+                                                data-placement="top" title="Click to quick quote">Quick Quote
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-blue-grey float-right mr-0" data-toggle="tooltip"
-                                    data-placement="top" title="Click to quick quote">Quick Quote
-                            </button>
                         </div>
                     </div>
                     <div class="card mr-0 mt-3">
@@ -267,12 +294,11 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-7">
-                                    <label class="mb-0 grey-text">Tracking</label>
                                     <input type="text" class="form-control m-0"
                                            placeholder="Tracking #, ShipID or Reference">
                                 </div>
                                 <div class="col-sm-5">
-                                    <button type="button" class="btn btn-blue-grey float-right mr-0"
+                                    <button type="button" class="btn btn-blue-grey float-right m-0"
                                             data-toggle="tooltip" data-placement="top"
                                             title="Click to track this shipment">Track
                                     </button>
