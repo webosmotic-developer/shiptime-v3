@@ -530,8 +530,8 @@
                                                             <div class="tab-pane fade in show active" id="panel1011"
                                                                  role="tabpanel">
                                                                 <div class="row border border-gray small m-0">
-                                                                    <div class="col-sm-12 p-3 item-container">
-                                                                        <div class="row my-auto item-row">
+                                                                    <div class="col-sm-12 p-3 11-item-container">
+                                                                        <div class="row my-auto 11-item-row py-2 border-bottom">
                                                                             <div class="col-7 my-2">
                                                                                 <div class="row">
                                                                                     <div class="px-2 my-auto border-right">
@@ -600,7 +600,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-12">
-                                                                        <a href="#" class="btn m-0 ml-5 mb-3 btn-md orange darken-3"><i
+                                                                        <a href="#" class="btn m-0 ml-5 mb-3 btn-md orange darken-3 11-add-item-btn"><i
                                                                                 class="fa fa-plus mr-1 mt-0"></i>Add
                                                                             Item</a>
                                                                     </div>
@@ -687,8 +687,8 @@
                                                             <!--Panel 4-->
                                                             <div class="tab-pane fade" id="panel1014" role="tabpanel">
                                                                 <div class="row border border-gray small m-0">
-                                                                    <div class="col-sm-12 p-3">
-                                                                        <div class="row my-auto">
+                                                                    <div class="col-sm-12 p-3 14-item-container">
+                                                                        <div class="row my-auto 14-item-row py-2 border-bottom">
                                                                             <div class="col-7 my-2">
                                                                                 <div class="row">
                                                                                     <div class="px-2 my-auto border-right">
@@ -757,7 +757,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-12">
-                                                                        <a href="#" class="btn m-0 ml-5 mb-3 btn-md orange darken-3"><i
+                                                                        <a href="#" class="btn m-0 ml-5 mb-3 btn-md orange darken-3 14-add-item-btn"><i
                                                                                 class="fa fa-plus mr-1 mt-0"></i>Add
                                                                             Item</a>
                                                                     </div>
@@ -769,7 +769,9 @@
                                                             <div class="tab-pane fade" id="panel1015" role="tabpanel">
                                                                 <div class="row border border-gray small m-0">
                                                                     <div class="col-sm-12 p-3">
-                                                                        <div class="row my-2">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12 15-item-container">
+                                                                                <div class="row my-2 15-item-row py-2 border-bottom">
                                                                             <div class="col-7 my-2">
                                                                                 <div class="row">
                                                                                     <div class="my-auto pl-2 pr-2 border-right">
@@ -859,8 +861,15 @@
 
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row mt-3 pt-3 border-top">
-                                                                            <div class="col-md-3 offset-6">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-2">
+                                                                            <div class="col-md-6">
+                                                                                <a href="#" class="btn m-0 ml-5 btn-md orange darken-3 15-add-item-btn"><i
+                                                                                        class="fa fa-plus mr-1 mt-0"></i>Add
+                                                                                    Item</a>
+                                                                            </div>
+                                                                            <div class="col-md-3">
                                                                                 <div class="row">
                                                                                     <div class="col-3 my-auto">
                                                                                         <span>Lift gate</span>
@@ -901,11 +910,6 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <a href="#" class="btn m-0 ml-5 mb-3 btn-md orange darken-3"><i
-                                                                                class="fa fa-plus mr-1 mt-0"></i>Add
-                                                                            Item</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1500,6 +1504,18 @@
     $('.carrier-row').mouseout(function () {
         $(this).find('.btn-select, .trash-btn').addClass('d-none');
 
+    });
+
+    $('.11-add-item-btn').click(function() {
+        $('.11-item-row').last().clone(true).appendTo('.11-item-container');
+    });
+
+    $('.14-add-item-btn').click(function() {
+        $('.14-item-row').last().clone(true).appendTo('.14-item-container');
+    });
+
+    $('.15-add-item-btn').click(function() {
+        $('.15-item-row').last().clone(true).appendTo('.15-item-container');
     });
 </script>
 </body>
