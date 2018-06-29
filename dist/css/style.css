@@ -9,7 +9,7 @@ input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([re
   box-shadow: 0 1px 0 0 #e65100;
 }
 
-dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-transition: all .1s linear;
@@ -28,7 +28,7 @@ a, a:hover {
     width: 100%*/
 }
 
-.breadcrumb-dn p, .hm-btn, .hm-btn:hover, .button-collapse, button-collapse:hover {
+.breadcrumb-dn p, .hm-btn, .hm-btn:hover, .button-collapse, .button-collapse:hover {
   margin: 0;
   padding-top: 0;
   color: #000;
@@ -365,6 +365,7 @@ input.select-dropdown {
 .select-wrapper span.caret{
   top: 8px;
   margin-right: 5px ;
+  color: #9e9e9e!important;
 }
 
 
@@ -491,4 +492,8 @@ input.select-dropdown {
 
 .classic-tabs li a {
   font-size: 11px !important;
+}
+
+.classic-tabs {
+  overflow-x: unset !important;
 }
