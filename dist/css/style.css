@@ -346,6 +346,25 @@ input.select-dropdown {
   width: 40px;
 }
 
+.history-icon-img {
+  width: 35px;
+}
+
+.history-table table td {
+  font-size: 0.8rem;
+}
+
+.history-table td:last-child {
+  width: 12%;
+}
+
+.modal-lg {
+  max-width: 85%;
+}
+
+.btn-status {
+  position: absolute;
+}
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
   cursor: pointer;
@@ -443,6 +462,11 @@ input.select-dropdown {
   /*margin-top: -6px !important;*/
 }
 
+.checkbox-grey-filled [type="checkbox"][class*='filled-in']:checked+label:after {
+  border-color: #d4d4d4;
+  background-color: #d4d4d4;
+}
+
 .checkbox-info-filled [type="checkbox"][class*='filled-in']:checked+label:after {
   border-color: #17a2b8;
   background-color: #17a2b8;
@@ -504,4 +528,41 @@ input.select-dropdown {
 
 .classic-tabs li a {
   text-transform: unset !important;
+}
+
+.search-input {
+  height: 35px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+
+.search-input:focus {
+  box-shadow: none !important;
+  border-color: #e9e9e9 !important;
+  border-left: 0px !important;
+}
+
+.search-input + .input-group-append > span {
+  border-left: 0px !important;
+}
+
+.search-icon {
+  border-right: 0px !important;
+}
+
+#exampleModal .modal-footer .clear {
+  color: #9e9e9e !important;
+}
+
+#exampleModal .form-check label {
+  font-size: 0.8rem !important;
+}
+
+#exampleModal .modal-footer button {
+  text-transform: none;
+  font-size: 0.8rem !important;
+}
+
+#detailsModal p {
+  white-space: initial;
 }
