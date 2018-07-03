@@ -542,7 +542,7 @@ input.select-dropdown {
 
 .search-input:focus {
   box-shadow: none !important;
-  border-color: #17a2b8 !important;
+  border-color: #007bff !important;
 }
 
 #exampleModal .modal-footer .clear {
