@@ -347,7 +347,7 @@ input.select-dropdown {
 }
 
 .history-icon-img {
-  width: 35px;
+  width: 30px;
 }
 
 .history-table table td {
@@ -364,6 +364,10 @@ input.select-dropdown {
 
 .btn-status {
   position: absolute;
+}
+
+.screen-name {
+  color: #dc5026 !important
 }
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
@@ -538,16 +542,7 @@ input.select-dropdown {
 
 .search-input:focus {
   box-shadow: none !important;
-  border-color: #e9e9e9 !important;
-  border-left: 0px !important;
-}
-
-.search-input + .input-group-append > span {
-  border-left: 0px !important;
-}
-
-.search-icon {
-  border-right: 0px !important;
+  border-color: #17a2b8 !important;
 }
 
 #exampleModal .modal-footer .clear {
