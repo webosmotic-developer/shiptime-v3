@@ -587,6 +587,7 @@ input.select-dropdown {
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: right;
+  background-position-x: 98%;
 }
 
 .measurement-switch {
