@@ -193,11 +193,17 @@
                                         <div class="steps-step-2">
                                             <a href="#step-4" type="button"
                                                class="btn btn-blue-grey btn-circle-2 waves-effect mr-0"
+                                               data-toggle="tooltip" data-placement="bottom" title="Pickup Or Drop-off">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="steps-step-2">
+                                            <a href="#step-5" type="button"
+                                               class="btn btn-blue-grey btn-circle-2 waves-effect mr-0"
                                                data-toggle="tooltip" data-placement="bottom" title="Finalize & Pay">
                                                 <i class="fa fa-credit-card" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="steps-step-2">
-                                            <a href="#step-5" type="button"
+                                            <a href="#step-6" type="button"
                                                class="btn btn-blue-grey btn-circle-2 waves-effect mr-0"
                                                data-toggle="tooltip" data-placement="bottom" title="Print Labels">
                                                 <i class="fa fa-print" aria-hidden="true"></i></a>
@@ -439,10 +445,10 @@
                                                 <h6 class="grey-text m-0">Enter the items you would like to ship</h6>
                                             </div>
 
-                                            <div class="card-body pb-0">
+                                            <div class="card-body pb-0 pt-0">
                                                 <div class="row">
                                                     <div class="col-sm-4">
-                                                        <label class="pt-2 mr-3 font-bold">Tax & duty paid by:</label>
+                                                        <label class="pt-2 mr-3 font-weight-bold small">Tax & duty paid by:</label>
                                                         <div class="switch blue-white-switch mt-2 d-inline-block">
                                                             <label class="small">
                                                                 Consignee
@@ -454,7 +460,7 @@
                                                     </div>
                                                     <div class="offset-sm-4 col-sm-4">
                                                         <div class="float-right">
-                                                            <label class="pt-2 mr-3 font-bold">Insurance:</label>
+                                                            <label class="pt-2 mr-3 font-weight-bold small">Insurance:</label>
                                                             <div class="switch blue-white-switch mt-2 d-inline-block">
                                                                 <label class="small">
                                                                     Carrier
@@ -506,9 +512,9 @@
                                                                         <i class="fa fa-envelope-open pr-1 pb-1" aria-hidden="true"></i>
                                                                         <br> LTL Freight (Pallet)</a>
                                                                 </li>
-                                                                <div class="w-50 my-auto">
+                                                                <div class="my-auto pr-2 measurement-switch">
                                                                     <div class="float-right">
-                                                                        <label class="pt-2 mr-3 font-bold white-text">Measurement unit:</label>
+                                                                        <label class="pt-2 mr-3 white-text font-weight-bold small">Measurement unit:</label>
                                                                         <div class="switch blue-white-switch mt-2 d-inline-block">
                                                                             <label class="small white-text">
                                                                                 Metric
@@ -868,12 +874,12 @@
                                                                                         class="fa fa-plus mr-1 mt-0"></i>Add
                                                                                     Item</a>
                                                                             </div>
-                                                                            <div class="col-md-3">
+                                                                            <div class="col-md-3 float-right border-right ml-5">
                                                                                 <div class="row">
                                                                                     <div class="col-3 my-auto">
                                                                                         <span>Lift gate</span>
                                                                                     </div>
-                                                                                    <div class="col-9 pl-3">
+                                                                                    <div class="col-9 pl-0">
                                                                                         <select class="mdb-select colorful-select dropdown-orange">
                                                                                             <option selected disabled value="1">
                                                                                                 None
@@ -894,7 +900,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-3 text-md-right pl-0">
+                                                                            <div class="col-md-2 text-md-right pl-2 float-right">
                                                                                 <label class="pt-2 mr-3 font-bold">Delivery
                                                                                     Apt. :</label>
 
@@ -1136,7 +1142,64 @@
                                 </div>
 
                                 <!-- Fourth Step -->
-                                <div class="row setup-content-2" id="step-4">
+                                <div class="setup-content-2" id="step-4">
+                                    <div class="card mx-auto col-5 p-0">
+                                        <div class="card-header white grey-text">
+                                            <span class="">Shipping Information</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <span class="font-weight-bold small grey-text">Pickup Address</span>
+                                            <br>
+                                            <span class="small grey-text">
+                                                This address and contact information will be shown on the receiver's package and used for the courier pickup.
+                                            </span>
+                                            <br>
+                                            <div class="p-1 px-2 small border-gray grey lighten-2 rounded">
+                                                <span>Test , test.com, 14838 Satanas St, 92129, California San Diego, 9898568523, test@gmail.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mx-auto col-5 p-0 mt-4">
+                                        <div class="card-header white grey-text">
+                                            <div class="float-left">
+                                                <img class="irc_mi" src="http://www.canshave.com/images/FEx-Logo-PNG-Transparent.png" alt="Image result for fedex png logo" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" style="margin-top: 0px;height: 20px; width: 70px;">
+                                            </div>
+                                            <div class="float-right">
+                                                <span class="small">1 Shipment</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <span class="font-weight-bold small grey-text">Service Options</span>
+                                            <div class="row">
+                                                <div class="col-12 pl-0">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" name="group20" type="radio"
+                                                               id="radio131" checked="checked">
+                                                        <label class="form-check-label grey-text" for="radio131">Drop-off at Fed-Ex</label>
+                                                        <span class="float-right grey-text">free</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 pl-0">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" name="group20" type="radio"
+                                                               id="radio130" checked="checked">
+                                                        <label class="form-check-label grey-text" for="radio130">Pickup by Fed-Ex</label>
+                                                        <span class="float-right grey-text">free</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="float-right">
+                                                <span class="grey-text small">Total Cost:</span>
+                                                <span class="font-weight-bold small grey-text">USD 855.53<i class="fa fa-exclamation-circle pl-1"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fifth Step -->
+                                <div class="row setup-content-2" id="step-5">
                                     <div class="card mx-auto col-9">
                                         <div class="row">
                                             <div class="col-lg-8 order-md-1">
@@ -1287,8 +1350,8 @@
                                     </div>
                                 </div>
 
-                                <!-- Fifth Dtep -->
-                                <div class="row setup-content-2" id="step-5">
+                                <!-- Sixth Dtep -->
+                                <div class="row setup-content-2" id="step-6">
                                     <div class="card mx-auto col-9">
                                         <div class="row">
                                             <div class="col-lg-8">
