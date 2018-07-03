@@ -196,11 +196,6 @@
                                                data-toggle="tooltip" data-placement="bottom" title="Finalize & Pay">
                                                 <i class="fa fa-credit-card" aria-hidden="true"></i></a>
                                         </div>
-                                        <!-- <div class="steps-step-2">
-                                           <a href="#step-5" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect mr-0"
-                                              data-toggle="tooltip" data-placement="bottom" title="International Details">
-                                             <i class="fa fa-globe" aria-hidden="true"></i></a>
-                                         </div>-->
                                         <div class="steps-step-2">
                                             <a href="#step-5" type="button"
                                                class="btn btn-blue-grey btn-circle-2 waves-effect mr-0"
@@ -437,7 +432,7 @@
                                 <!-- Second Step -->
                                 <div class="row setup-content-2" id="step-2">
                                     <div class="col-md-12">
-                                        <div class="card pb-2">
+                                        <div class="card">
                                             <div class="card-header white border-bottom" role="tab">
                                                 <h5 class="font-weight-bold text-dark m-0">
                                                     What Are You Shipping?</h5>
@@ -447,7 +442,7 @@
                                             <div class="card-body pb-0">
                                                 <div class="row">
                                                     <div class="col-sm-4">
-                                                        <label class="pt-2 mr-3 font-bold">Measurement Unit:</label>
+                                                        <label class="pt-2 mr-3 font-bold">Measurement unit:</label>
                                                         <div class="switch blue-white-switch mt-2 d-inline-block">
                                                             <label class="small">
                                                                 Metric
@@ -459,7 +454,7 @@
                                                     </div>
                                                     <div class="col-sm-4">
                                                         <div class="float-right">
-                                                            <label class="pt-2 mr-3 font-bold">Tax & Duty Paid By:</label>
+                                                            <label class="pt-2 mr-3 font-bold">Tax & duty paid by:</label>
                                                             <div class="switch blue-white-switch mt-2 d-inline-block">
                                                                 <label class="small">
                                                                     Consignee
@@ -485,8 +480,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="card mt-2">
+
                                             <!-- Classic tabs -->
                                             <div class="classic-tabs">
                                                 <div class="col-12">
@@ -529,7 +523,7 @@
                                                         </div>
 
                                                         <!-- Tab panels -->
-                                                        <div class="tab-content w-100 card p-0">
+                                                        <div class="tab-content w-100 card p-0 z-depth-0">
 
                                                             <!--Panel 1-->
                                                             <div class="tab-pane fade in show active" id="panel1011"
@@ -1163,9 +1157,6 @@
                                                                     <span class="font-weight-bold">Expires:</span><span>11/2020</span>
                                                                 </div>
                                                                 <div class="col-2 my-auto">
-                                                                    <button class="btn btn-sm btn-rounded light-blue darken-2 float-right"
-                                                                    >Select
-                                                                    </button>
                                                                 </div>
                                                             </div>
                                                             <div class="row bill-row">
@@ -1180,9 +1171,6 @@
                                                                     <span class="font-weight-bold">Expires:</span><span>11/2020</span>
                                                                 </div>
                                                                 <div class="col-2 my-auto">
-                                                                    <button class="btn btn-sm btn-rounded light-blue darken-2 float-right">
-                                                                        Select
-                                                                    </button>
                                                                 </div>
                                                             </div>
                                                             <div class="row bill-row">
@@ -1197,27 +1185,18 @@
                                                                     <span class="font-weight-bold">Expires:</span><span>11/2020</span>
                                                                 </div>
                                                                 <div class="col-2 my-auto">
-                                                                    <button class="btn btn-sm btn-rounded light-blue darken-2 float-right"
-                                                                    >Select
-                                                                    </button>
                                                                 </div>
                                                             </div>
-                                                            <div class="row bill-row">
+                                                            <div class="row bill-row py-3">
                                                                 <div class="col-lg-8 my-auto">
                                                                     Credit Balance :
                                                                     <span class="ml-2">$100</span>
                                                                 </div>
                                                                 <div class="col-4 my-auto">
-                                                                    <button class="btn btn-sm btn-rounded light-blue darken-2 float-right"
-                                                                    >Select
-                                                                    </button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-12 mt-2">
-                                                            <button class="btn btn-sm btn-rounded light-blue darken-2 float-right"
-                                                                    id="addCardBtn">Add Card
-                                                            </button>
                                                         </div>
                                                         <div class="col-12 card z-depth-0 mt-2 mb-3 pt-2 rounded border d-none"
                                                              id="addCardDiv">
@@ -1264,7 +1243,7 @@
                                                         </div>
                                                         <div class="col-lg-12 text-center">
                                                             <button
-                                                                    class="btn waves-effect waves-light  btn-rounded orange darken-3"
+                                                                    class="btn waves-effect waves-light orange darken-3"
                                                                     type="button">Make Payment
                                                             </button>
                                                         </div>
@@ -1500,8 +1479,24 @@
         $(this).addClass('blue-grey lighten-3 z-depth-1');
     });
     $('.bill-row').on('mouseout',function() {
-        $(this).removeClass('blue-grey lighten-3 z-depth-1');
+        if (! $(this).hasClass('active')) {
+            $(this).removeClass('blue-grey lighten-3 z-depth-1');
+        }
     });
+
+    $('.bill-row').on('click', function() {
+        if ($(this).hasClass('active')) {
+            $('.bill-row').removeClass('active blue-grey lighten-3 z-depth-1');
+            $(this).removeClass('active blue-grey lighten-3 z-depth-1');
+            $(this).removeClass('active');
+        } else {
+            $('.bill-row').removeClass('active blue-grey lighten-3 z-depth-1');
+            $(this).addClass('active blue-grey lighten-3 z-depth-1');
+            $(this).addClass('active');
+        }
+
+    });
+
     $('.carrier-row').mouseover(function () {
         $(this).find('.btn-select, .trash-btn').removeClass('d-none');
 

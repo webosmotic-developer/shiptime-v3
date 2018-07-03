@@ -58,7 +58,7 @@ a, a:hover {
 }
 
 .side-nav {
-  z-index: 9999;
+  z-index: 1040;
 }
 
 .side-nav .nav-text, .fixed-sn .nav-text {
@@ -560,4 +560,31 @@ input.select-dropdown {
 
 #detailsModal p {
   white-space: initial;
+}
+
+.form-check label {
+  font-size: 0.8rem !important;
+}
+
+[type=checkbox][class*=filled-in]:checked+label:before {
+  left: 0px;
+  height: 11px;
+}
+
+[type=checkbox][class*=filled-in]+label:after {
+  height: 17px;
+  width: 17px;
+}
+
+[type=checkbox]+label, [type=radio]+label {
+  height: 20px;
+  line-height: 20px;
+  padding-left: 25px;
+}
+
+.bill-row.active {
+  background: url(https://png.icons8.com/metro/1600/checkmark.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
