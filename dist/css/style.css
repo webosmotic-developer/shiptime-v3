@@ -635,5 +635,5 @@ input.select-dropdown {
 }
 
 [type=radio]+label:after, [type=radio]+label:before {
-  margin: 2px 4px 4px 4px;
+  margin: 1px 4px 4px 4px;
 }
