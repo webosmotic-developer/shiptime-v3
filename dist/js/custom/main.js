@@ -5,8 +5,8 @@ $(function () {
 /*  ----------------------------------Bhavesh----------------------------------------  */
 $(document).ready(function() {
   $('#addCardBtn').on('click',function() {
-    if($('#addCardDiv').hasClass("invisible")) {
-      $('#addCardDiv').toggleClass("invisible");
+    if($('#addCardDiv').hasClass("d-none")) {
+      $('#addCardDiv').toggleClass("d-none");
     }
   });
 

@@ -86,13 +86,8 @@
                         </a>
                     </li>
                     <li>
-                        <a class="waves-effect arrow-r" href="quick-quote.html">
-                            <i class="fa fa-fighter-jet fa-ws"></i> <span class="nav-text">Quick Quote</span>
-                        </a>
-                    </li>
-                    <li>
                         <a class="waves-effect arrow-r" href="new-quick-quote.html">
-                            <i class="fa fa-fighter-jet fa-ws"></i> <span class="nav-text">New Quick Quote</span>
+                            <i class="fa fa-fighter-jet fa-ws"></i> <span class="nav-text">Quick Quote</span>
                         </a>
                     </li>
                     <li>
@@ -439,7 +434,7 @@
                                 <div class="row setup-content-2" id="step-2">
                                     <div class="col-md-12">
                                         <div class="card">
-                                            <div class="card-header white border-bottom" role="tab">
+                                            <div class="card-header white border-bottom-0" role="tab">
                                                 <h5 class="font-weight-bold text-dark m-0">
                                                     What Are You Shipping?</h5>
                                                 <h6 class="grey-text m-0">Enter the items you would like to ship</h6>
@@ -1086,88 +1081,95 @@
 
                                 <!-- Fourth Step -->
                                 <div class="setup-content-2" id="step-4">
-                                    <div class="card mx-auto col-5 p-0">
+                                    <div class="card mx-auto col-7 p-0">
                                         <div class="card-header white grey-text">
-                                            <span class="font-weight-bold">Shipping Information</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <span class="font-weight-bold small grey-text">Pickup Address</span>
-                                            <br>
-                                            <span class="small grey-text">
-                                                This address and contact information will be shown on the receiver's package and used for the courier pickup.
-                                            </span>
-                                            <br>
-                                            <div class="p-1 px-2 small border-gray grey lighten-2 rounded">
-                                                <span>Test , test.com, 14838 Satanas St, 92129, California San Diego, 9898568523, test@gmail.com</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card mx-auto col-5 p-0 mt-4">
-                                        <div class="card-header white grey-text">
-                                            <div class="float-left">
+                                            <div class="float-left pr-3">
                                                 <img class="irc_mi" src="http://www.canshave.com/images/FEx-Logo-PNG-Transparent.png" alt="Image result for fedex png logo" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" style="margin-top: 0px;height: 20px; width: 70px;">
                                             </div>
+                                            <span class=" pl-2 font-weight-bold border-left">Shipping Information</span>
                                         </div>
                                         <div class="card-body">
-                                            <span class="font-weight-bold small grey-text">Service Options</span>
+                                            <div class=" row">
+                                                <div class="col-12">
+                                                    <div class="border-bottom">
+                                                        <span class="font-weight-bold small grey-text">Pickup Address</span>
+                                                    </div>
+                                                    <span class="small grey-text ml-2">
+                                                    This address and contact information will be shown on the receiver's package and used for the courier pickup.
+                                                 </span>
+                                                    <br>
+                                                    <div class="p-1 px-2 small border-gray grey lighten-2 rounded mb-2 ml-2">
+                                                        <span>Test , test.com, 14838 Satanas St, 92129, California San Diego, 9898568523, test@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom">
+                                                <span class="font-weight-bold small grey-text">Service Options</span>
+                                            </div>
                                             <div class="row">
                                                 <div class="col-sm-12 pl-0">
                                                     <div class="form-check">
                                                         <input class="form-check-input" name="group20" type="radio"
-                                                               id="radio131" checked="checked">
-                                                        <label class="form-check-label grey-text" for="radio131">Drop-off at Fed-Ex</label>
-                                                        <span class="float-right grey-text">free</span>
+                                                               id="drop-off-cbk">
+                                                        <label class="form-check-label grey-text" for="drop-off-cbk">Drop-off at Fed-Ex</label>
+                                                        <span class="float-right grey-text font-weight-bold">Free</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12 pl-0">
                                                     <div class="form-check">
                                                         <input class="form-check-input" name="group20" type="radio"
-                                                               id="radio130" checked="checked">
-                                                        <label class="form-check-label grey-text" for="radio130">Pickup by Fed-Ex</label>
-                                                        <span class="float-right grey-text">free</span>
+                                                               id="pickup-cbk">
+                                                        <label class="form-check-label grey-text" for="pickup-cbk">Pickup by Fed-Ex</label>
+                                                        <span class="float-right grey-text font-weight-bold">Free</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-12 mt-1">
-                                                    <div class="row pl-2">
-                                                        <div class="col-6">
-                                                            <div class="md-form form-group m-0">
-                                                                <input placeholder="Pickup date" type="text"
-                                                                       id="pickup-date-picker"
-                                                                       class="form-control datepicker">
+                                                <div class="d-none col-12" id="pickup-div">
+                                                    <div class="col-sm-12 mt-1">
+                                                        <div class="row pl-2">
+                                                            <div class="col-6 pl-0">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input placeholder="Pickup date" type="text"
+                                                                           id="pickup-date-picker"
+                                                                           class="form-control datepicker">
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <div class="md-form form-group m-0">
-                                                                <select class="mdb-select colorful-select dropdown-orange">
-                                                                    <option value="" disabled selected>Pickup Location
-                                                                    </option>
-                                                                    <option value="1">Backdoor</option>
-                                                                    <option value="2">Front door</option>
-                                                                    <option value="3">Basement</option>
-                                                                </select>
+                                                            <div class="col-6 pr-0">
+                                                                <div class="md-form form-group m-0">
+                                                                    <select class="mdb-select colorful-select dropdown-orange">
+                                                                        <option value="" disabled selected>Pickup Location
+                                                                        </option>
+                                                                        <option value="1">Backdoor</option>
+                                                                        <option value="2">Front door</option>
+                                                                        <option value="3">Basement</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-12 mt-1">
+                                                    <div class="col-12 mt-1 px-0">
                                                     <div class="row pl-2">
                                                         <div class="col-6 my-auto pr-0">
                                                             <span class="small grey-text">Courier will pickup by fed-ex in between</span>
                                                         </div>
                                                         <div class="col-6">
                                                             <div class="row">
-                                                            <div class="md-form col-5 mb-0 pr-0">
-                                                                <input placeholder="From" type="text" id="start_time" class="form-control timepicker">
-                                                            </div>
-                                                            <div class="col-2 my-auto">
-                                                                <span class="grey-text">&</span>
-                                                            </div>
-                                                            <div class="md-form col-5 mb-0 pl-0">
-                                                                <input placeholder="To" type="text" id="end_time" class="form-control timepicker">
-                                                            </div>
+                                                                <div class="md-form col-5 mb-0 pr-0">
+                                                                    <input placeholder="From" type="text" id="start_time" class="form-control timepicker">
+                                                                </div>
+                                                                <div class="col-2 my-auto text-center">
+                                                                    <span class="grey-text">&</span>
+                                                                </div>
+                                                                <div class="md-form col-5 mb-0 pl-0">
+                                                                    <input placeholder="To" type="text" id="end_time" class="form-control timepicker">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                </div>
+                                                <div class="d-none pl-3 col-12 px-0" id="drop-off-div">
+                                                    <span class="small grey-text pl-2">You chose to drop off your package at a Fed-Ex authorized location.
+                                                        <a class="font-italic alert-link">Click here to find one near you.</a></span>
                                                 </div>
                                                 <div class="col-sm-12 mt-1">
                                                     <div class="row pl-2">
@@ -1213,7 +1215,7 @@
                                                     <hr>
                                                     <div class="row">
                                                         <div class="col-12">
-                                                            <div class="row bill-row">
+                                                            <div class="row bill-row c-pointer">
                                                                 <div class="col-2">
                                                                     <img width="50px"
                                                                          src="http://apartmentsbariloche.com/wp-content/themes/latinretreats/assets/img/front/visa.png">
@@ -1227,7 +1229,7 @@
                                                                 <div class="col-2 my-auto">
                                                                 </div>
                                                             </div>
-                                                            <div class="row bill-row">
+                                                            <div class="row bill-row c-pointer">
                                                                 <div class="col-2">
                                                                     <img width="50px"
                                                                          src="http://apartmentsbariloche.com/wp-content/themes/latinretreats/assets/img/front/visa.png">
@@ -1241,7 +1243,7 @@
                                                                 <div class="col-2 my-auto">
                                                                 </div>
                                                             </div>
-                                                            <div class="row bill-row">
+                                                            <div class="row bill-row c-pointer">
                                                                 <div class="col-2">
                                                                     <img width="50px"
                                                                          src="http://apartmentsbariloche.com/wp-content/themes/latinretreats/assets/img/front/visa.png">
@@ -1255,7 +1257,7 @@
                                                                 <div class="col-2 my-auto">
                                                                 </div>
                                                             </div>
-                                                            <div class="row bill-row py-3">
+                                                            <div class="row bill-row py-3 c-pointer">
                                                                 <div class="col-lg-8 my-auto">
                                                                     Credit Balance :
                                                                     <span class="ml-2">$100</span>
@@ -1264,14 +1266,8 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="coupon-code row">
-                                                                <div class="col-lg-8 pr-4">
-                                                                    <span class="grey-text small">Have a coupon code?</span>
-                                                                    <input type="text" class="form-control border-gray" placeholder="Enter Coupon code here.">
-                                                                    <button class="btn btn-blue btn-sm">Apply</button>
-                                                                </div>
-                                                            </div>
+                                                        <div class="col-12 text-right pr-0">
+                                                            <button type="button" class="btn btn-rounded btn-blue-grey btn-sm mr-0" id="addCardBtn">Add Card</button>
                                                         </div>
                                                         <div class="col-12 card z-depth-0 mt-2 mb-3 pt-2 rounded border d-none"
                                                              id="addCardDiv">
@@ -1313,6 +1309,15 @@
                                                                                 type="button">Submit
                                                                         </button>
                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="coupon-code row">
+                                                                <div class="col-lg-8 pr-4">
+                                                                    <span class="grey-text small">Have a coupon code?</span>
+                                                                    <input type="text" class="form-control border-gray" placeholder="Enter Coupon code here.">
+                                                                    <button class="btn btn-blue btn-sm">Apply</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1360,18 +1365,71 @@
                                 <div class="row setup-content-2" id="step-6">
                                     <div class="card mx-auto col-9">
                                         <div class="row">
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-4 order-md-0 p-0">
+                                                <div class="card-body contact light-blue darken-3 h-100 white-text">
+                                                    <div class="position-absolute text-right col-12 pr-5">
+                                                        <a class="btn-floating btn-sm btn-blue-grey my-0" data-toggle="tooltip" title="Cancel Shipment" data-placement="top"><i class="fa fa-remove white-text"></i></a>
+                                                        <a class="btn-floating btn-sm btn-blue-grey my-0" data-toggle="tooltip" title="Repeat Shipment" data-placement="top"><i class="fa fa-refresh white-text"></i></a>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <span class="font-weight-bold">Summary</span>
+
+                                                        <div class="small border-top my-1 py-1 pl-2">
+                                                            <span>1 Package</span>
+                                                            <br>
+                                                            <span>3 Kg</span>
+                                                            <br>
+                                                            <span>Ground</span>
+                                                            <br>
+                                                            <span class="font-weight-bold">Delivery</span><span
+                                                                class="pl-2">Jul-05-2018</span>
+                                                            <br>
+                                                            <span class="font-weight-bold">Insurance</span><span
+                                                                class="pl-2">CARRIER</span>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="font-weight-bold mt-2">Details</span>
+
+                                                        <div class="small border-top my-1 py-1 pl-2">
+                                                            <span class="font-weight-bold">Ship Id #</span><span
+                                                                class="pl-2">2861692</span>
+                                                            <br>
+                                                            <span class="font-weight-bold">Tracking #</span><span
+                                                                class="pl-2">D420917200000000241001</span>
+                                                            <br>
+                                                            <span class="font-weight-bold">Pickup #</span><span
+                                                                class="pl-2">No Pickup Scheduled</span>
+                                                            <br>
+                                                            <span class="font-weight-bold">Total</span><span
+                                                                class="pl-2">$156.91</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
                                                 <div class="card-body p-3">
                                                     <div class="col-12 position-absolute text-right pr-4">
                                                         <a class="btn-floating btn-sm btn-info my-0" data-toggle="tooltip" title="Print Label" data-placement="top"><i class="fa fa-print"></i></a>
                                                         <a class="btn-floating btn-sm btn-info my-0" data-toggle="tooltip" title="Email Label" data-placement="top"><i class="fa fa-envelope"></i></a>
-                                                        <a class="btn-floating btn-sm btn-info my-0" data-toggle="tooltip" title="Cancel Shipment" data-placement="top"><i class="fa fa-remove"></i></a>
-                                                        <a class="btn-floating btn-sm btn-info my-0" data-toggle="tooltip" title="Repeat Shipment" data-placement="top"><i class="fa fa-refresh"></i></a>
                                                     </div>
                                                     <h4 class="text-center border-bottom pb-2 mt-2">Label Preview</h4>
                                                     <div class="row">
                                                         <div class="col-lg-12 my-auto">
-                                                            <object height="368px" width="100%"
+                                                            <object height="330px" width="100%"
+                                                                    data="Pdf/Canpar%20Label.pdf"></object>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <div class="col-12 position-absolute text-right pr-4">
+                                                        <a class="btn-floating btn-sm btn-info my-0" data-toggle="tooltip" title="Print Label" data-placement="top"><i class="fa fa-print"></i></a>
+                                                        <a class="btn-floating btn-sm btn-info my-0" data-toggle="tooltip" title="Email Label" data-placement="top"><i class="fa fa-envelope"></i></a>
+                                                    </div>
+                                                    <h4 class="text-center border-bottom pb-2 mt-2">Custome Documents</h4>
+                                                    <div class="row">
+                                                        <div class="col-lg-12 my-auto">
+                                                            <object height="330px" width="100%"
                                                                     data="Pdf/Canpar%20Label.pdf"></object>
                                                         </div>
                                                     </div>
@@ -1506,15 +1564,20 @@
         darktheme: true
     });
 
-    function showPickUp() {
-        $('.pickup-container').css('display', 'inline-block');
-        $('#drop-msg').css('display', 'none');
-    }
+    $('#pickup-cbk').on('click', function() {
+        $('#pickup-div').removeClass('d-none');
+        if(!$('#drop-off-div').hasClass('d-none')) {
+            $('#drop-off-div').addClass('d-none');
+        }
+    });
 
-    function hidePickUp() {
-        $('.pickup-container').css('display', 'none');
-        $('#drop-msg').css('display', 'inline-block');
-    }
+    $('#drop-off-cbk').on('click', function() {
+        $('#drop-off-div').removeClass('d-none');
+        if(!$('#pickup-div').hasClass('d-none')) {
+            $('#pickup-div').addClass('d-none');
+        }
+    });
+
     $(document).ready(function() {
         $('.addr-select').on('click', function(){
             $('.modal').trigger('click');

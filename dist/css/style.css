@@ -633,3 +633,7 @@ input.select-dropdown {
   margin-top: -40px;
   right: 2rem;
 }
+
+[type=radio]+label:after, [type=radio]+label:before {
+  margin: 2px 4px 4px 4px;
+}
