@@ -367,7 +367,31 @@ input.select-dropdown {
 }
 
 .screen-name {
-  color: #dc5026 !important
+  color: #dc5026 !important;
+  border-color: #d64c27 !important;
+}
+
+
+.btn-history {
+  width: 153px;
+  font-size: 0.8rem !important;
+}
+
+
+table.table-history-info td {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.7rem;
+}
+
+table.table-history-info th {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.nav-tabs {
+  background-color: #54acf0;
 }
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
