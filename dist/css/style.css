@@ -593,3 +593,7 @@ input.select-dropdown {
 .measurement-switch {
   width: 56%;
 }
+
+.classic-tabs li:first-child {
+  margin-left: 0px;
+}
