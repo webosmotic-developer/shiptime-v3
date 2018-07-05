@@ -118,94 +118,114 @@
 <main>
     <div class="main-conainter">
         <div class="main-content p-3">
-            <div class="row mx-auto">
-                <div class="offset-sm-2 col-sm-6">
+            <div class="row">
+                <div class="offset-sm-2 col-sm-4">
                     <div class="form-group">
                         <div class="input-group mb-3 search-div">
                             <div class="input-group-prepend">
-                                <span class="input-group-text transparent border-primary search-icon"><i class="fa fa-search text-primary"></i></span>
+                                <span class="input-group-text transparent border-primary search-icon"><i
+                                        class="fa fa-search text-primary"></i></span>
                             </div>
-                            <input type="text" class="form-control search-input m-0 border-primary" placeholder="Start Typing a Ship ID # or Reference">
-                            <div class="input-group-append">
-                            <span class="input-group-text transparent border-primary py-1"  data-toggle="modal" data-target="#exampleModal">
-                                    <i class="fa fa-sort-desc text-primary"></i>
-                            </span>
-                            </div>
+                            <input type="text" class="form-control input-35 rounded-right m-0 border-primary"
+                                   placeholder="Start Typing Name or Address">
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 pr-0">
-                    <button type="button" class=" mr-0 mt-0 btn btn-tw btn-md btn-history text-capitalize float-right">Bulk Import</button>
-                    <button type="button" class=" mt-0 btn btn-tw btn-md btn-history text-capitalize float-right">Add New</button>
+                <div class="col-sm-2">
+                    <select name="example_length" aria-controls="example"
+                            class="mdb-select colorful-select dropdown-info input-35 rounded">
+                        <option value="10" disabled selected>Category</option>
+                        <option value="25">Category 1</option>
+                        <option value="50">Category 2</option>
+                        <option value="100">Category 3</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" data-toggle="modal" data-target="#bulkImportModal" class="mr-0 mt-0 btn btn-tw btn-md btn-history text-capitalize float-right mt-n-3">
+                        Bulk Import
+                    </button>
+                    <button type="button"  data-toggle="modal" data-target="#newAddressModal" class="mt-0 btn btn-tw btn-md btn-history text-capitalize float-right mt-n-3">Add
+                        New
+                    </button>
                 </div>
             </div>
-            <div class="card card-body history-table pt-0">
+            <div class="card card-body pt-0 addr-table">
                 <!-- Within scripts, below mdb.min.js script -->
                 <!-- Within <body></body> tags -->
-                <div class="offset-md-6 col-sm-12 col-md-6 pr-0">
-                    <div class="d-flex flex-row float-right pt-2 pb-2">
-                        <label class="my-auto mr-2">Show  entries </label>
-                        <div class="my-auto">
-                            <select name="example_length" aria-controls="example" class="mdb-select dropdown-info">
-                                <option value="10">10</option>
-                                <option value="25">25</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                            </select>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <button type="button" class="btn mt-2 btn-tw ml-0 btn-md btn-history text-capitalize">Ship to selected
+                        </button>
+                        <button type="button" class="btn mt-2 btn-tw btn-md btn-history text-capitalize">
+                            Delete selected
+                        </button>
+                    </div>
+                    <div class=" col-sm-12 col-md-6">
+                        <div class="d-flex flex-row float-right pt-2 pb-2">
+                            <label class="my-auto mr-2">Show entries </label>
+                            <div class="my-auto">
+                                <select name="example_length" aria-controls="example"
+                                        class="mdb-select colorful-select dropdown-info">
+                                    <option value="10" disabled selected>10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <table id="example" class="table table-striped table-responsive-md c-pointer border-top" cellspacing="0" width="100%">
+                <table id="example" class="table table-striped table-responsive-md c-pointer border-top" cellspacing="0"
+                       width="100%">
                     <thead>
                     <tr>
-                        <th>
+                        <th class="pb-2 border-right">
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox775" class="filled-in form-check-input">
                                 <label class="form-check-label" for="checkbox775"></label>
                             </div>
                         </th>
                         <th class="border-right">
-                            Name
+                           <span> Name
                             <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                           </span>
                         </th>
                         <th class="border-right">
                             Address
                             <i class="fa fa-sort float-right" aria-hidden="true"></i>
                         </th>
-                        <th class="border-right">
+                        <th class="">
                             Category
                         </th>
-                        <th>
-                            Actions
-                        </th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody class="small ">
-                    <tr class="history-row"  data-toggle="modal" data-target="#detailsModal">
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox775"></label>
+                                <label class="form-check-label" for="checkbox1"></label>
                             </div>
                         </td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>Canpar<br>Ground</td>
                         <td>
-                            <span class="lbl-amount">$10</span>
+                            <span class="font-weight-bold">
+                                A Pinch of Creativity
+                            </span>
+                            <br>
+                            <span>Tannis,attn</span>
+                        </td>
+                        <td>296 McDermot Avenue <br>Winnipeg, MB</td>
+                        <td>
+                           <span> Category 1</span>
+                        </td>
+                        <td class="pt-2">
                             <div class="d-none btn-status">
-                                <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
-                                      data-placement="top" title="Repeat">
-                                <i class="fa fa-repeat"></i>
-                            </span>
-                                <span type="button" class="btn-floating btn-sm btn-cyan m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Track">
-                                <i class="fa fa-search"></i>
-                            </span>
                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                       data-toggle="tooltip" data-placement="top" title="Cancel">
-                                <i class="fa fa-stop-circle"></i>
-                            </span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                                <button type="button" class="btn btn-slack btn-md">Ship here</button>
                             </div>
                         </td>
                     </tr>
@@ -213,139 +233,139 @@
                         <td>
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox2" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox775"></label>
+                                <label class="form-check-label" for="checkbox2"></label>
                             </div>
                         </td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>Canpar<br>Ground</td>
                         <td>
-                            <span class="lbl-amount">$25</span>
+                             <span class="font-weight-bold">
+                                A Pinch of Creativity
+                            </span>
+                            <br>
+                            <span>Tannis,attn</span>
+                        </td>
+                        <td>1500 McGill Collège Avenue <br>Montreal, QC</td>
+                        <td>
+                            <span> Category 2</span>
+                        </td>
+                        <td class="pt-2">
                             <div class="d-none btn-status">
-                                <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
-                                      data-placement="top" title="Repeat">
-                                <i class="fa fa-repeat"></i>
-                            </span>
-                                <span type="button" class="btn-floating btn-sm btn-cyan m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Track">
-                                <i class="fa fa-search"></i>
-                            </span>
                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                       data-toggle="tooltip" data-placement="top" title="Cancel">
-                                <i class="fa fa-stop-circle"></i>
-                            </span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                                <button type="button" class="btn btn-slack btn-md">Ship here</button>
                             </div>
                         </td>
                     </tr>
-                    <tr class="history-row"  data-toggle="modal" data-target="#detailsModal">
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox3" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox775"></label>
+                                <label class="form-check-label" for="checkbox3"></label>
                             </div>
                         </td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>Canpar<br>Ground</td>
                         <td>
-                            <span class="lbl-amount">$89</span>
+                             <span class="font-weight-bold">
+                                Chef'sChoice by EdgeCraft
+                             </span>
+                            <br>
+                            <span>DaRin,Mary</span>
+                        </td>
+                        <td>296 McDermot Avenue <br>Winnipeg, MB</td>
+                        <td>
+                            <span>Category 3</span>
+                        </td>
+                        <td class="pt-2">
                             <div class="d-none btn-status">
-                                <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
-                                      data-placement="top" title="Repeat">
-                                <i class="fa fa-repeat"></i>
-                            </span>
-                                <span type="button" class="btn-floating btn-sm btn-cyan m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Track">
-                                <i class="fa fa-search"></i>
-                            </span>
                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                       data-toggle="tooltip" data-placement="top" title="Cancel">
-                                <i class="fa fa-stop-circle"></i>
-                            </span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                                <button type="button" class="btn btn-slack btn-md">Ship here</button>
                             </div>
                         </td>
                     </tr>
-                    <tr class="history-row"  data-toggle="modal" data-target="#detailsModal">
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox4" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox775"></label>
+                                <label class="form-check-label" for="checkbox4"></label>
                             </div>
                         </td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>DHL INTL<br>EXPRESS WORLDWIDE</td>
                         <td>
-                            <span class="lbl-amount">$100</span>
+                             <span class="font-weight-bold">
+                                A Pinch of Creativity
+                             </span>
+                             <br>
+                             <span>Tannis,attn</span>
+                        </td>
+                        <td>296 McDermot Avenue <br>Winnipeg, MB</td>
+                        <td>
+                            <span>Category</span>
+                        </td>
+                        <td class="pt-2">
                             <div class="d-none btn-status">
-                                <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
-                                      data-placement="top" title="Repeat">
-                                <i class="fa fa-repeat"></i>
-                            </span>
-                                <span type="button" class="btn-floating btn-sm btn-cyan m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Track">
-                                <i class="fa fa-search"></i>
-                            </span>
                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                       data-toggle="tooltip" data-placement="top" title="Cancel">
-                                <i class="fa fa-stop-circle"></i>
-                            </span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                                <button type="button" class="btn btn-slack btn-md">Ship here</button>
                             </div>
                         </td>
                     </tr>
-                    <tr class="history-row"  data-toggle="modal" data-target="#detailsModal">
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox5" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox775"></label>
+                                <label class="form-check-label" for="checkbox5"></label>
                             </div>
                         </td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>Canpar<br>Ground</td>
                         <td>
-                            <span class="lbl-amount">$101</span>
+                            <span class="font-weight-bold">
+                                A Pinch of Creativity
+                             </span>
+                            <br>
+                            <span>Tannis,attn</span>
+                        </td>
+                        <td>East GuangXing <br>Xingxing County Guangdong</td>
+                        <td>
+                            <span>Category 4</span>
+                        </td>
+                        <td class="pt-2">
                             <div class="d-none btn-status">
-                                <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
-                                      data-placement="top" title="Repeat">
-                                <i class="fa fa-repeat"></i>
-                            </span>
-                                <span type="button" class="btn-floating btn-sm btn-cyan m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Track">
-                                <i class="fa fa-search"></i>
-                            </span>
                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                       data-toggle="tooltip" data-placement="top" title="Cancel">
-                                <i class="fa fa-stop-circle"></i>
-                            </span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                                <button type="button" class="btn btn-slack btn-md">Ship here</button>
                             </div>
                         </td>
                     </tr>
-                    <tr class="history-row"  data-toggle="modal" data-target="#detailsModal">
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox6" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox775"></label>
+                                <label class="form-check-label" for="checkbox6"></label>
                             </div>
                         </td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>DHL INTL<br>EXPRESS WORLDWIDE</td>
                         <td>
-                            <span class="lbl-amount">$70</span>
+                            <span class="font-weight-bold">
+                                Chef'sChoice by EdgeCraft
+                             </span>
+                            <br>
+                            <span>DaRin,Mary</span>
+                        </td>
+                        <td>1500 McGill Collège Avenue <br>Montreal, QC</td>
+                        <td>
+                            <span>Category 1</span>
+                        </td>
+                        <td class="pt-2">
                             <div class="d-none btn-status">
-                                <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
-                                      data-placement="top" title="Repeat">
-                                <i class="fa fa-repeat"></i>
-                            </span>
-                                <span type="button" class="btn-floating btn-sm btn-cyan m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Track">
-                                <i class="fa fa-search"></i>
-                            </span>
                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                       data-toggle="tooltip" data-placement="top" title="Cancel">
-                                <i class="fa fa-stop-circle"></i>
-                            </span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                                <button type="button" class="btn btn-slack btn-md">Ship here</button>
                             </div>
                         </td>
                     </tr>
@@ -353,83 +373,83 @@
                         <td>
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox7" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox775"></label>
+                                <label class="form-check-label" for="checkbox7"></label>
                             </div>
                         </td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>Canpar<br>Ground</td>
                         <td>
-                            <span class="lbl-amount">$55</span>
+                            <span class="font-weight-bold">
+                               Chef'sChoice by EdgeCraft
+                             </span>
+                            <br>
+                            <span>DaRin,Mary</span>
+                        </td>
+                        <td>East GuangXing <br>Xingxing County Guangdong</td>
+                        <td>
+                            <span>Category 2</span>
+                        </td>
+                        <td class="pt-2">
                             <div class="d-none btn-status">
-                                <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
-                                      data-placement="top" title="Repeat">
-                                <i class="fa fa-repeat"></i>
-                            </span>
-                                <span type="button" class="btn-floating btn-sm btn-cyan m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Track">
-                                <i class="fa fa-search"></i>
-                            </span>
                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                       data-toggle="tooltip" data-placement="top" title="Cancel">
-                                <i class="fa fa-stop-circle"></i>
-                            </span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                                <button type="button" class="btn btn-slack btn-md">Ship here</button>
                             </div>
                         </td>
                     </tr>
-                    <tr class="history-row"  data-toggle="modal" data-target="#detailsModal">
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox8" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox775"></label>
+                                <label class="form-check-label" for="checkbox8"></label>
                             </div>
                         </td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>DHL INTL<br>EXPRESS WORLDWIDE</td>
                         <td>
-                            <span class="lbl-amount">$100</span>
+                            <span class="font-weight-bold">
+                                A Pinch of Creativity
+                             </span>
+                            <br>
+                            <span>Tannis,attn</span>
+                        </td>
+                        <td>1500 McGill Collège Avenue <br>Montreal, QC</td>
+                        <td>
+                            <span>Category 4</span>
+                        </td>
+                        <td class="pt-2">
                             <div class="d-none btn-status">
-                                <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
-                                      data-placement="top" title="Repeat">
-                                <i class="fa fa-repeat"></i>
-                            </span>
-                                <span type="button" class="btn-floating btn-sm btn-cyan m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Track">
-                                <i class="fa fa-search"></i>
-                            </span>
                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                       data-toggle="tooltip" data-placement="top" title="Cancel">
-                                <i class="fa fa-stop-circle"></i>
-                            </span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                                <button type="button" class="btn btn-slack btn-md">Ship here</button>
                             </div>
                         </td>
                     </tr>
-                    <tr class="history-row"  data-toggle="modal" data-target="#detailsModal">
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
                                 <input type="checkbox" id="checkbox9" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox775"></label>
+                                <label class="form-check-label" for="checkbox9"></label>
                             </div>
                         </td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>S C M P Test <br>Ajax, ON, CA, L1Z1L6</td>
-                        <td>Canpar<br>Ground</td>
                         <td>
-                            <span class="lbl-amount">$101</span>
+                            <span class="font-weight-bold">
+                                Chef'sChoice by EdgeCraft
+                             </span>
+                            <br>
+                            <span>DaRin,Mary</span>
+                        </td>
+                        <td>East GuangXing <br>Xingxing County Guangdong</td>
+                        <td>
+                            <span>Category 3</span>
+                        </td>
+                        <td class="pt-2">
                             <div class="d-none btn-status">
-                                <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
-                                      data-placement="top" title="Repeat">
-                                <i class="fa fa-repeat"></i>
-                            </span>
-                                <span type="button" class="btn-floating btn-sm btn-cyan m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Track">
-                                <i class="fa fa-search"></i>
-                            </span>
                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                       data-toggle="tooltip" data-placement="top" title="Cancel">
-                                <i class="fa fa-stop-circle"></i>
-                            </span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                                <button type="button" class="btn btn-slack btn-md">Ship here</button>
                             </div>
                         </td>
                     </tr>
@@ -448,7 +468,8 @@
                                     <a href="#" aria-controls="example" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
                                 </li>
                                 <li class="paginate_button page-item active">
-                                    <a href="#" aria-controls="example" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                                    <a href="#" aria-controls="example" data-dt-idx="1" tabindex="0"
+                                       class="page-link">1</a>
                                 </li>
                                 <li class="paginate_button page-item next disabled" id="example_next">
                                     <a href="#" aria-controls="example" data-dt-idx="2" tabindex="0" class="page-link">Next</a>
@@ -462,319 +483,252 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header p-2">
-                    <h5 class="modal-title" id="exampleModalLabel">Ship ID #124587</h5>
-                    <div class="w-75 text-right ">
-                        <a class="btn-floating btn-blue-grey m-0 btn-sm z-depth-1"><i class="fa fa-step-backward"></i></a>
-                        <a class="btn-floating btn-blue-grey m-0 btn-sm z-depth-1 ml-2"><i class="fa fa-step-forward"></i></a>
+</main>
+<!--Main layout-->
+
+<div class="modal fade" id="bulkImportModal" tabindex="-1" role="dialog" aria-labelledby="bulkImportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header px-3 pt-2 pb-0 border-0">
+                <h5 class="modal-title mt-3 grey-text font-weight-bold pl-2" id="bulkImportLabel">Import Contacts in Bulk</h5>
+                <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body small pt-0">
+                <div class="row px-3">
+                    <div class="col-12 mt-3">
+                        <form class="md-form">
+                            <div class="file-field">
+                                <a class="btn-floating btn-info mt-3 float-left btn-sm">
+                                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                    <input type="file">
+                                </a>
+                                <span class="grey-text pl-2">Select a .csv file to upload</span>
+
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Upload your file">
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body small pt-0">
-                    <div class="row pt-2">
-                        <div class="col-sm-8 my-auto mx-auto row">
-                            <div class="col-sm-6">
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Ship ID #
-                                    </div>
-                                    <div class="col-sm-8">
-                                        2861575
-                                    </div>
-                                </div>
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Packaging
-                                    </div>
-                                    <div class="col-sm-8">
-                                        Package
-                                    </div>
-                                </div>
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Processed
-                                    </div>
-                                    <div class="col-sm-8">
-                                        12-03-2018
-                                    </div>
-                                </div>
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Shipped
-                                    </div>
-                                    <div class="col-sm-8">
-                                        12-03-2018
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Tracking #
-                                    </div>
-                                    <div class="col-sm-8">
-                                        JD013036538172463749
-                                    </div>
-                                </div>
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Pickup #
-                                    </div>
-                                    <div class="col-sm-8">
-                                        2861575
-                                    </div>
-                                </div>
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Insurance
-                                    </div>
-                                    <div class="col-sm-8">
-                                        Carrier
-                                    </div>
-                                </div>
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Your References
-                                    </div>
-                                    <div class="col-sm-8">
-                                        Test
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 my-auto">
-                            <div class="row">
-                                <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Print labels</button>
-                                </div>
-                                <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Print invoice</button>
-                                </div>
-                                <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Customs Invoice</button>
-                                </div>
-                                <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Email this</button>
-                                </div>
-                                <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Make claim</button>
-                                </div>
-                                <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Claim status</button>
-                                </div>
+                    <div class="col-12 mb-2 mt-2">
+                        <div class="row px-3">
+                            <div class="col-12 text-center py-2 green lighten-4">
+                                File Addressbook.csv file uploaded.
                             </div>
                         </div>
                     </div>
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs nav-justified mt-2">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Details</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Tracking</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Destination</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#panel4" role="tab">Payment</a>
-                        </li>
-                    </ul>
-                    <!-- Tab panels -->
-                    <div class="tab-content card" style="min-height: 200px">
-                        <!--Panel 1-->
-                        <div class="tab-pane fade in show active row" id="panel1" role="tabpanel">
-                            <div class="col-sm-12">
-                                <!--Table-->
-                                <table class="table table-hover table-history-info">
-                                    <!--Table head-->
-                                    <thead>
-                                    <tr>
-                                        <th class="border-right">Dimensions</th>
-                                        <th class="border-right">Weight (KG)</th>
-                                        <th class="border-right">Insurance (CAD)</th>
-                                        <th>Description</th>
-                                    </tr>
-                                    </thead>
-                                    <!--Table head-->
-                                    <!--Table body-->
-                                    <tbody class="small">
-                                    <tr class="p-0">
-                                        <td scope="row">17x13x15</td>
-                                        <td>10</td>
-                                        <td>$234.45</td>
-                                        <td>@gemstones</td>
-                                    </tr>
-                                    <tr class="p-0">
-                                        <td scope="row">17x13x15</td>
-                                        <td>10</td>
-                                        <td>$234.45</td>
-                                        <td>@gemstones</td>
-                                    </tr>
-                                    <tr class="p-0">
-                                        <td scope="row">17x13x15</td>
-                                        <td>10</td>
-                                        <td>$234.45</td>
-                                        <td>gemstones</td>
-                                    </tr>
-                                    </tbody>
-                                    <!--Table body-->
-                                </table>
-                                <!--Table-->
-                            </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Category">
+
+                        <div class="form-check checkbox-info-filled p-0 mt-2">
+                            <input type="checkbox"
+                                   class="filled-in form-check-input"
+                                   id="checkbox115"
+                                   checked="checked">
+                            <label class="form-check-label"
+                                   for="checkbox115">Replace all my Contacts</label>
                         </div>
-                        <!--/.Panel 1-->
-                        <!--Panel 2-->
-                        <div class="tab-pane fade row" id="panel2" role="tabpanel">
-                            <div class="col-sm-6 pl-4 ml-1">
-                                <div class="row p-1">
-                                    <div class="col-sm-6 border-bottom">
-                                        <div>Oct-17-2016</div>
-                                    </div>
-                                    <div class="col-sm-6 border-bottom">
-                                        <div>Proof of pickup</div>
-                                    </div>
-                                </div>
-                                <div class="row p-1">
-                                    <div class="col-sm-6 border-bottom">
-                                        <div>Oct-17-2016</div>
-                                    </div>
-                                    <div class="col-sm-6 border-bottom">
-                                        <div>Proof of pickup</div>
-                                    </div>
-                                </div>
-                                <div class="row p-1">
-                                    <div class="col-sm-6 border-bottom">
-                                        <div>Oct-17-2016</div>
-                                    </div>
-                                    <div class="col-sm-6 border-bottom">
-                                        <div>Proof of pickup</div>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <a href="#" class="border-bottom">Full Tracking</a>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="md-form form-group m-0">
+                            <select class="mdb-select colorful-select dropdown-orange">
+                                <option value="" disabled selected>Select Encoding
+                                </option>
+                                <option value="1">UTF-8</option>
+                                <option value="2">UTF-16</option>
+                                <option value="3">WIN_1252</option>
+                            </select>
                         </div>
-                        <!--/.Panel 2-->
-                        <!--Panel 3-->
-                        <div class="tab-pane fade row" id="panel3" role="tabpanel">
-                            <div class="col-sm-10 row pt-4">
-                                <div class="col-sm-6 row">
-                                    <div class="col-sm-2 my-auto">
-                                        <span class="font-weight-bold my-auto float-right"> From</span>
-                                    </div>
-                                    <div class="col-sm-9 border-left">
-                                        <div class="row pl-3">
-                                            <span>Test Bermuda</span>
-                                            <span>5 Serpentine</span>
-                                            <span>Pembroke</span>
-                                            <span>Bermuda, HM 05</span>
-                                            <span>4445556666</span>
-                                        </div>
-                                        <div class="mt-2">
-                                            <div class="form-check checkbox-info-filled pl-0">
-                                                <input type="checkbox"
-                                                       class="filled-in form-check-input"
-                                                       id="checkbox120"
-                                                       checked="checked">
-                                                <label class="form-check-label"
-                                                       for="checkbox120">Lift gate</label>
-                                            </div>
-                                            <div class="form-check checkbox-info-filled pl-0">
-                                                <input type="checkbox"
-                                                       class="filled-in form-check-input"
-                                                       id="checkbox122"
-                                                       checked="checked">
-                                                <label class="form-check-label"
-                                                       for="checkbox122">Special Handling</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 row ">
-                                    <div class="col-sm-2 my-auto">
-                                        <span class="font-weight-bold float-right"> TO</span>
-                                    </div>
-                                    <div class="col-sm-9 border-left">
-                                        <div class="row pl-3">
-                                            <span>Test Bermuda</span>
-                                            <span>5 Serpentine</span>
-                                            <span>Pembroke</span>
-                                            <span>Bermuda, HM 05</span>
-                                            <span>4445556666</span>
-                                        </div>
-                                        <div class="mt-2">
-                                            <div class="form-check checkbox-info-filled pl-0">
-                                                <input type="checkbox"
-                                                       class="filled-in form-check-input"
-                                                       id="checkbox131"
-                                                       checked="checked">
-                                                <label class="form-check-label"
-                                                       for="checkbox131">Lift gate</label>
-                                            </div>
-                                            <div class="form-check checkbox-info-filled pl-0">
-                                                <input type="checkbox"
-                                                       class="filled-in form-check-input"
-                                                       id="checkbox132"
-                                                       checked="checked">
-                                                <label class="form-check-label"
-                                                       for="checkbox132">Delivery Appt.</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Panel 3-->
-                        <!--Panel 4-->
-                        <div class="tab-pane fade" id="panel4" role="tabpanel">
-                            <div class="col-sm-10 row pt-4">
-                                <div class="col-sm-4 row">
-                                    <div class="col-sm-12">
-                                        <span class="font-weight-bold">Mastercard</span><br>
-                                        <span>Number: ....3345</span><br>
-                                        <span>Name: jameson jameson jr</span><br>
-                                        <span>Charged: 2016-11-21</span><br>
-                                        <span>Amount: $223.332</span>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <button class="btn btn-deep-orange btn-sm btn-rounded ml-0">Receipt</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="row border-bottom py-1">
-                                        <div class="col-sm-6 font-weight-bold border-right"> Type </div>
-                                        <div class="col-sm-6 font-weight-bold">Credit Card</div>
-                                    </div>
-                                    <div class="row border-bottom py-1">
-                                        <div class="col-sm-6">Base</div>
-                                        <div class="col-sm-6">$155.80</div>
-                                    </div>
-                                    <div class="row border-bottom py-1">
-                                        <div class="col-sm-6">Fuel</div>
-                                        <div class="col-sm-6">$14.02</div>
-                                    </div>
-                                    <div class="row border-bottom py-1">
-                                        <div class="col-sm-6">Total</div>
-                                        <div class="col-sm-6">$169.82</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Panel 4-->
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-danger btn-md ml-0">Cancel</button>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class="btn btn-info btn-md mr-0">Begin Import</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</main>
-<!--Main layout-->
+</div>
+
+<div class="modal fade" id="newAddressModal" tabindex="-1" role="dialog" aria-labelledby="newAddressModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content mt-3">
+            <div class="modal-header px-3 pt-2 pb-0 border-0">
+                <h5 class="modal-title mt-3 grey-text font-weight-bold pl-4" id="newAddressLabel">Add New Contact</h5>
+                <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body small pt-0">
+                <div class="mt-1 px-4">
+                    <!-- Material form group -->
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="md-form form-group m-0">
+                                    <select class="mdb-select colorful-select dropdown-orange">
+                                        <option value="" disabled selected>Select Category
+                                        </option>
+                                        <option value="1">Create New Category</option>
+                                        <option value="2">New Test</option>
+                                        <option value="3">Personal</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Category">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Company Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Street">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Appt. Unit, P.O., Box, etc">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="City">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <select class="mdb-select colorful-select dropdown-orange">
+                                        <option value="" disabled selected>Province
+                                        </option>
+                                        <option value="1">Ontario</option>
+                                        <option value="2">California</option>
+                                        <option value="3">Arizona</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Postal">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <select class="mdb-select colorful-select dropdown-orange">
+                                        <option value="" disabled selected>Country
+                                        </option>
+                                        <option value="1">Canada</option>
+                                        <option value="2">USA</option>
+                                        <option value="3">India</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Special Intruction">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-sm-4">
+                                <div class="form-check checkbox-info-filled p-0">
+                                    <input type="checkbox"
+                                           class="filled-in form-check-input"
+                                           id="checkbox104"
+                                           checked="checked">
+                                    <label class="form-check-label"
+                                           for="checkbox104">Default Ship from</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-check checkbox-info-filled p-0 text-center">
+                                    <input type="checkbox"
+                                           class="filled-in form-check-input"
+                                           id="checkbox105"
+                                           checked="checked">
+                                    <label class="form-check-label"
+                                           for="checkbox105">Residential</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-check checkbox-info-filled p-0 text-right">
+                                    <input type="checkbox"
+                                           class="filled-in form-check-input"
+                                           id="checkbox103"
+                                           checked="checked">
+                                    <label class="form-check-label"
+                                           for="checkbox103">Send Notification Emails</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <button class="btn btn-blue btn-md btn-info mr-0">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Material input -->
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
@@ -852,16 +806,19 @@
     });
 
     /* ----Bhavesh---- */
-    $('#exampleModal .modal-content').blur(function() {
+    $('#exampleModal .modal-content').blur(function () {
         $('#exampleModal').modal('hide');
     });
     modalStyling(0);
-    function modalStyling (timeout){
+    function modalStyling(timeout) {
         $('#exampleModal .modal-dialog').css('opacity', 0);
-        setTimeout(function() {
+        setTimeout(function () {
             var searchWidth = $('.search-div');
-            console.log('top : '+searchWidth.offset().top +"searchWidth.position().left "+ searchWidth.offset().left);
-            $('#exampleModal .modal-dialog').offset({top:searchWidth.offset().top+35,left:searchWidth.offset().left});
+            console.log('top : ' + searchWidth.offset().top + "searchWidth.position().left " + searchWidth.offset().left);
+            $('#exampleModal .modal-dialog').offset({
+                top: searchWidth.offset().top + 35,
+                left: searchWidth.offset().left
+            });
             $('#exampleModal .modal-dialog').css('max-width', 'none');
             $('#exampleModal .modal-dialog').css('width', searchWidth.width());
             $('#exampleModal .modal-dialog').css('margin', 0);

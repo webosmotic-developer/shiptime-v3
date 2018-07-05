@@ -358,6 +358,18 @@ input.select-dropdown {
   width: 12%;
 }
 
+.addr-table table td {
+  font-size: 0.8rem;
+}
+
+.addr-table td:last-child {
+  width: 15%;
+}
+
+.addr-table td .btn-status button {
+  font-size: 0.8rem !important;
+}
+
 .modal-xl {
   max-width: 85%;
 }
@@ -393,6 +405,11 @@ table.table-history-info th {
 .nav-tabs {
   background-color: #54acf0;
 }
+
+.mt-n-3 {
+  margin-top: -3px !important;
+}
+
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
   cursor: pointer;
@@ -636,4 +653,20 @@ input.select-dropdown {
 
 [type=radio]+label:after, [type=radio]+label:before {
   margin: 1px 4px 4px 4px;
+}
+
+.input-35 {
+  height: 35px !important;
+}
+
+.input-35:focus {
+  box-shadow: none !important;
+  border-color: #007bff !important;
+}
+
+.input-35 input {
+  height: 35px !important;
+  border-radius: 2px;
+  border-color: #007bff!important;
+  margin-top: 0px !important;
 }
