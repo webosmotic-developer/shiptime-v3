@@ -102,12 +102,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="waves-effect arrow-r active" href="addressbook.html">
+                        <a class="waves-effect arrow-r" href="addressbook.html">
                             <i class="fa fa-address-book-o fa-ws"></i> <span class="nav-text">Address Book</span>
                         </a>
                     </li>
                     <li>
-                        <a class="waves-effect arrow-r" href="invoice.html">
+                        <a class="waves-effect arrow-r active" href="invoice.html">
                             <i class="fa fa-usd fa-ws"></i> <span class="nav-text">Invoice</span>
                         </a>
                     </li>
@@ -156,7 +156,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card card-body pt-0 addr-table">
+            <div class="card card-body pt-0">
                 <!-- Within scripts, below mdb.min.js script -->
                 <!-- Within <body></body> tags -->
                 <div class="row">
@@ -194,21 +194,30 @@
                             </div>
                         </th>
                         <th class="border-right">
-                           <span> Name
+                           <span> Date
                             <i class="fa fa-sort float-right" aria-hidden="true"></i>
                            </span>
                         </th>
                         <th class="border-right">
-                            Address
-                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                            <span>Invoice#
+                                <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                            </span>
                         </th>
-                        <th class="">
-                            Category
+                        <th class="border-right">
+                            <span>Shipments</span>
                         </th>
-                        <th></th>
+                        <th class="border-right">
+                            <span>Invoice Total</span>
+                        </th>
+                        <th class="border-right">
+                            <span>Balance Due</span>
+                        </th>
+                        <th class="border-right">
+                            <span>Status</span>
+                        </th>
                     </tr>
                     </thead>
-                    <tbody class="small ">
+                    <tbody class="small">
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
@@ -218,337 +227,275 @@
                         </td>
                         <td>
                             <span class="font-weight-bold">
-                                A Pinch of Creativity
+                                Aug-19-2016
                             </span>
                             <br>
-                            <span>Tannis,attn</span>
+                            <span>1 Year ago</span>
                         </td>
-                        <td>296 McDermot Avenue <br>Winnipeg, MB</td>
+                        <td> <span> 41378</span></td>
                         <td>
-                            <span> Category 1</span>
+                            <span> 1</span>
                         </td>
-                        <td class="pt-2">
-                            <div class="d-none btn-status">
-                                 <span data-toggle="modal" data-target="#newAddressModal" type="button"
-                                       class="btn-floating btn-sm btn-li m-0"
-                                       data-toggle="tooltip" data-placement="top" title="edit">
-                                    <i class="fa fa-edit"></i>
-                                </span>
-                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
-                                      class="btn-floating btn-sm btn-so m-0"
-                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
-                                    <i class="fa fa-history"></i>
-                                </span>
-                                <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Cancel">
-                                    <i class="fa fa-trash-o"></i>
-                                </span>
-                                <button type="button" class="btn btn-slack btn-md btn-rounded">Ship here</button>
-                            </div>
+                        <td>
+                            <span>$ 27.47</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
                         </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox2" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox2"></label>
+                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox1"></label>
                             </div>
                         </td>
                         <td>
-                             <span class="font-weight-bold">
-                                A Pinch of Creativity
+                            <span class="font-weight-bold">
+                                Jul-14-2016
                             </span>
                             <br>
-                            <span>Tannis,attn</span>
+                            <span>1 Year ago</span>
                         </td>
-                        <td>1500 McGill Collège Avenue <br>Montreal, QC</td>
+                        <td> <span> 41375</span></td>
                         <td>
-                            <span> Category 2</span>
+                            <span> 2</span>
                         </td>
-                        <td class="pt-2">
-                            <div class="d-none btn-status">
-                                  <span data-toggle="modal" data-target="#newAddressModal" type="button"
-                                        class="btn-floating btn-sm btn-li m-0"
-                                        data-toggle="tooltip" data-placement="top" title="edit">
-                                    <i class="fa fa-edit"></i>
-                                </span>
-                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
-                                      class="btn-floating btn-sm btn-so m-0"
-                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
-                                    <i class="fa fa-history"></i>
-                                </span>
-                                <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Cancel">
-                                    <i class="fa fa-trash-o"></i>
-                                </span>
-                                <button type="button" class="btn btn-slack btn-md btn-rounded">Ship here</button>
-                            </div>
+                        <td>
+                            <span>$ 21.34</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
                         </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox3" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox3"></label>
-                            </div>
-                        </td>
-                        <td>
-                             <span class="font-weight-bold">
-                                Chef'sChoice by EdgeCraft
-                             </span>
-                            <br>
-                            <span>DaRin,Mary</span>
-                        </td>
-                        <td>296 McDermot Avenue <br>Winnipeg, MB</td>
-                        <td>
-                            <span>Category 3</span>
-                        </td>
-                        <td class="pt-2">
-                            <div class="d-none btn-status">
-                                  <span data-toggle="modal" data-target="#newAddressModal" type="button"
-                                        class="btn-floating btn-sm btn-li m-0"
-                                        data-toggle="tooltip" data-placement="top" title="edit">
-                                    <i class="fa fa-edit"></i>
-                                </span>
-                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
-                                      class="btn-floating btn-sm btn-so m-0"
-                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
-                                    <i class="fa fa-history"></i>
-                                </span>
-                                <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Cancel">
-                                    <i class="fa fa-trash-o"></i>
-                                </span>
-                                <button type="button" class="btn btn-slack btn-md btn-rounded">Ship here</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
-                        <td>
-                            <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox4" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox4"></label>
-                            </div>
-                        </td>
-                        <td>
-                             <span class="font-weight-bold">
-                                A Pinch of Creativity
-                             </span>
-                            <br>
-                            <span>Tannis,attn</span>
-                        </td>
-                        <td>296 McDermot Avenue <br>Winnipeg, MB</td>
-                        <td>
-                            <span>Category</span>
-                        </td>
-                        <td class="pt-2">
-                            <div class="d-none btn-status">
-                                  <span data-toggle="modal" data-target="#newAddressModal" type="button"
-                                        class="btn-floating btn-sm btn-li m-0"
-                                        data-toggle="tooltip" data-placement="top" title="edit">
-                                    <i class="fa fa-edit"></i>
-                                </span>
-                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
-                                      class="btn-floating btn-sm btn-so m-0"
-                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
-                                    <i class="fa fa-history"></i>
-                                </span>
-                                <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Cancel">
-                                    <i class="fa fa-trash-o"></i>
-                                </span>
-                                <button type="button" class="btn btn-slack btn-md btn-rounded">Ship here</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
-                        <td>
-                            <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox5" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox5"></label>
+                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox1"></label>
                             </div>
                         </td>
                         <td>
                             <span class="font-weight-bold">
-                                A Pinch of Creativity
-                             </span>
+                                Aug-19-2016
+                            </span>
                             <br>
-                            <span>Tannis,attn</span>
+                            <span>1 Year ago</span>
                         </td>
-                        <td>East GuangXing <br>Xingxing County Guangdong</td>
+                        <td> <span> 41378</span></td>
                         <td>
-                            <span>Category 4</span>
+                            <span> 1</span>
                         </td>
-                        <td class="pt-2">
-                            <div class="d-none btn-status">
-                                 <span data-toggle="modal" data-target="#newAddressModal" type="button"
-                                       class="btn-floating btn-sm btn-li m-0"
-                                       data-toggle="tooltip" data-placement="top" title="edit">
-                                    <i class="fa fa-edit"></i>
-                                </span>
-                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
-                                      class="btn-floating btn-sm btn-so m-0"
-                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
-                                    <i class="fa fa-history"></i>
-                                </span>
-                                <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Cancel">
-                                    <i class="fa fa-trash-o"></i>
-                                </span>
-                                <button type="button" class="btn btn-slack btn-md btn-rounded">Ship here</button>
-                            </div>
+                        <td>
+                            <span>$ 27.47</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
                         </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox6" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox6"></label>
+                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox1"></label>
                             </div>
                         </td>
                         <td>
                             <span class="font-weight-bold">
-                                Chef'sChoice by EdgeCraft
-                             </span>
+                                Jul-14-2016
+                            </span>
                             <br>
-                            <span>DaRin,Mary</span>
+                            <span>1 Year ago</span>
                         </td>
-                        <td>1500 McGill Collège Avenue <br>Montreal, QC</td>
+                        <td> <span> 41375</span></td>
                         <td>
-                            <span>Category 1</span>
+                            <span> 2</span>
                         </td>
-                        <td class="pt-2">
-                            <div class="d-none btn-status">
-                                  <span data-toggle="modal" data-target="#newAddressModal" type="button"
-                                        class="btn-floating btn-sm btn-li m-0"
-                                        data-toggle="tooltip" data-placement="top" title="edit">
-                                    <i class="fa fa-edit"></i>
-                                </span>
-                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
-                                      class="btn-floating btn-sm btn-so m-0"
-                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
-                                    <i class="fa fa-history"></i>
-                                </span>
-                                <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Cancel">
-                                    <i class="fa fa-trash-o"></i>
-                                </span>
-                                <button type="button" class="btn btn-slack btn-md btn-rounded">Ship here</button>
-                            </div>
+                        <td>
+                            <span>$ 21.34</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
                         </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox7" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox7"></label>
+                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox1"></label>
                             </div>
                         </td>
                         <td>
                             <span class="font-weight-bold">
-                               Chef'sChoice by EdgeCraft
-                             </span>
+                                Aug-19-2016
+                            </span>
                             <br>
-                            <span>DaRin,Mary</span>
+                            <span>1 Year ago</span>
                         </td>
-                        <td>East GuangXing <br>Xingxing County Guangdong</td>
+                        <td> <span> 41378</span></td>
                         <td>
-                            <span>Category 2</span>
+                            <span> 1</span>
                         </td>
-                        <td class="pt-2">
-                            <div class="d-none btn-status">
-                                 <span data-toggle="modal" data-target="#newAddressModal" type="button"
-                                       class="btn-floating btn-sm btn-li m-0"
-                                       data-toggle="tooltip" data-placement="top" title="edit">
-                                    <i class="fa fa-edit"></i>
-                                </span>
-                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
-                                      class="btn-floating btn-sm btn-so m-0"
-                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
-                                    <i class="fa fa-history"></i>
-                                </span>
-                                <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Cancel">
-                                    <i class="fa fa-trash-o"></i>
-                                </span>
-                                <button type="button" class="btn btn-slack btn-md btn-rounded">Ship here</button>
-                            </div>
+                        <td>
+                            <span>$ 27.47</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
                         </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox8" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox8"></label>
+                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox1"></label>
                             </div>
                         </td>
                         <td>
                             <span class="font-weight-bold">
-                                A Pinch of Creativity
-                             </span>
+                                Jul-14-2016
+                            </span>
                             <br>
-                            <span>Tannis,attn</span>
+                            <span>1 Year ago</span>
                         </td>
-                        <td>1500 McGill Collège Avenue <br>Montreal, QC</td>
+                        <td> <span> 41375</span></td>
                         <td>
-                            <span>Category 4</span>
+                            <span> 2</span>
                         </td>
-                        <td class="pt-2">
-                            <div class="d-none btn-status">
-                               <span data-toggle="modal" data-target="#newAddressModal" type="button"
-                                     class="btn-floating btn-sm btn-li m-0"
-                                     data-toggle="tooltip" data-placement="top" title="edit">
-                                    <i class="fa fa-edit"></i>
-                                </span>
-                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
-                                      class="btn-floating btn-sm btn-so m-0"
-                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
-                                    <i class="fa fa-history"></i>
-                                </span>
-                                <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Cancel">
-                                    <i class="fa fa-trash-o"></i>
-                                </span>
-                                <button type="button" class="btn btn-slack btn-md btn-rounded">Ship here</button>
-                            </div>
+                        <td>
+                            <span>$ 21.34</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
                         </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox9" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox9"></label>
+                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox1"></label>
                             </div>
                         </td>
                         <td>
                             <span class="font-weight-bold">
-                                Chef'sChoice by EdgeCraft
-                             </span>
+                                Aug-19-2016
+                            </span>
                             <br>
-                            <span>DaRin,Mary</span>
+                            <span>1 Year ago</span>
                         </td>
-                        <td>East GuangXing <br>Xingxing County Guangdong</td>
+                        <td> <span> 41378</span></td>
                         <td>
-                            <span>Category 3</span>
+                            <span> 1</span>
                         </td>
-                        <td class="pt-2">
-                            <div class="d-none btn-status">
-                                 <span data-toggle="modal" data-target="#newAddressModal" type="button"
-                                       class="btn-floating btn-sm btn-li m-0"
-                                       data-toggle="tooltip" data-placement="top" title="edit">
-                                    <i class="fa fa-edit"></i>
-                                </span>
-                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
-                                      class="btn-floating btn-sm btn-so m-0"
-                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
-                                    <i class="fa fa-history"></i>
-                                </span>
-                                <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                      data-toggle="tooltip" data-placement="top" title="Cancel">
-                                    <i class="fa fa-trash-o"></i>
-                                </span>
-                                <button type="button" class="btn btn-slack btn-md btn-rounded">Ship here</button>
+                        <td>
+                            <span>$ 27.47</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
+                        </td>
+                    </tr>
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
+                        <td>
+                            <div class="checkbox-info-filled">
+                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox1"></label>
                             </div>
+                        </td>
+                        <td>
+                            <span class="font-weight-bold">
+                                Jul-14-2016
+                            </span>
+                            <br>
+                            <span>1 Year ago</span>
+                        </td>
+                        <td> <span> 41375</span></td>
+                        <td>
+                            <span> 2</span>
+                        </td>
+                        <td>
+                            <span>$ 21.34</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
+                        </td>
+                    </tr>
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
+                        <td>
+                            <div class="checkbox-info-filled">
+                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox1"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="font-weight-bold">
+                                Aug-19-2016
+                            </span>
+                            <br>
+                            <span>1 Year ago</span>
+                        </td>
+                        <td> <span> 41378</span></td>
+                        <td>
+                            <span> 1</span>
+                        </td>
+                        <td>
+                            <span>$ 27.47</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
+                        </td>
+                    </tr>
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
+                        <td>
+                            <div class="checkbox-info-filled">
+                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox1"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="font-weight-bold">
+                                Jul-14-2016
+                            </span>
+                            <br>
+                            <span>1 Year ago</span>
+                        </td>
+                        <td> <span> 41375</span></td>
+                        <td>
+                            <span> 2</span>
+                        </td>
+                        <td>
+                            <span>$ 21.34</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
                         </td>
                     </tr>
                     </tbody>
