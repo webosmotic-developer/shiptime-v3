@@ -363,7 +363,7 @@ input.select-dropdown {
 }
 
 .addr-table td:last-child {
-  width: 15%;
+  width: 22%;
 }
 
 .addr-table td .btn-status button {
@@ -583,7 +583,7 @@ input.select-dropdown {
 
 .search-input:focus {
   box-shadow: none !important;
-  border-color: #007bff !important;
+  border-color: #343a40 !important;
 }
 
 #exampleModal .modal-footer .clear {
@@ -661,12 +661,12 @@ input.select-dropdown {
 
 .input-35:focus {
   box-shadow: none !important;
-  border-color: #007bff !important;
+  border-color: #343a40 !important;
 }
 
 .input-35 input {
   height: 35px !important;
   border-radius: 2px;
-  border-color: #007bff!important;
+  border-color: #343a40!important;
   margin-top: 0px !important;
 }
