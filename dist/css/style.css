@@ -410,6 +410,11 @@ table.table-history-info th {
   margin-top: -3px !important;
 }
 
+.sign-in-input {
+  border-width: 2px !important;
+  height: 40px !important;
+}
+
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
   cursor: pointer;
