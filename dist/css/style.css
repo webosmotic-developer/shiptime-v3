@@ -675,3 +675,25 @@ input.select-dropdown {
   border-color: #343a40!important;
   margin-top: 0px !important;
 }
+
+.card-row td {
+  padding: 4px 4px 4px 4px;
+  padding-top: 14px !important;
+  padding-bottom: 6px !important;
+}
+
+.card-row td:first-child {
+  width: 15%;
+  padding-top: 6px !important;
+  padding-left: 29px;
+}
+
+.card-row td {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.card-row td:last-child {
+  width: 8%;
+  padding-top: 6px !important;
+}
