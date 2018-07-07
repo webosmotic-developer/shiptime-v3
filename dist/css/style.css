@@ -522,6 +522,11 @@ input.select-dropdown {
   background-color: #17a2b8;
 }
 
+.checkbox-orange-filled [type="checkbox"][class*='filled-in']:checked+label:after {
+  border-color: #dc5026;
+  background-color: #dc5026;
+}
+
 .bill-row {
   color: #000000
 }
@@ -701,4 +706,18 @@ input.select-dropdown {
 .user-row td:last-child {
   width: 15%;
   padding-top: 8px !important;
+}
+
+.classic-tabs li a.active {
+  color: #000000;
+  border-bottom: 0px;
+  background: #e6510061;
+}
+
+.classic-tabs li a {
+  color: #000000;
+}
+
+.classic-tabs ul {
+  border-bottom: 3px solid #e6510061;
 }
