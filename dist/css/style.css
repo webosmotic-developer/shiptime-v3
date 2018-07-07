@@ -721,3 +721,13 @@ input.select-dropdown {
 .classic-tabs ul {
   border-bottom: 3px solid #e6510061;
 }
+
+.table .user-row td {
+  border-top: 0px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table .card-row td {
+  border-top: 0px;
+  border-bottom: 1px solid #dee2e6;
+}

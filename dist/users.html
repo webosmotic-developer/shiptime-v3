@@ -141,18 +141,8 @@
                         <div class="card-body">
                             <div class="row px-3">
                                 <div class="col-12 p-0">
-                                    <table id="example" class="table table-responsive-md table-hover c-pointer border-top"
-                                           cellspacing="0"
-                                           width="100%">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th class="border-right">Email Id</th>
-                                                <th class="border-right">Name</th>
-                                                <th>Phone</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
+                                    <table id="example" class="table table-responsive-md table-hover c-pointer"
+                                           cellspacing="0" width="100%">
                                         <tbody class="small">
                                             <tr class="user-row">
                                                 <td>
@@ -169,13 +159,14 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-none btn-status">
-                                                    <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                                          data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="fa fa-trash-o"></i>
-                                                    </span>
-                                                    <span type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light" data-placement="top" title="edit">
-                                                        <i class="fa fa-edit"></i>
-                                                    </span>
+                                                        <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                              data-toggle="tooltip" data-placement="top" title="Delete">
+                                                            <i class="fa fa-trash-o"></i>
+                                                        </span>
+                                                        <span type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light"
+                                                              data-target="#addUserModal" data-toggle="modal" data-placement="top" title="edit">
+                                                            <i class="fa fa-edit"></i>
+                                                        </span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -194,13 +185,14 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-none btn-status">
-                                                    <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                                          data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="fa fa-trash-o"></i>
-                                                    </span>
-                                                    <span type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light" data-placement="top" title="edit">
-                                                        <i class="fa fa-edit"></i>
-                                                    </span>
+                                                        <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                              data-toggle="tooltip" data-placement="top" title="Delete">
+                                                            <i class="fa fa-trash-o"></i>
+                                                        </span>
+                                                        <span type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light"
+                                                              data-target="#addUserModal" data-toggle="modal" data-placement="top" title="edit">
+                                                            <i class="fa fa-edit"></i>
+                                                        </span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -219,13 +211,14 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-none btn-status">
-                                                    <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                                          data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="fa fa-trash-o"></i>
-                                                    </span>
-                                                    <span type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light" data-placement="top" title="edit">
-                                                        <i class="fa fa-edit"></i>
-                                                    </span>
+                                                        <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                              data-toggle="tooltip" data-placement="top" title="Delete">
+                                                            <i class="fa fa-trash-o"></i>
+                                                        </span>
+                                                        <span type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light"
+                                                              data-target="#addUserModal" data-toggle="modal" data-placement="top" title="edit">
+                                                            <i class="fa fa-edit"></i>
+                                                        </span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -244,13 +237,14 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-none btn-status">
-                                                    <span type="button" class="btn-floating btn-sm btn-yt m-0"
-                                                          data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="fa fa-trash-o"></i>
-                                                    </span>
-                                                    <span type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light" data-placement="top" title="edit">
-                                                        <i class="fa fa-edit"></i>
-                                                    </span>
+                                                        <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                              data-toggle="tooltip" data-placement="top" title="Delete">
+                                                            <i class="fa fa-trash-o"></i>
+                                                        </span>
+                                                        <span type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light"
+                                                              data-target="#addUserModal" data-toggle="modal" data-placement="top" title="edit">
+                                                            <i class="fa fa-edit"></i>
+                                                        </span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -258,134 +252,7 @@
                                     </table>
                                 </div>
                                 <div class="col-12 text-right p-0">
-                                    <button class="btn btn-tw btn-md mr-0" id="addCardBtn">Add User</button>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-12 card z-depth-0 mt-2 mb-3 pt-2 rounded border d-none"
-                                             id="addCardDiv">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <span class="font-weight-bold grey-text">User Credentials</span>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="User Name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="Password">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="Confirm Password">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="row">
-                                                        <div class="col-12 text-right">
-                                                            <span class="font-weight-bold text-right grey-text">Contact information</span>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="First Name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="Last Name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control"
-                                                                       placeholder="Phone">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mt-3">
-                                                    <div class="row">
-                                                        <div class="col-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <select class="mdb-select colorful-select dropdown-orange">
-                                                                    <option value="" disabled selected>Default Label Size
-                                                                    </option>
-                                                                    <option value="1">4X6"</option>
-                                                                    <option value="2">8.5X11"</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <select class="mdb-select colorful-select dropdown-orange"
-                                                                    id="toCountry">
-                                                                <option value="" disabled selected>English
-                                                                </option>
-                                                                <option value="1">French</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 mt-3">
-                                                    <div class="row">
-                                                        <div class="col-12 my-auto">
-                                                            <div class="form-check checkbox-info-filled p-0">
-                                                                <input type="checkbox"
-                                                                       class="filled-in form-check-input"
-                                                                       id="checkbox101"
-                                                                       checked="checked">
-                                                                <label class="form-check-label"
-                                                                       for="checkbox101">Can manage Profiles</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 my-auto">
-                                                            <div class="form-check checkbox-info-filled p-0">
-                                                                <input type="checkbox"
-                                                                       class="filled-in form-check-input"
-                                                                       id="checkbox102"
-                                                                       checked="checked">
-                                                                <label class="form-check-label"
-                                                                       for="checkbox102">Can manage Users</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 mt-3">
-                                                    <div class="rounded-bottom lighten-5 text-center">
-                                                        <button
-                                                                class="btn btn-sm btn-blue-grey darken-2 float-left waves-effect waves-light ml-0"
-                                                                type="button">API Key
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12 mb-2 mt-3">
-                                                    <div class="rounded-bottom lighten-5 text-center">
-                                                        <button
-                                                                class="btn btn-sm btn-danger darken-2 float-left waves-effect waves-light ml-0"
-                                                                type="button">Cancel
-                                                        </button>
-                                                    </div>
-                                                    <div class="lighten-5 text-center">
-                                                        <button
-                                                                class="btn btn-sm light-blue darken-2 float-right waves-effect waves-light mr-0"
-                                                                type="button">Submit
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <button class="btn btn-tw btn-md mr-0" id="addCardBtn" data-toggle="modal" data-target="#addUserModal">Add User</button>
                                 </div>
                             </div>
                         </div>
@@ -399,6 +266,149 @@
 
 </main>
 <!--Main layout-->
+<div class="modal fade" style="z-index: 10000;" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg pt-5" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Your Addresses</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body border-0">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 card z-depth-0 mt-2 mb-3 pt-2" id="addCardDiv">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span class="font-weight-bold grey-text">User Credentials</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="User Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Confirm Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12 text-right">
+                                            <span class="font-weight-bold text-right grey-text">Contact information</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Phone">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="md-form form-group m-0">
+                                                <select class="mdb-select colorful-select dropdown-orange">
+                                                    <option value="" disabled selected>Default Label Size
+                                                    </option>
+                                                    <option value="1">4X6"</option>
+                                                    <option value="2">8.5X11"</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <select class="mdb-select colorful-select dropdown-orange"
+                                                    id="toCountry">
+                                                <option value="" disabled selected>English
+                                                </option>
+                                                <option value="1">French</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 mt-3">
+                                    <div class="row">
+                                        <div class="col-12 my-auto">
+                                            <div class="form-check checkbox-info-filled p-0">
+                                                <input type="checkbox"
+                                                       class="filled-in form-check-input"
+                                                       id="checkbox101"
+                                                       checked="checked">
+                                                <label class="form-check-label"
+                                                       for="checkbox101">Can manage Profiles</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 my-auto">
+                                            <div class="form-check checkbox-info-filled p-0">
+                                                <input type="checkbox"
+                                                       class="filled-in form-check-input"
+                                                       id="checkbox102"
+                                                       checked="checked">
+                                                <label class="form-check-label"
+                                                       for="checkbox102">Can manage Users</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 mt-3">
+                                    <div class="rounded-bottom lighten-5 text-center">
+                                        <button
+                                                class="btn btn-sm btn-blue-grey darken-2 float-left waves-effect waves-light ml-0"
+                                                type="button">API Key
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-2 mt-3">
+                                    <div class="rounded-bottom lighten-5 text-center">
+                                        <button
+                                                class="btn btn-sm btn-danger darken-2 float-left waves-effect waves-light ml-0"
+                                                type="button">Cancel
+                                        </button>
+                                    </div>
+                                    <div class="lighten-5 text-center">
+                                        <button
+                                                class="btn btn-sm light-blue darken-2 float-right waves-effect waves-light mr-0"
+                                                type="button">Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
