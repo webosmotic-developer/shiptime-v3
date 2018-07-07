@@ -10,6 +10,13 @@ $(document).ready(function() {
     }
   });
 
+  $('[title="edit"]').on('click', function() {
+    console.log('in row edit click...')
+    if($('#addCardDiv').hasClass("d-none")) {
+      $('#addCardDiv').toggleClass("d-none");
+    }
+  });
+
   $('#getQuoteBtn').on('click',function() {
     if($('#quoteListDiv').hasClass('d-none')) {
       $('#quoteListDiv').removeClass('d-none');
