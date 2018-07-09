@@ -41,7 +41,7 @@
             <img src="img/logo-horizontal-en.png" width="165" height="50"/>
         </div>
         <!-- Links -->
-        <h4 class="border-right p-2 mb-1 screen-name">Address Book</h4>
+        <h4 class="border-right p-2 mb-1 screen-name">Invoices</h4>
         <ul class="nav navbar-nav nav-flex-icons">
             <li class="nav-item">
                 <a class="nav-link text-dark">
@@ -149,23 +149,23 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <!--<select name="example_length" aria-controls="example"
-                            class="mdb-select colorful-select dropdown-info input-35 rounded">
-                        <option value="10" disabled selected>Category</option>
-                        <option value="25">Category 1</option>
-                        <option value="50">Category 2</option>
-                        <option value="100">Category 3</option>
-                    </select>-->
+                    <div class="md-form form-group m-0 input-35">
+                        <input placeholder="Pickup date" type="text"
+                               id="pickup-date-picker"
+                               class="form-control datepicker">
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <!--<button type="button" data-toggle="modal" data-target="#bulkImportModal"
-                            class="mr-0 mt-0 btn btn-tw btn-md btn-history text-capitalize float-right mt-n-3">
-                        Bulk Import
-                    </button>
-                    <button type="button" data-toggle="modal" data-target="#newAddressModal"
-                            class="mt-0 btn btn-tw btn-md btn-history text-capitalize float-right mt-n-3">Add
-                        New
-                    </button>-->
+                <div class="col-sm-1 input-35 my-auto">
+                    <div class="checkbox-info-filled">
+                        <input type="checkbox" id="checkbox100" class="filled-in form-check-input">
+                        <label class="form-check-label" for="checkbox100">Paid</label>
+                    </div>
+                </div>
+                <div class="col-sm-1 input-35 my-auto">
+                    <div class="checkbox-info-filled">
+                        <input type="checkbox" id="checkbox101" class="filled-in form-check-input">
+                        <label class="form-check-label" for="checkbox101">Unpaid</label>
+                    </div>
                 </div>
             </div>
             <div class="card card-body pt-0">
@@ -173,12 +173,11 @@
                 <!-- Within <body></body> tags -->
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <!--<button type="button" class="btn mt-2 btn-tw ml-0 btn-md text-capitalize">Ship to
-                            selected
+                        <button type="button" class="btn mt-2 btn-tw ml-0 btn-md text-capitalize">Pay selected
                         </button>
-                        <button type="button" class="btn mt-2 btn-yt btn-md text-capitalize">
-                            Delete selected
-                        </button>-->
+                        <button type="button" class="btn mt-2 btn-tw btn-md text-capitalize">
+                            Pay all Invoices
+                        </button>
                     </div>
                     <div class=" col-sm-12 col-md-6">
                         <div class="d-flex flex-row float-right pt-2 pb-2">
@@ -195,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-                <table id="example" class="table table-striped table-responsive-md c-pointer border-top" cellspacing="0"
+                <table id="example" class="table table-striped table-responsive-md c-pointer border-top invoice-table" cellspacing="0"
                        width="100%">
                     <thead>
                     <tr>

@@ -362,6 +362,10 @@ input.select-dropdown {
   font-size: 0.8rem;
 }
 
+table.invoice-table td {
+  font-size: 0.8rem;
+}
+
 .addr-table td:last-child {
   width: 22%;
 }
