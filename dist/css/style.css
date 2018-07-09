@@ -453,6 +453,7 @@ table.table-history-info th {
 .step-btn {
   margin-top: -42px;
   z-index: 10;
+  height: 50px;
 }
 
 .step-btn.rounded-bottom .btn {

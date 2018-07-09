@@ -22,16 +22,31 @@ $(document).ready(function () {
     if (!$item.hasClass('disabled')) {
       navListItems.removeClass('active btn-amber').addClass('btn-blue-grey');
       currentIndex = $item.attr('href').split('-')[1];
+        currentIndex = parseInt(currentIndex);
       console.log(currentIndex);
       if(currentIndex == 1){
-        $('.prevBtn-2').addClass("d-none")
+        $('.prevBtn-2').addClass("d-none");
       } else{
-        $('.prevBtn-2').removeClass("d-none")
+        $('.prevBtn-2').removeClass("d-none");
       }
       $item.addClass('active btn-amber visited');
       allWells.hide();
       $target.show();
 
+        // button content change logic..
+        if(currentIndex != 1) {
+            $('.prevBtn-2').empty();
+            $('.prevBtn-2').append($("a[href^='#step-"+(currentIndex-1)+"']").attr('data-original-title'));
+        }
+        if(currentIndex != totalStep) {
+            $('.nextBtn-2').show();
+            $('.nextBtn-2').empty();
+            $('.nextBtn-2').append($("a[href^='#step-"+(currentIndex+1)+"']").attr('data-original-title'));
+        } else {
+            $('.nextBtn-2').hide();
+            $('.prevBtn-2').hide();
+        }
+        // end....
     }
   });
 
@@ -98,6 +113,20 @@ $(document).ready(function () {
     var $target = $('#step-' + currentIndex);
     allWells.hide();
     $target.show();
+      // button content change logic..
+      if(currentIndex != 1) {
+          $('.prevBtn-2').empty();
+          $('.prevBtn-2').append($("a[href^='#step-"+(currentIndex-1)+"']").attr('data-original-title'));
+      }
+      if(currentIndex != totalStep) {
+          $('.nextBtn-2').show();
+          $('.nextBtn-2').empty();
+          $('.nextBtn-2').append($("a[href^='#step-"+(currentIndex+1)+"']").attr('data-original-title'));
+      } else {
+          $('.nextBtn-2').hide();
+          $('.prevBtn-2').hide();
+      }
+      // ends.....
   }
 
   function fnMakeVisited(currentIndex) {
