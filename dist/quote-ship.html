@@ -249,8 +249,8 @@
                                         <div class="card">
                                             <!-- Card header -->
                                             <div class="card-header white border-bottom-0">
-                                                <h5 class="mb-0 font-weight-bold">Shipping From<span
-                                                        class="small ml-1 grey-text">Ontario, L1Z 1L6,Canada</span></h5>
+                                                <h5 class="mb-0"><span class="font-weight-bold">Shipping From</span>
+                                                    <span class="small ml-1 grey-text">Ontario, L1Z 1L6,Canada</span></h5>
 
                                                 <div class="small">
                                                     <span class="grey-text">Shipping rates are calculated according to your default sender address.</span>
@@ -268,7 +268,7 @@
                                                    href="#collapseTwo"
                                                    aria-expanded="true" aria-controls="collapseOne">
                                                     <h5 class="my-auto">
-                                                        <span class="text-dark">Ship To:</span>
+                                                        <span class="text-dark font-weight-bold">Ship To:</span>
                                                         <!--     <i class="fa fa-angle-down fa-lg rotate-icon"></i>-->
                                                     </h5>
                                                 </a>
@@ -1317,10 +1317,12 @@
                                             <span class="grey-text">Since you’re shipping across the border, we just need a little more information. </span>
                                             <div class=" row">
                                                 <div class="col-12">
-                                                    <div class="border-bottom mb-2">
-                                                        <span class="font-weight-bold small grey-text">Goods Sold To:</span>
+                                                    <div class="border-bottom mb-1 mx-auto">
+                                                        <div class="pb-2 pt-2 pl-0 font-weight-bold">
+                                                            Goods Sold To:
+                                                        </div>
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row mb-2">
                                                         <div class="col-sm-6">
                                                             <div class="md-form form-group m-0">
                                                                 <input type="text" class="form-control" placeholder="Company Name">
@@ -1409,8 +1411,20 @@
                                                         </div>
                                                 </div>
 
-                                                    <div class="border-bottom mb-2">
-                                                        <span class="font-weight-bold small grey-text">Products Shipped:</span>
+                                                    <div class="border-bottom mb-2 row mx-auto">
+                                                        <div class="col-sm-5 pl-0 my-auto">
+                                                            <span class="font-weight-bold">Products Shipped:</span>
+                                                        </div>
+                                                        <div class="col-sm-7 pr-0">
+                                                            <div class="d-inline-block float-right w-25">
+                                                                <select name="example_length" aria-controls="example"
+                                                                        class="mdb-select colorful-select dropdown-info">
+                                                                    <option value="10">CAD</option>
+                                                                    <option value="25">USD</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="d-inline-block p-2 grey-text float-right">Currency</div>
+                                                        </div>
                                                     </div>
                                                     <div class="row small grey lighten-2 m-0 pt-2 pb-2">
                                                         <div class="col-1">
