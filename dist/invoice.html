@@ -168,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card card-body pt-0">
+            <div class="card card-body pt-0 invoic-table">
                 <!-- Within scripts, below mdb.min.js script -->
                 <!-- Within <body></body> tags -->
                 <div class="row">
@@ -223,9 +223,10 @@
                         <th class="border-right">
                             <span>Balance Due</span>
                         </th>
-                        <th class="border-right">
+                        <th>
                             <span>Status</span>
                         </th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody class="small">
@@ -256,12 +257,26 @@
                         <td>
                             <span>Paid</span>
                         </td>
+                        <td>
+                            <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                      class="btn-floating btn-sm btn-so m-0"
+                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox1"></label>
+                                <input type="checkbox" id="checkbox2" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox2"></label>
                             </div>
                         </td>
                         <td>
@@ -284,12 +299,26 @@
                         <td>
                             <span>Paid</span>
                         </td>
+                        <td>
+                            <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                      class="btn-floating btn-sm btn-so m-0"
+                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox1"></label>
+                                <input type="checkbox" id="checkbox3" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox3"></label>
                             </div>
                         </td>
                         <td>
@@ -312,12 +341,26 @@
                         <td>
                             <span>Paid</span>
                         </td>
+                        <td>
+                            <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                      class="btn-floating btn-sm btn-so m-0"
+                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
                             <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox1"></label>
+                                <input type="checkbox" id="checkbox4" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox4"></label>
                             </div>
                         </td>
                         <td>
@@ -339,6 +382,230 @@
                         </td>
                         <td>
                             <span>Paid</span>
+                        </td>
+                        <td>
+                            <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                      class="btn-floating btn-sm btn-so m-0"
+                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
+                        <td>
+                            <div class="checkbox-info-filled">
+                                <input type="checkbox" id="checkbox5" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox5"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="font-weight-bold">
+                                Aug-19-2016
+                            </span>
+                            <br>
+                            <span>1 Year ago</span>
+                        </td>
+                        <td> <span> 41378</span></td>
+                        <td>
+                            <span> 1</span>
+                        </td>
+                        <td>
+                            <span>$ 27.47</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
+                        </td>
+                        <td>
+                            <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                      class="btn-floating btn-sm btn-so m-0"
+                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
+                        <td>
+                            <div class="checkbox-info-filled">
+                                <input type="checkbox" id="checkbox6" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox6"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="font-weight-bold">
+                                Jul-14-2016
+                            </span>
+                            <br>
+                            <span>1 Year ago</span>
+                        </td>
+                        <td> <span> 41375</span></td>
+                        <td>
+                            <span> 2</span>
+                        </td>
+                        <td>
+                            <span>$ 21.34</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
+                        </td>
+                        <td>
+                            <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                      class="btn-floating btn-sm btn-so m-0"
+                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
+                        <td>
+                            <div class="checkbox-info-filled">
+                                <input type="checkbox" id="checkbox7" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox7"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="font-weight-bold">
+                                Aug-19-2016
+                            </span>
+                            <br>
+                            <span>1 Year ago</span>
+                        </td>
+                        <td> <span> 41378</span></td>
+                        <td>
+                            <span> 1</span>
+                        </td>
+                        <td>
+                            <span>$ 27.47</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
+                        </td>
+                        <td>
+                            <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                      class="btn-floating btn-sm btn-so m-0"
+                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
+                        <td>
+                            <div class="checkbox-info-filled">
+                                <input type="checkbox" id="checkbox8" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox8"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="font-weight-bold">
+                                Jul-14-2016
+                            </span>
+                            <br>
+                            <span>1 Year ago</span>
+                        </td>
+                        <td> <span> 41375</span></td>
+                        <td>
+                            <span> 2</span>
+                        </td>
+                        <td>
+                            <span>$ 21.34</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
+                        </td>
+                        <td>
+                            <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                      class="btn-floating btn-sm btn-so m-0"
+                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
+                        <td>
+                            <div class="checkbox-info-filled">
+                                <input type="checkbox" id="checkbox9" class="filled-in form-check-input">
+                                <label class="form-check-label" for="checkbox9"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="font-weight-bold">
+                                Aug-19-2016
+                            </span>
+                            <br>
+                            <span>1 Year ago</span>
+                        </td>
+                        <td> <span> 41378</span></td>
+                        <td>
+                            <span> 1</span>
+                        </td>
+                        <td>
+                            <span>$ 27.47</span>
+                        </td>
+                        <td>
+                            <span>-</span>
+                        </td>
+                        <td>
+                            <span>Paid</span>
+                        </td>
+                        <td>
+                            <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                      class="btn-floating btn-sm btn-so m-0"
+                                      data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                            </div>
                         </td>
                     </tr>
                     <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
@@ -350,34 +617,6 @@
                         </td>
                         <td>
                             <span class="font-weight-bold">
-                                Aug-19-2016
-                            </span>
-                            <br>
-                            <span>1 Year ago</span>
-                        </td>
-                        <td> <span> 41378</span></td>
-                        <td>
-                            <span> 1</span>
-                        </td>
-                        <td>
-                            <span>$ 27.47</span>
-                        </td>
-                        <td>
-                            <span>-</span>
-                        </td>
-                        <td>
-                            <span>Paid</span>
-                        </td>
-                    </tr>
-                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
-                        <td>
-                            <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox1"></label>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="font-weight-bold">
                                 Jul-14-2016
                             </span>
                             <br>
@@ -396,117 +635,19 @@
                         <td>
                             <span>Paid</span>
                         </td>
-                    </tr>
-                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
                         <td>
-                            <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox1"></label>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="font-weight-bold">
-                                Aug-19-2016
-                            </span>
-                            <br>
-                            <span>1 Year ago</span>
-                        </td>
-                        <td> <span> 41378</span></td>
-                        <td>
-                            <span> 1</span>
-                        </td>
-                        <td>
-                            <span>$ 27.47</span>
-                        </td>
-                        <td>
-                            <span>-</span>
-                        </td>
-                        <td>
-                            <span>Paid</span>
-                        </td>
-                    </tr>
-                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
-                        <td>
-                            <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox1"></label>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="font-weight-bold">
-                                Jul-14-2016
-                            </span>
-                            <br>
-                            <span>1 Year ago</span>
-                        </td>
-                        <td> <span> 41375</span></td>
-                        <td>
-                            <span> 2</span>
-                        </td>
-                        <td>
-                            <span>$ 21.34</span>
-                        </td>
-                        <td>
-                            <span>-</span>
-                        </td>
-                        <td>
-                            <span>Paid</span>
-                        </td>
-                    </tr>
-                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
-                        <td>
-                            <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox1"></label>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="font-weight-bold">
-                                Aug-19-2016
-                            </span>
-                            <br>
-                            <span>1 Year ago</span>
-                        </td>
-                        <td> <span> 41378</span></td>
-                        <td>
-                            <span> 1</span>
-                        </td>
-                        <td>
-                            <span>$ 27.47</span>
-                        </td>
-                        <td>
-                            <span>-</span>
-                        </td>
-                        <td>
-                            <span>Paid</span>
-                        </td>
-                    </tr>
-                    <tr class="history-row" data-toggle="modal" data-target="#detailsModal">
-                        <td>
-                            <div class="checkbox-info-filled">
-                                <input type="checkbox" id="checkbox1" class="filled-in form-check-input">
-                                <label class="form-check-label" for="checkbox1"></label>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="font-weight-bold">
-                                Jul-14-2016
-                            </span>
-                            <br>
-                            <span>1 Year ago</span>
-                        </td>
-                        <td> <span> 41375</span></td>
-                        <td>
-                            <span> 2</span>
-                        </td>
-                        <td>
-                            <span>$ 21.34</span>
-                        </td>
-                        <td>
-                            <span>-</span>
-                        </td>
-                        <td>
-                            <span>Paid</span>
+                           <div class="d-none btn-status">
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-li m-0"
+                                      data-toggle="tooltip" data-placement="top" title="edit">
+                                    <i class="fa fa-info"></i>
+                                </span>
+                               <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                     class="btn-floating btn-sm btn-so m-0"
+                                     data-toggle="tooltip" data-placement="top" title="latest shipment's">
+                                    <i class="fa fa-history"></i>
+                                </span>
+                           </div>
                         </td>
                     </tr>
                     </tbody>
@@ -540,76 +681,6 @@
     <!-- Modal -->
 </main>
 <!--Main layout-->
-
-<div class="modal fade" id="bulkImportModal" tabindex="-1" role="dialog" aria-labelledby="bulkImportModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-        <div class="modal-content">
-            <div class="modal-header px-3 pt-2 pb-0 border-0">
-                <h5 class="modal-title mt-3 grey-text font-weight-bold pl-2" id="bulkImportLabel">Import Contacts in
-                    Bulk</h5>
-                <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body small pt-0">
-                <div class="row px-3">
-                    <div class="col-12 mt-3">
-                        <form class="md-form">
-                            <div class="file-field">
-                                <a class="btn-floating btn-info mt-3 float-left btn-sm">
-                                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
-                                    <input type="file">
-                                </a>
-                                <span class="grey-text pl-2">Select a .csv file to upload</span>
-
-                                <div class="file-path-wrapper">
-                                    <input class="file-path validate" type="text" placeholder="Upload your file">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-12 mb-2 mt-2">
-                        <div class="row px-3">
-                            <div class="col-12 text-center py-2 green lighten-4">
-                                File Addressbook.csv file uploaded.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control" placeholder="Category">
-
-                        <div class="form-check checkbox-info-filled p-0 mt-2">
-                            <input type="checkbox"
-                                   class="filled-in form-check-input"
-                                   id="checkbox115"
-                                   checked="checked">
-                            <label class="form-check-label"
-                                   for="checkbox115">Replace all my Contacts</label>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="md-form form-group m-0">
-                            <select class="mdb-select colorful-select dropdown-orange">
-                                <option value="" disabled selected>Select Encoding
-                                </option>
-                                <option value="1">UTF-8</option>
-                                <option value="2">UTF-16</option>
-                                <option value="3">WIN_1252</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <button class="btn btn-danger btn-md ml-0">Cancel</button>
-                    </div>
-                    <div class="col-6 text-right">
-                        <button class="btn btn-info btn-md mr-0">Begin Import</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="modal fade" id="newAddressModal" tabindex="-1" role="dialog" aria-labelledby="newAddressModalLabel"
      aria-hidden="true">
@@ -792,7 +863,9 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header px-3 pt-2 pb-0">
-                <h5 class="modal-title mt-3 grey-text font-weight-bold pl-2" id="latestShipmentLabel">Latest Shipments</h5>
+                <h5 class="modal-title mt-3 pl-2" id="latestShipmentLabel">
+                    <span class="font-weight-bold">4 Shipments in this invoice</span>
+                </h5>
                 <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

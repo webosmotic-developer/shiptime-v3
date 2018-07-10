@@ -370,6 +370,14 @@ table td {
   font-size: 0.8rem !important;
 }
 
+.invoic-table td:last-child {
+  width: 8%;
+}
+
+.invoic-table td .btn-status button {
+  font-size: 0.8rem !important;
+}
+
 .modal-xl {
   max-width: 85%;
 }
