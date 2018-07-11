@@ -827,7 +827,6 @@
     </div>
 </div>
 
-
 <div class="modal fade" id="latestShipmentModal" tabindex="-1" role="dialog" aria-labelledby="latestShipmentModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
@@ -1209,10 +1208,6 @@
         </div>
     </div>
 </div>
-
-
-
-
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -1249,8 +1244,6 @@
                 })
             }
         }
-        $('#exampleModal .modal-dialog').css('opacity', 0);
-        modalStyling(2500);
     });
 
     if ($(window).width() > 1200) {
@@ -1270,7 +1263,6 @@
         } else {
             $(".side-nav").addClass('fixed');
         }
-        modalStyling(0);
     });
 
     $(function () {
@@ -1287,27 +1279,6 @@
         $(this).find('.btn-status').addClass('d-none');
         $(this).find('.lbl-amount').removeClass('d-none');
     });
-
-    /* ----Bhavesh---- */
-    $('#exampleModal .modal-content').blur(function () {
-        $('#exampleModal').modal('hide');
-    });
-    modalStyling(0);
-    function modalStyling(timeout) {
-        $('#exampleModal .modal-dialog').css('opacity', 0);
-        setTimeout(function () {
-            var searchWidth = $('.search-div');
-            console.log('top : ' + searchWidth.offset().top + "searchWidth.position().left " + searchWidth.offset().left);
-            $('#exampleModal .modal-dialog').offset({
-                top: searchWidth.offset().top + 35,
-                left: searchWidth.offset().left
-            });
-            $('#exampleModal .modal-dialog').css('max-width', 'none');
-            $('#exampleModal .modal-dialog').css('width', searchWidth.width());
-            $('#exampleModal .modal-dialog').css('margin', 0);
-            $('#exampleModal .modal-dialog').css('opacity', 1);
-        }, timeout);
-    }
 </script>
 </body>
 </html>

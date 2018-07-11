@@ -423,6 +423,10 @@ table.table-history-info th {
   height: 40px !important;
 }
 
+.tab-contant-top-border {
+  border-top: 3px solid #e6510061!important;
+}
+
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
   cursor: pointer;
@@ -721,14 +725,11 @@ input.select-dropdown {
   color: #000000;
   border-bottom: 0px;
   background: #e6510061;
+  border-bottom: 2px solid #f7be9e!important;
 }
 
 .classic-tabs li a {
   color: #000000;
-}
-
-.classic-tabs ul {
-  border-bottom: 3px solid #e6510061;
 }
 
 .table .user-row td {
@@ -747,4 +748,13 @@ input.select-dropdown {
 
 #step-5 .carrier-row:hover {
   border: 1px solid #e0e0e0;
+}
+
+.carrier-card.store-card:hover .btn-status {
+  display: block !important;
+  border-radius: 8px;
+}
+
+.carrier-card.store-card:hover img{
+  opacity: 0.3;
 }
