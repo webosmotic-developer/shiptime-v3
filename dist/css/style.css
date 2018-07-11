@@ -758,3 +758,7 @@ input.select-dropdown {
 .carrier-card.store-card:hover img{
   opacity: 0.3;
 }
+
+.carrier-card.store-card .card-body {
+  border-radius: 8px !important;
+}

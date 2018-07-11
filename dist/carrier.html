@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ShipTime</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/steps.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        main {
+            margin-top: 66px;
+        }
+    </style>
+</head>
+
+<body class="grey lighten-3">
+
+<!--Main Navigation-->
+<header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top white fixed">
+
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="hm-btn">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn mr-auto">
+            <img src="img/logo-horizontal-en.png" width="165" height="50"/>
+        </div>
+
+        <h4 class="border-right p-2 mb-1 screen-name">My Account</h4>
+        <!-- Links -->
+        <ul class="nav navbar-nav nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link text-dark">
+                    <i class="fa fa-envelope"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Contact</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-gear"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Settings</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="global-preferences.html">Global Prefences</a>
+                    <a class="dropdown-item" href="credit-cards.html">Credit Cards</a>
+                    <a class="dropdown-item" href="users.html">Users</a>
+                    <a class="dropdown-item" href="carrier.html">Carriers</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Account</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
+                    <a class="dropdown-item" href="my-info.html">My Info</a>
+                    <a class="dropdown-item" href="index.html">Logout</a>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav blue-gradient darken-2">
+        <ul class="custom-scrollbar list-unstyled">
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="waves-effect arrow-r" href="dashboard.html">
+                            <i class="fa fa-tachometer fa-ws"></i>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="quote-ship.html">
+                            <i class="fa fa-dropbox fa-ws"></i>
+                            <span class="nav-text">Quote & Ship</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="new-quick-quote.html">
+                            <i class="fa fa-fighter-jet fa-ws"></i>
+                            <span class="nav-text">Quick Quote</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="plugins.html">
+                            <i class="fa fa-plug fa-ws"></i>
+                            <span class="nav-text">Plugins</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="history-tracking.html">
+                            <i class="fa fa-history fa-ws"></i>
+                            <span class="nav-text">History & Tracking</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="addressbook.html">
+                            <i class="fa fa-address-book-o fa-ws"></i>
+                            <span class="nav-text">Address Book</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect arrow-r" href="invoice.html">
+                            <i class="fa fa-usd fa-ws"></i>
+                            <span class="nav-text">Invoice</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </ul>
+    </div>
+    <!--/. Sidebar navigation -->
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main>
+    <div class="main-conainter">
+        <div class="main-content p-3">
+            <div class="row mt-4 offset-3 justify-content-center">
+                <h4 class="grey-text">Add or connect a carrier account</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 grey-text py-3 pr-0">
+                    <h4>Connect a Carrier Account</h4>
+                    <span>For $49 + tax per carrier, you can connect your own carrier accounts allowing you to compare your own rates alongside ShipTime's default discounted rates.</span>
+                    <div class="grey-text mt-3">
+                        <span class="justify-content-center">Once you've connected your account, that carrier will appear as an option when shipping.</span>
+                    </div>
+                    <div class="grey-text mt-3">
+                        <span class="justify-content-center">When you process a shipment with your own carrier account, ShipTime will not bill you for the shipment and you will instead be billed directly by the carrier.</span>
+                    </div>
+                </div>
+                <div class="col-sm-9 row justify-content-center">
+                    <div class="carrier-card card store-card m-3 hoverable" data-toggle="modal" data-target="#modalCart">
+                        <div class="card-body d-flex p-0">
+                            <img class="m-auto" src="img/carrier/logo-purolator@2x.png" style="max-width: 170px; max-height: 45px;">
+                        </div>
+                        <div class="h-100 w-100 btn-status py-4 text-center d-none" style="top: 0px; left: 0px;">
+                                <span type="button"
+                                       class="btn-floating btn-sm btn-li m-0 d-none"
+                                      data-toggle="modal" data-target="#newAddressModal" title="Edit">
+                                    <i class="fa fa-edit"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-fb m-0" title="Add">
+                                    <i class="fa fa-plus"></i>
+                                </span>
+                                <span type="button" class="btn-floating btn-sm btn-yt m-0 d-none"
+                                      data-toggle="tooltip" data-placement="top" title="Cancel">
+                                    <i class="fa fa-remove"></i>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="carrier-card card store-card m-3 hoverable" data-toggle="modal" data-target="#modalCart">
+                        <div class="card-body d-flex p-0">
+                            <img class="m-auto" src="img/carrier/costco-logo.png" style="max-width: 170px; max-height: 45px;">
+                        </div>
+                        <div class="h-100 w-100 btn-status py-4 text-center d-none" style="top: 0px; left: 0px;">
+                                 <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                       class="btn-floating btn-sm btn-li m-0 d-none" title="Edit">
+                                    <i class="fa fa-edit"></i>
+                                </span>
+                                <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                      class="btn-floating btn-sm btn-fb m-0"
+                                      data-toggle="tooltip" data-placement="top" title="Add">
+                                    <i class="fa fa-plus"></i>
+                                </span>
+                                <span type="button" class="btn-floating btn-sm btn-yt m-0 d-none"
+                                      data-toggle="tooltip" data-placement="top" title="Cancel">
+                                    <i class="fa fa-remove"></i>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="carrier-card card store-card m-3 hoverable" data-toggle="modal" data-target="#modalCart">
+                        <div class="card-body d-flex p-0 grey lighten-4 rounded">
+                            <img class="m-auto" src="img/carrier/fedex_logo1.png" style="max-width: 170px; max-height: 45px;">
+                            <span class=""><i class="fa fa-check fa-lg text-success"></i></span>
+                        </div>
+                        <div class="h-100 w-100 btn-status py-4 text-center d-none" style="top: 0px; left: 0px;">
+                             <span data-toggle="modal" data-target="#newAddressModal" type="button"
+                                   class="btn-floating btn-sm btn-li m-0"
+                                   data-toggle="tooltip" data-placement="top" title="Edit">
+                                <i class="fa fa-edit"></i>
+                            </span>
+                            <span data-toggle="modal" data-target="#latestShipmentModal" type="button"
+                                  class="btn-floating btn-sm btn-fb m-0 d-none"
+                                  data-toggle="tooltip" data-placement="top" title="Add">
+                                <i class="fa fa-plus"></i>
+                            </span>
+                            <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                  data-toggle="tooltip" data-placement="top" title="Cancel">
+                                <i class="fa fa-remove"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--Main layout-->
+<div class="modal fade" style="z-index: 10000;" id="modalCart" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <img class="mr-2" style="width: 100px" src="img/carrier/fedex_logo.png">
+                <h4 class="modal-title pt-1 pl-3 border-left grey-text" id="myModalLabel">Connect Fedex account</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body border-0 mb-3">
+                <div class="card" style="box-shadow:none">
+                    <div class="card-body grey-text pb-0 small">
+                        <div class="row">
+                            <div class="col-4 my-auto">
+                                <label class="mb-0 font-weight-bold">Description</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" placeholder="Description">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 my-auto">
+                                <label class="mb-0 font-weight-bold">Account Number</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" placeholder="Account Number">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 my-auto">
+                                <label class="mb-0 font-weight-bold">API userId</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" placeholder="API userId">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 my-auto">
+                                <label class="mb-0 font-weight-bold">API password</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" placeholder="API password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <button class="btn btn-yt btn-md">Reset</button>
+                                <button class="btn btn-tw btn-md">Connect</button>
+                            </div>
+                        </div>
+                        <div class="row px-3 mt-2">
+                            <span class="">Don't have Loomis API credentials?</span>
+                        </div>
+                        <div class="row px-3 mt-2">
+                            <span class="">1. Email servicedesk@loomis-express.com</span>
+                            <br>
+                            <span class="">2. Provide Loomis client account number with your email request for API credentials</span>
+                            <br>
+                            <span class="">3. Make sure subject line says "SHIPTIME API Credentials Request"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/custom/main.js"></script>
+<script type="text/javascript" src="js/custom/steps.js"></script>
+
+<!-- Initializations -->
+<script>
+    // SideNav Initialization
+    $(".button-collapse").sideNav();
+    $(".hm-btn").click(function () {
+        if ($("body").hasClass("fixed-sn")) {
+            $("body").removeClass('fixed-sn');
+            if ($('.sidenav-overlay')) {
+                $('.sidenav-overlay').remove();
+            }
+        } else {
+            $("body").addClass('fixed-sn');
+            if ($(window).width() <= 1200) {
+                $('body').append('<div class="sidenav-overlay"></div>')
+                $('.sidenav-overlay').click(function () {
+                    console.log('test', $(".hm-btn"));
+                    $(".hm-btn").trigger("click");
+                })
+            }
+        }
+    });
+
+    if ($(window).width() > 1200) {
+        $(".side-nav").hover(function () {
+            $(".side-nav").addClass('fixed');
+        }, function () {
+            $(".side-nav").removeClass('fixed');
+
+        })
+    } else {
+        $(".side-nav").addClass('fixed');
+    }
+
+
+    $(window).resize(function () {
+        if ($(window).width() > 1200) {
+            $(".side-nav").removeClass('fixed');
+        } else {
+            $(".side-nav").addClass('fixed');
+        }
+    });
+
+    $(document).ready(function () {
+        $('.addr-select').on('click', function () {
+            $('.modal').trigger('click');
+        });
+    });
+</script>
+</body>
+
+</html>
