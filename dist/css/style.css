@@ -677,7 +677,7 @@ input.select-dropdown {
 .coupon-code.row .btn-sm{
   position: absolute;
   margin-top: -40px;
-  right: 2rem;
+  right: 1.4rem;
 }
 
 [type=radio]+label:after, [type=radio]+label:before {
