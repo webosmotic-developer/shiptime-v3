@@ -740,3 +740,11 @@ input.select-dropdown {
   border-top: 0px;
   border-bottom: 1px solid #dee2e6;
 }
+
+#step-5 .carrier-row{
+  border: 1px solid #ffffff;
+}
+
+#step-5 .carrier-row:hover {
+  border: 1px solid #e0e0e0;
+}
