@@ -427,6 +427,12 @@ table.table-history-info th {
   border-top: 3px solid #e6510061!important;
 }
 
+.cal-icon {
+  position: absolute;
+  margin-left: 84px;
+  top: 14px;
+}
+
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
   cursor: pointer;
