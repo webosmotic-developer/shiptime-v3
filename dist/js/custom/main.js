@@ -23,7 +23,14 @@ $(document).ready(function() {
     }
   });
 
-  $('#addItemBtn').on('click',function() {
+  $('#fr-btn').on('click', function() {
+    console.log('in fr...')
+    $('#fr-btn').addClass('grey lighten-2');
+    $('#en-btn').removeClass('grey lighten-2');
+  });
 
+  $('#en-btn').on('click', function() {
+    $('#en-btn').addClass('grey lighten-2');
+    $('#fr-btn').removeClass('grey lighten-2');
   });
 });

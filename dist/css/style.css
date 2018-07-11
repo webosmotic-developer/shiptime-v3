@@ -768,3 +768,7 @@ input.select-dropdown {
 .carrier-card.store-card .card-body {
   border-radius: 8px !important;
 }
+
+.font-8 {
+  font-size: 0.8rem;
+}
