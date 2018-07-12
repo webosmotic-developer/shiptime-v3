@@ -772,3 +772,7 @@ input.select-dropdown {
 .font-8 {
   font-size: 0.8rem;
 }
+
+.history-table .carrier-row td:last-child {
+  padding: 0.8rem;
+}
