@@ -43,7 +43,7 @@
             <img src="img/logo-horizontal-en.png" width="165" height="50"/>
         </div>
 
-        <h4 class="border-right p-2 mb-1 screen-name">Plugins</h4>
+        <h4 class="border-right p-2 mb-1 screen-name">My Account</h4>
         <!-- Links -->
         <ul class="nav navbar-nav nav-flex-icons">
             <li class="nav-item">
@@ -68,6 +68,7 @@
                     <a class="dropdown-item" href="credit-cards.html">Credit Cards</a>
                     <a class="dropdown-item" href="users.html">Users</a>
                     <a class="dropdown-item" href="carrier.html">Carriers</a>
+                    <a class="dropdown-item" href="boxes.html">Boxes</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -110,7 +111,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="waves-effect arrow-r active" href="plugins.html">
+                        <a class="waves-effect arrow-r" href="plugins.html">
                             <i class="fa fa-plug fa-ws"></i>
                             <span class="nav-text">Plugins</span>
                         </a>
@@ -253,29 +254,38 @@
     <div class="modal-dialog pt-5" role="document">
         <div class="modal-content">
             <!--Header-->
-            <div class="modal-header">
-                <img class="mr-2" style="width: 100px" src="img/amazon-detailed.png">
-                <h4 class="modal-title pt-1 pl-3 border-left grey-text" id="myModalLabel">Connect Amazon Store</h4>
+            <div class="modal-header pb-0">
+                <h4 class="modal-title pt-1 pl-3 grey-text" id="myModalLabel">Add new Box</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
             <!--Body-->
-            <div class="modal-body border-0 mb-3">
+            <div class="modal-body border-0">
                 <div class="card" style="box-shadow:none">
-                    <div class="card-body grey-text pb-0">
-                        <h6 class="grey-text">Fill in the form below to connect your Amazon store to your ShipTime
-                            account.</h6>
-                        <label class="mb-0 mt-2">Store name</label>
-                        <input type="text" class="form-control" aria-describedby="basic-addon2">
-                        <label class="mb-0 mt-1">Country</label>
-                        <select class="mdb-select colorful-select dropdown-info" id="toCountry">
-                            <option value="" disabled selected></option>
-                            <option value="1">Canada</option>
-                            <option value="2">USA</option>
-                            <option value="3">India</option>
-                        </select>
-                        <button type="button" class="btn btn-blue-grey float-right mr-0 mt-2">Connect</button>
+                    <div class="card-body grey-text pb-0 pt-0">
+                        <label class="mb-0">Name</label>
+                        <input type="text" class="form-control" for="name" aria-describedby="basic-addon2" placeholder="Box name">
+                        <label class="mb-0 mt-1">Dimensions</label>
+                        <div class="row">
+                            <div class="col-3 pr-0">
+                                <input type="text" class="form-control" aria-describedby="basic-addon2" placeholder="Length">
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                <div class="col-3 my-auto text-center">X</div>
+                                <div class="col-6 px-2">
+                                    <input type="text" class="form-control" aria-describedby="basic-addon2"
+                                           placeholder="Width">
+                                </div>
+                                <div class="col-3 my-auto text-center">X</div>
+                                </div>
+                            </div>
+                            <div class="col-3 pl-0">
+                                <input type="text" class="form-control" aria-describedby="basic-addon2" placeholder="Height">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-tw text-capitalize btn-md float-right mr-0 mt-2">Save Box</button>
                     </div>
                 </div>
             </div>
