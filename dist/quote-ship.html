@@ -1588,95 +1588,89 @@
                                                             <div class="d-inline-block p-2 grey-text float-right">Currency</div>
                                                         </div>
                                                     </div>
-                                                    <div class="row small grey lighten-2 m-0 pt-2 pb-2">
-                                                        <div class="col-1">
-                                                            Qty
-                                                        </div>
-                                                        <div class="col-3">
-                                                            Description
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <span>HS Code</span>
-                                                            <i class="fa fa-question-circle grey-text"
-                                                               data-toggle="tooltip" data-html="true"
-                                                               title="<strong>The HS (Harmonized Commodity Description and Coding System) Code </strong>  is a 6-10 digit number that is required for all international shipments. This number is used by customs to identify the products shipped across international borders. These codes can be very specific and are important. If you don’t yet know your product’s HS Code, click on the icon in HS Code field below to access an app that can help you determine this code."
-                                                               data-placement="right" aria-hidden="true"> </i>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            Country of Origin
-                                                        </div>
-                                                        <div class="col-2">
-                                                            Unit Price
-                                                        </div>
-                                                        <div class="col-2">
-                                                            Ext. Price
-                                                        </div>
-                                                    </div>
 
                                                     <div class="carrier-row row small m-0 pt-2 pb-2">
-                                                        <div class="col-1">
-                                                            <input type="text" class="form-control" placeholder="Qty">
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <input type="text" class="form-control" placeholder="Description">
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <input type="text" class="form-control" placeholder="HS Code">
-                                                            <i class="fa fa-lg fa-calculator grey-text cal-icon"></i>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <select name="example_length" aria-controls="example"
-                                                                    class="mdb-select colorful-select dropdown-info">
-                                                                <option value="10" disabled selected>Country</option>
-                                                                <option value="25">Canada</option>
-                                                                <option value="50">USA</option>
-                                                                <option value="100">India</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <input type="text" class="form-control" placeholder="Unit Price">
-                                                        </div>
-                                                        <div class="col-2 my-auto">
-                                                            <span class="float-left">$100</span>
-                                                            <div class="btn-select d-none text-right position-absolute w-100" style="margin-top: -8px;">
-                                                                 <span type="button" class="btn-floating btn-sm btn-yt m-0 ml-3"
+                                                        <div class="col-1 text-right pr-0">
+                                                            <div class="position-absolute w-100 text-left" style="margin-left: -10px;">
+                                                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                                                        data-toggle="tooltip" data-placement="top" title="Cancel">
                                                                      <i class="fa fa-remove"></i>
                                                                  </span>
                                                             </div>
+                                                            <div class="pt-2">1</div>
+                                                        </div>
+                                                        <div class="col-1">
+                                                            <input type="text" class="form-control" placeholder="Qty">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <input type="text" class="form-control" placeholder="Name">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" class="form-control" placeholder="HS Code">
+                                                                    <i class="fa fa-lg fa-calculator grey-text cal-icon"></i>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <select name="example_length" aria-controls="example"
+                                                                            class="mdb-select colorful-select dropdown-info">
+                                                                        <option value="10" disabled selected>Country</option>
+                                                                        <option value="25">Canada</option>
+                                                                        <option value="50">USA</option>
+                                                                        <option value="100">India</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" class="form-control" placeholder="Unit Price">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <textarea class="form-control mb-1 mt-0 h-100" row="10"
+                                                                      placeholder="Description"></textarea>
+                                                            <!--<input type="text" class="form-control" placeholder="Description">-->
                                                         </div>
                                                     </div>
                                                     <div class="carrier-row row small m-0 pt-2 pb-2">
-                                                        <div class="col-1">
-                                                            <input type="text" class="form-control" placeholder="Qty">
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <input type="text" class="form-control" placeholder="Description">
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <input type="text" class="form-control" placeholder="HS Code">
-                                                            <i class="fa fa-lg fa-calculator grey-text cal-icon"></i>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <select name="example_length" aria-controls="example"
-                                                                    class="mdb-select colorful-select dropdown-info">
-                                                                <option value="10" disabled selected>Country</option>
-                                                                <option value="25">Canada</option>
-                                                                <option value="50">USA</option>
-                                                                <option value="100">India</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <input type="text" class="form-control" placeholder="Unit Price">
-                                                        </div>
-                                                        <div class="col-2 my-auto">
-                                                            <span class="float-left">$100</span>
-                                                            <div class="btn-select d-none text-right position-absolute w-100" style="margin-top: -8px;">
-                                                                 <span type="button" class="btn-floating btn-sm btn-yt m-0 ml-3"
+                                                        <div class="col-1 text-right pr-0">
+                                                            <div class="position-absolute w-100 text-left" style="margin-left: -10px;">
+                                                                 <span type="button" class="btn-floating btn-sm btn-yt m-0"
                                                                        data-toggle="tooltip" data-placement="top" title="Cancel">
                                                                      <i class="fa fa-remove"></i>
                                                                  </span>
                                                             </div>
+                                                            <div class="pt-2">2</div>
+                                                        </div>
+                                                        <div class="col-1">
+                                                            <input type="text" class="form-control" placeholder="Qty">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <input type="text" class="form-control" placeholder="Name">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" class="form-control" placeholder="HS Code">
+                                                                    <i class="fa fa-lg fa-calculator grey-text cal-icon"></i>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <select name="example_length" aria-controls="example"
+                                                                            class="mdb-select colorful-select dropdown-info">
+                                                                        <option value="10" disabled selected>Country</option>
+                                                                        <option value="25">Canada</option>
+                                                                        <option value="50">USA</option>
+                                                                        <option value="100">India</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" class="form-control" placeholder="Unit Price">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <textarea class="form-control mb-1 mt-0 h-100" row="10"
+                                                                      placeholder="Description"></textarea>
+                                                            <!--<input type="text" class="form-control" placeholder="Description">-->
                                                         </div>
                                                     </div>
                                                     <div class="row m-0 pt-2 pb-2">
@@ -1725,6 +1719,9 @@
 
                                 <!-- Sixth Step -->
                                 <div class="row setup-content-2" id="step-6">
+                                    <!--<div class="card mx-auto col-2">
+
+                                    </div>-->
                                     <div class="card mx-auto col-8">
                                         <div class="row">
                                             <div class="col-lg-8 order-md-1">

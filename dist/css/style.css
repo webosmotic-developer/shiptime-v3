@@ -427,7 +427,7 @@ table.table-history-info th {
 
 .cal-icon {
   position: absolute;
-  margin-left: 84px;
+  margin-left: 150px;
   top: 14px;
 }
 
@@ -755,6 +755,7 @@ input.select-dropdown {
 
 #step-5 .carrier-row{
   border: 1px solid #ffffff;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 #step-5 .carrier-row:hover {
