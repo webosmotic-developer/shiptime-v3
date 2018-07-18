@@ -646,6 +646,12 @@ input.select-dropdown {
   width: 17px;
 }
 
+[type=checkbox][class*=filled-in]+label {
+  height: 17px;
+  line-height: 17px;
+  padding-left: 25px;
+}
+
 [type=checkbox]+label, [type=radio]+label {
   height: 20px;
   line-height: 20px;
@@ -770,9 +776,25 @@ input.select-dropdown {
 }
 
 .font-8 {
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;
 }
 
 .history-table .carrier-row td:last-child {
   padding: 0.8rem;
+}
+
+.batch-ship-row:hover {
+  background: #cccccc;
+}
+
+.batch-ship-row:hover .card-body{
+  background: #ededed;
+}
+
+.batch-ship-row.active .card-body{
+  background: #ededed;
+}
+
+.batch-ship-row.active {
+  background: #cccccc;
 }
