@@ -133,7 +133,65 @@
     <div class="main-conainter">
         <div class="main-content p-3">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-12">
+                    <div class="card ml-0 mt-3">
+                        <div class="card-header">Quick Quote</div>
+                        <div class="card-body">
+                            <div class="row mx-auto">
+                                <div class="col-12 pl-0 my-auto">
+                                    You're shipping from: <span class="font-weight-bold">Ontario, L1Z 1L6,Canada</span>
+                                <span class="grey-text">
+                                    <a data-placement="right" title="you can change it by click here"
+                                       data-toggle="modal" data-target="#modalCart">
+                                        <i class="fa fa-pencil-square-o ml-1"></i>
+                                    </a>
+                                    <span class="pl-2 small">Shipping to certain areas may incur a surcharge, enter the postal code to get a more accurate quote.</span>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="row mt-2 mt-3">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-2 my-auto">
+                                            <h5 class="text-dark mb-0">
+                                                <span>Ship To:</span>
+                                            </h5>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                                   placeholder="Search by Name, Address or Zip">
+                                        </div>
+                                        <div class="col-sm-5 my-auto mt-3 offset-2">
+                                            <select class="mdb-select colorful-select dropdown-info"
+                                                    id="fromCountry">
+                                                <option value="" disabled selected>Country</option>
+                                                <option value="1">Canada</option>
+                                                <option value="2">USA</option>
+                                                <option value="3">India</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-5 my-auto mt-3">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control" placeholder="Postal">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 mt-auto">
+                                            <div class="float-right">
+                                                <a href="new-quick-quote.html" type="button"
+                                                   class="btn btn-blue-grey font-8 btn-md mr-0" data-toggle="tooltip"
+                                                   data-placement="top" title="Click to quick quote">Quick Quote
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
                     <div class="card mt-3">
                         <div class="card-header">
                             <div class="row">
@@ -148,11 +206,13 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <canvas id="barChart" width="400" height="400"></canvas>
+                            <div class="col-9 m-auto">
+                                <canvas id="barChart" width="400" height="400"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <!--<div class="col-sm-4">
                     <div class="card mt-3">
                         <div class="card-header">
                             <div class="row">
@@ -170,8 +230,8 @@
                             <canvas id="doughnutChart" width="400" height="400"></canvas>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
+                </div>-->
+                <div class="col-sm-6">
                     <div class="card mt-3">
                         <div class="card-header">
                             <div class="row">
@@ -186,14 +246,598 @@
                             </div>
                         </div>
                         <div class="card-body">
+                            <div class="col-9 m-auto">
                             <canvas id="lineChart" width="400" height="400"></canvas>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-3">
+                <div class="col-sm-12 card mt-3 px-0">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-6">Shipping History</div>
+                            <div class="col-4 offset-2 pl-1">
+                                <div class="row border-left ml-1">
+                                    <div class="col-7 offset-5">
+                                        <select class="mdb-select colorful-select dropdown-info m-0">
+                                            <option value="3">Month</option>
+                                            <option value="2">Week</option>
+                                            <option value="1">Today</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="ml-0 mt-3">
+                            <div class="card-body grey-text small pt-0">
+                                <!--Accordion wrapper-->
+                                <div class="accordion col-12 pr-2" id="addressAccordionEx" role="tablist" aria-multiselectable="true"
+                                     style="overflow-y: auto; height: 380px; overflow-x: hidden">
+                                    <!-- Accordion card -->
+                                    <div class="card">
+                                        <!-- Card header -->
+                                        <div class="" role="tab" id="headingTwo">
+                                            <a class="collapsed grey-text" data-toggle="collapse" href="#collapseTwo"
+                                               aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="row row-hover p-1  mt-2 mb-2" data-toggle="tooltip" data-placement="top" title="Click for more information">
+                                                    <div class="col-sm-3 my-auto pr-0">A Pinch of Creativity, Winnipeg-R3B0T2, Canada</div>
+                                                    <div class="col-sm-1 my-auto">
+                                                        <i class="fa fa-long-arrow-right grey-text"></i>
+                                                    </div>
+                                                    <div class="col-sm-3 my-auto pl-0">Test Company Inc., Etobicoke-M9B5Z2, Canada</div>
+                                                    <div class="col-sm-2 p-0 my-auto text-primary text-center">IN-Transit</div>
+                                                    <div class="col-sm-3 my-auto text-right pr-2">
+                                                  <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
+                                                        data-placement="top" title="Repeat">
+                                                    <i class="fa fa-repeat"></i>
+                                                  </span>
+                                            <span type="button" class="btn-floating btn-sm btn-cyan m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Track">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                            <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Cancel">
+                                                        <i class="fa fa-stop-circle"></i>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                                             data-parent="#accordionEx">
+                                            <div class="card-body row border-top">
+                                                <div class="col-sm-7 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship ID #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">2861690</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship Date</div>
+                                                        <div class="col-sm-8">: Jun-27-2018</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Carrier</div>
+                                                        <div class="col-sm-8">: Ground</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Tracking #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">D420917200000000240001</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Weight</div>
+                                                        <div class="col-sm-8">:
+                                                            <span>1 PCS</span>
+                                                            <span>3 LBS</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">Type</div>
+                                                        <div class="col-sm-8">: PACKAGE</div>
+                                                    </div>
+                                                </div>
+                                                <div class="offset-sm-1 col-sm-4 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Base</div>
+                                                        <div class="col-sm-6">$10.00</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Fuel</div>
+                                                        <div class="col-sm-6">$2.08</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Residential</div>
+                                                        <div class="col-sm-6">$1.18</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">Tax</div>
+                                                        <div class="col-sm-6">$3.15</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                    <div class="card">
+                                        <!-- Card header -->
+                                        <div class="" role="tab" id="headingThree">
+                                            <a class="collapsed grey-text" data-toggle="collapse" href="#collapseThree"
+                                               aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="row row-hover p-1 mt-2 mb-2" data-toggle="tooltip" data-placement="top" title="Click for more information">
+                                                    <div class="col-sm-3 my-auto pr-0">LTL US 1, Beverly Hills-90210, United State</div>
+                                                    <div class="col-sm-1 my-auto">
+                                                        <i class="fa fa-long-arrow-right grey-text"></i>
+                                                    </div>
+                                                    <div class="col-sm-3 my-auto pl-0">Test Bermuda, Pembroke-HM05, Bermuda</div>
+                                                    <div class="col-sm-2 p-0 my-auto orange-text text-center">Pending</div>
+                                                    <div class="col-sm-3 my-auto text-right pr-2">
+                                                    <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
+                                                          data-placement="top" title="Repeat">
+                                                        <i class="fa fa-repeat"></i>
+                                                    </span>
+                                            <span type="button" class="btn-floating btn-sm btn-cyan m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Track">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                            <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Cancel">
+                                                        <i class="fa fa-stop-circle"></i>
+                                                  </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapseThree" class="collapse" role="tabpanel"
+                                             aria-labelledby="headingThree" data-parent="#accordionEx">
+                                            <div class="card-body row border-top">
+                                                <div class="col-sm-7 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship ID #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">2861690</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship Date</div>
+                                                        <div class="col-sm-8">: Jun-27-2018</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Carrier</div>
+                                                        <div class="col-sm-8">: Ground</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Tracking #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">D420917200000000240001</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Weight</div>
+                                                        <div class="col-sm-8">:
+                                                            <span>1 PCS</span>
+                                                            <span>3 LBS</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">Type</div>
+                                                        <div class="col-sm-8">: PACKAGE</div>
+                                                    </div>
+                                                </div>
+                                                <div class="offset-sm-1 col-sm-4 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Base</div>
+                                                        <div class="col-sm-6">$10.00</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Fuel</div>
+                                                        <div class="col-sm-6">$2.08</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Residential</div>
+                                                        <div class="col-sm-6">$1.18</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">Tax</div>
+                                                        <div class="col-sm-6">$3.15</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                    <div class="card">
+                                        <!-- Card header -->
+                                        <div class="" role="tab" id="heading4">
+                                            <a class="collapsed grey-text" data-toggle="collapse" href="#collapse4"
+                                               aria-expanded="false" aria-controls="collapse4">
+                                                <div class="row row-hover p-1  mt-2 mb-2" data-toggle="tooltip" data-placement="top" title="Click for more information">
+                                                    <div class="col-sm-3 my-auto pr-0">A Pinch of Creativity, Winnipeg-R3B0T2, Canada</div>
+                                                    <div class="col-sm-1 my-auto">
+                                                        <i class="fa fa-long-arrow-right grey-text"></i>
+                                                    </div>
+                                                    <div class="col-sm-3 my-auto pl-0">Test Company Inc., Etobicoke-M9B5Z2, Canada</div>
+                                                    <div class="col-sm-2 p-0 my-auto text-primary text-center">IN-Transit</div>
+                                                    <div class="col-sm-3 my-auto text-right text-right pr-2">
+                                                  <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
+                                                        data-placement="top" title="Repeat">
+                                                    <i class="fa fa-repeat"></i>
+                                                  </span>
+                                            <span type="button" class="btn-floating btn-sm btn-cyan m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Track">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                            <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Cancel">
+                                                        <i class="fa fa-stop-circle"></i>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4"
+                                             data-parent="#accordionEx">
+                                            <div class="card-body row border-top">
+                                                <div class="col-sm-7 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship ID #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">2861690</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship Date</div>
+                                                        <div class="col-sm-8">: Jun-27-2018</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Carrier</div>
+                                                        <div class="col-sm-8">: Ground</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Tracking #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">D420917200000000240001</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Weight</div>
+                                                        <div class="col-sm-8">:
+                                                            <span>1 PCS</span>
+                                                            <span>3 LBS</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">Type</div>
+                                                        <div class="col-sm-8">: PACKAGE</div>
+                                                    </div>
+                                                </div>
+                                                <div class="offset-sm-1 col-sm-4 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Base</div>
+                                                        <div class="col-sm-6">$10.00</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Fuel</div>
+                                                        <div class="col-sm-6">$2.08</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Residential</div>
+                                                        <div class="col-sm-6">$1.18</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">Tax</div>
+                                                        <div class="col-sm-6">$3.15</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                    <div class="card">
+                                        <!-- Card header -->
+                                        <div class="" role="tab" id="headingFive">
+                                            <a class="collapsed grey-text" data-toggle="collapse" href="#collapseFive"
+                                               aria-expanded="false" aria-controls="collapseFive">
+                                                <div class="row row-hover p-1 mt-2 mb-2" data-toggle="tooltip" data-placement="top" title="Click for more information">
+                                                    <div class="col-sm-3 my-auto pr-0">LTL US 1, Beverly Hills-90210, United State</div>
+                                                    <div class="col-sm-1 my-auto">
+                                                        <i class="fa fa-long-arrow-right grey-text"></i>
+                                                    </div>
+                                                    <div class="col-sm-3 my-auto pl-0">Test Bermuda, Pembroke-HM05, Bermuda</div>
+                                                    <div class="col-sm-2 p-0 my-auto text-success text-center">Delivered</div>
+                                                    <div class="col-sm-3 my-auto text-right pr-2">
+                                                    <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
+                                                          data-placement="top" title="Repeat">
+                                                        <i class="fa fa-repeat"></i>
+                                                    </span>
+                                            <span type="button" class="btn-floating btn-sm btn-cyan m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Track">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                            <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Cancel">
+                                                        <i class="fa fa-stop-circle"></i>
+                                                  </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapseFive" class="collapse" role="tabpanel"
+                                             aria-labelledby="headingFive" data-parent="#accordionEx">
+                                            <div class="card-body row border-top">
+                                                <div class="col-sm-7 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship ID #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">2861690</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship Date</div>
+                                                        <div class="col-sm-8">: Jun-27-2018</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Carrier</div>
+                                                        <div class="col-sm-8">: Ground</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Tracking #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">D420917200000000240001</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Weight</div>
+                                                        <div class="col-sm-8">:
+                                                            <span>1 PCS</span>
+                                                            <span>3 LBS</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">Type</div>
+                                                        <div class="col-sm-8">: PACKAGE</div>
+                                                    </div>
+                                                </div>
+                                                <div class="offset-sm-1 col-sm-4 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Base</div>
+                                                        <div class="col-sm-6">$10.00</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Fuel</div>
+                                                        <div class="col-sm-6">$2.08</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Residential</div>
+                                                        <div class="col-sm-6">$1.18</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">Tax</div>
+                                                        <div class="col-sm-6">$3.15</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                    <div class="card">
+                                        <!-- Card header -->
+                                        <div class="" role="tab" id="heading5">
+                                            <a class="collapsed grey-text" data-toggle="collapse" href="#collapse5"
+                                               aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="row row-hover p-1  mt-2 mb-2" data-toggle="tooltip" data-placement="top" title="Click for more information">
+                                                    <div class="col-sm-3 my-auto pr-0">A Pinch of Creativity, Winnipeg-R3B0T2, Canada</div>
+                                                    <div class="col-sm-1 my-auto">
+                                                        <i class="fa fa-long-arrow-right grey-text"></i>
+                                                    </div>
+                                                    <div class="col-sm-3 my-auto pl-0">Test Company Inc., Etobicoke-M9B5Z2, Canada</div>
+                                                    <div class="col-sm-2 p-0 my-auto text-primary text-center">IN-Transit</div>
+                                                    <div class="col-sm-3 my-auto text-right pr-2">
+                                                  <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
+                                                        data-placement="top" title="Repeat">
+                                                    <i class="fa fa-repeat"></i>
+                                                  </span>
+                                            <span type="button" class="btn-floating btn-sm btn-cyan m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Track">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                            <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Cancel">
+                                                        <i class="fa fa-stop-circle"></i>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5"
+                                             data-parent="#accordionEx">
+                                            <div class="card-body row border-top">
+                                                <div class="col-sm-7 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship ID #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">2861690</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship Date</div>
+                                                        <div class="col-sm-8">: Jun-27-2018</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Carrier</div>
+                                                        <div class="col-sm-8">: Ground</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Tracking #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">D420917200000000240001</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Weight</div>
+                                                        <div class="col-sm-8">:
+                                                            <span>1 PCS</span>
+                                                            <span>3 LBS</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">Type</div>
+                                                        <div class="col-sm-8">: PACKAGE</div>
+                                                    </div>
+                                                </div>
+                                                <div class="offset-sm-1 col-sm-4 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Base</div>
+                                                        <div class="col-sm-6">$10.00</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Fuel</div>
+                                                        <div class="col-sm-6">$2.08</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Residential</div>
+                                                        <div class="col-sm-6">$1.18</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">Tax</div>
+                                                        <div class="col-sm-6">$3.15</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                    <div class="card">
+                                        <!-- Card header -->
+                                        <div class="" role="tab" id="heading6">
+                                            <a class="collapsed grey-text" data-toggle="collapse" href="#collapse6"
+                                               aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="row row-hover p-1 mt-2 mb-2" data-toggle="tooltip" data-placement="top" title="Click for more information">
+                                                    <div class="col-sm-3 my-auto pr-0">LTL US 1, Beverly Hills-90210, United State</div>
+                                                    <div class="col-sm-1 my-auto">
+                                                        <i class="fa fa-long-arrow-right grey-text"></i>
+                                                    </div>
+                                                    <div class="col-sm-3 my-auto pl-0">Test Bermuda, Pembroke-HM05, Bermuda</div>
+                                                    <div class="col-sm-2 p-0 my-auto orange-text text-center">Pending</div>
+                                                    <div class="col-sm-3 my-auto text-right pr-2">
+                                                    <span type="button" class="btn-floating btn-sm btn-fb m-0" data-toggle="tooltip"
+                                                          data-placement="top" title="Repeat">
+                                                        <i class="fa fa-repeat"></i>
+                                                    </span>
+                                            <span type="button" class="btn-floating btn-sm btn-cyan m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Track">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                            <span type="button" class="btn-floating btn-sm btn-yt m-0"
+                                                  data-toggle="tooltip" data-placement="top" title="Cancel">
+                                                        <i class="fa fa-stop-circle"></i>
+                                                  </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapse6" class="collapse" role="tabpanel"
+                                             aria-labelledby="heading6" data-parent="#accordionEx">
+                                            <div class="card-body row border-top">
+                                                <div class="col-sm-7 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship ID #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">2861690</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Ship Date</div>
+                                                        <div class="col-sm-8">: Jun-27-2018</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Carrier</div>
+                                                        <div class="col-sm-8">: Ground</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Tracking #</div>
+                                                        <div class="col-sm-8">:
+                                                            <a class="text-link" href="#">D420917200000000240001</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-4">Weight</div>
+                                                        <div class="col-sm-8">:
+                                                            <span>1 PCS</span>
+                                                            <span>3 LBS</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">Type</div>
+                                                        <div class="col-sm-8">: PACKAGE</div>
+                                                    </div>
+                                                </div>
+                                                <div class="offset-sm-1 col-sm-4 small">
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Base</div>
+                                                        <div class="col-sm-6">$10.00</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Fuel</div>
+                                                        <div class="col-sm-6">$2.08</div>
+                                                    </div>
+                                                    <div class="row border-bottom">
+                                                        <div class="col-sm-6">Residential</div>
+                                                        <div class="col-sm-6">$1.18</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">Tax</div>
+                                                        <div class="col-sm-6">$3.15</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                </div>
+                                <!--/.Accordion wrapper-->
+                                <div class="row grey-text show-more">
+                                    <i class="fa fa-2x fa-chevron-circle-down " data-toggle="tooltip" data-placement="top"
+                                       title="Show More" style="font-size:1.6em"></i>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-sm-4 p-0">
+                            <div class="mt-3 border-left">
+                                <!--<div class="row">
+                                    <div class="col">
+                                        <select class="mdb-select colorful-select dropdown-info m-0">
+                                            <option value="3">Month</option>
+                                            <option value="2">Week</option>
+                                            <option value="1">Today</option>
+                                        </select>
+                                    </div>
+                                </div>-->
+                                <div class="pr-4 pb-3 pl-1">
+                                    <canvas id="doughnutChart" width="400" height="400"></canvas>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row mt-0">
                 <div class="col-sm-6">
-                    <div class="card ml-0 mt-3">
+                    <!--<div class="card ml-0 mt-3">
                         <div class="card-header">Quick Quote</div>
                         <div class="card-body">
                             <div class="row mx-auto">
@@ -242,7 +886,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="card mr-0 mt-3">
                         <div class="card-header">Latest News And Alert's</div>
                         <div class="card-body small grey-text">
@@ -311,32 +955,15 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="card mr-0 mt-3">
-                        <div class="card-header">Quick Tracking</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-7">
-                                    <input type="text" class="form-control m-0"
-                                           placeholder="Tracking #, ShipID or Reference">
-                                </div>
-                                <div class="col-sm-5">
-                                    <button type="button" class="btn btn-blue-grey float-right m-0"
-                                            data-toggle="tooltip" data-placement="top"
-                                            title="Click to track this shipment">Track
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card ml-0 mt-3">
+                    <!--<div class="card ml-0 mt-3">
                         <div class="card-header">Shipping History</div>
                         <div class="card-body grey-text">
-                            <!--Accordion wrapper-->
+                            &lt;!&ndash;Accordion wrapper&ndash;&gt;
                             <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true"
                                  style="overflow-y: auto; height: 200px; overflow-x: hidden">
-                                <!-- Accordion card -->
+                                &lt;!&ndash; Accordion card &ndash;&gt;
                                 <div class="card">
-                                    <!-- Card header -->
+                                    &lt;!&ndash; Card header &ndash;&gt;
                                     <div class="" role="tab" id="headingOne">
                                         <a class="collapsed grey-text" data-toggle="collapse" href="#collapseOne"
                                            aria-expanded="true" aria-controls="collapseOne">
@@ -364,7 +991,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- Card body -->
+                                    &lt;!&ndash; Card body &ndash;&gt;
                                     <div id="collapseOne" class="collapse show" role="tabpanel"
                                          aria-labelledby="headingOne" data-parent="#accordionEx">
                                         <div class="card-body row border-top">
@@ -422,9 +1049,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
+                                &lt;!&ndash; Accordion card &ndash;&gt;
                                 <div class="card">
-                                    <!-- Card header -->
+                                    &lt;!&ndash; Card header &ndash;&gt;
                                     <div class="" role="tab" id="headingTwo">
                                         <a class="collapsed grey-text" data-toggle="collapse" href="#collapseTwo"
                                            aria-expanded="false" aria-controls="collapseTwo">
@@ -452,7 +1079,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- Card body -->
+                                    &lt;!&ndash; Card body &ndash;&gt;
                                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
                                          data-parent="#accordionEx">
                                         <div class="card-body row border-top">
@@ -510,9 +1137,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
+                                &lt;!&ndash; Accordion card &ndash;&gt;
                                 <div class="card">
-                                    <!-- Card header -->
+                                    &lt;!&ndash; Card header &ndash;&gt;
                                     <div class="" role="tab" id="headingThree">
                                         <a class="collapsed grey-text" data-toggle="collapse" href="#collapseThree"
                                            aria-expanded="false" aria-controls="collapseThree">
@@ -540,7 +1167,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- Card body -->
+                                    &lt;!&ndash; Card body &ndash;&gt;
                                     <div id="collapseThree" class="collapse" role="tabpanel"
                                          aria-labelledby="headingThree" data-parent="#accordionEx">
                                         <div class="card-body row border-top">
@@ -598,15 +1225,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
+                                &lt;!&ndash; Accordion card &ndash;&gt;
                             </div>
-                            <!--/.Accordion wrapper-->
+                            &lt;!&ndash;/.Accordion wrapper&ndash;&gt;
                             <div class="row grey-text show-more">
                                 <i class="fa fa-2x fa-chevron-circle-down " data-toggle="tooltip" data-placement="top"
                                    title="Show More" style="font-size:1.6em"></i>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="card mr-0 mt-3">
                         <div class="card-header">Support Ticket's</div>
                         <div class="card-body small grey-text">
@@ -654,7 +1281,7 @@
 <!--Main layout-->
 <div class="modal fade" style="z-index: 10000;" id="modalCart" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog pt-5" role="document">
         <div class="modal-content">
             <!--Header-->
             <div class="modal-header">
