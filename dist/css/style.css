@@ -391,12 +391,10 @@ table td {
   border-color: #d64c27 !important;
 }
 
-
 .btn-history {
   width: 153px;
   font-size: 0.8rem !important;
 }
-
 
 table.table-history-info td {
   padding-top: 0.4rem;
@@ -424,13 +422,17 @@ table.table-history-info th {
 }
 
 .tab-contant-top-border {
-  border-top: 3px solid #e6510061!important;
+    border-top: 3px solid #ef6c00 !important;
 }
 
 .cal-icon {
   position: absolute;
   margin-left: 84px;
   top: 14px;
+}
+
+.m-t-6 {
+    margin-top: 6px !important;
 }
 
 /* Mehul--------------------------------------------------------------------------------*/
@@ -502,7 +504,6 @@ table.table-history-info th {
 }
 
 /* Bhavesh--------------------------------------------------------------------------------*/
-
 
 input {
   border: 1px solid #e9e9e9 !important;
@@ -734,10 +735,8 @@ input.select-dropdown {
 }
 
 .classic-tabs li a.active {
-  color: #000000;
-  border-bottom: 0px;
-  background: #e6510061;
-  border-bottom: 2px solid #f7be9e!important;
+    background: #ef6c00;
+    border-bottom: 2px solid #ef6c00 !important;
 }
 
 .classic-tabs li a {
