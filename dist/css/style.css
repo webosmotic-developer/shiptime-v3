@@ -798,3 +798,8 @@ input.select-dropdown {
 .batch-ship-row.active {
   background: #cccccc;
 }
+
+.bottom-menu {
+  min-width: 100%;
+  bottom: 0px;
+}
