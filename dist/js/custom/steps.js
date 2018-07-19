@@ -67,7 +67,7 @@ $(document).ready(function () {
 
     allNextBtn.click(function () {
         if (currentIndex == 1) {
-            if ($('#toCountry').val() == null || $('#toPostal').val() == ''){
+            if (totalStep > 6 &&($('#toCountry').val() == null || $('#toPostal').val() == '')){
                 if ($('#toPostal').val() == '') {
                     $('#toPostal').addClass('border-danger');
                     $('#toPostal').on('focus', function () {
