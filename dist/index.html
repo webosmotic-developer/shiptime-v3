@@ -20,6 +20,10 @@
         main {
             margin-top: 66px;
         }
+
+        #pages-container {
+            height: 470px;
+        }
     </style>
 </head>
 
@@ -28,29 +32,78 @@
 <header></header>
 <!--Main Navigation-->
 <!--Main layout-->
-<main>
+<main style="margin-top: 0px; padding-left: 0px">
     <div class="main-conainter">
-        <div class="main-content p-3">
-            <div class="row mx-auto">
-                <div class="col-md-4 mx-auto">
-                    <div class="text-center pb-3">
-                        <img style="width: 120px" src="http://shiptimev3.appspaces.ca/images/theme/logo-square-p-500x500.png">
-                    </div>
-                    <h4 class="card-title text-center pb-2 grey-text">Login to your ShipTime account</h4>
-
-                    <div class="md-form form-lg">
-                        <div>
-                            <span class="small">Username / Email</span>
-                            <input type="text" id="inputLGEx" class="sign-in-input mt-0 mb-0 form-control form-control-lg border-gray rounded">
-                            <div class="col-12 pb-2 pr-0 small"> <a class="float-right blue-text">Forgot your username?</a></div>
+        <div class="main-content">
+            <div class="row position-absolute m-0 align-items-center w-100 h-100">
+                <div class="col-6 mx-auto card my-auto">
+                    <div class="row">
+                        <div class="col-md-6 my-auto">
+                            <img src="https://image.freepik.com/foto-gratuito/l-39-operaio-che-da-una-scatola-fragile_1156-611.jpg" width="100%" alt="IMG">
                         </div>
-                        <div class="mt-2">
-                            <span class="small">Password</span>
-                            <input type="text" id="inputLGEx1" class="sign-in-input mt-0 mb-0 form-control form-control-lg border-gray rounded">
-                            <a class="float-right blue-text small">Forgot your password?</a>
-                        </div>
+                        <div class="col-md-6 border-left d-flex" id="pages-container">
+                            <div id="signupPage" class="w-100 my-auto">
+                                <div class="text-center pb-3">
+                                    <img style="width: 120px"
+                                         src="http://shiptimev3.appspaces.ca/images/theme/logo-square-p-500x500.png">
+                                </div>
+                                <!--<h4 class="card-title text-center pb-2 grey-text">Login to your ShipTime account</h4>-->
 
-                        <a href="dashboard.html" type="button" class=" rounded btn btn-default mx-auto w-100 mt-3">Sign In</a>
+                                <div class="md-form form-lg px-3">
+                                    <div>
+                                        <span class="small">Username / Email</span>
+                                        <input type="text" id="inputLGEx"
+                                               class="sign-in-input mt-0 mb-0 form-control form-control-lg border-gray rounded">
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="small">Password</span>
+                                        <input type="text" id="inputLGEx1"
+                                               class="sign-in-input mt-0 mb-0 form-control form-control-lg border-gray rounded">
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="small">Confirm Password</span>
+                                        <input type="text" id="inputLGEx1"
+                                               class="sign-in-input mt-0 mb-0 form-control form-control-lg border-gray rounded">
+                                    </div>
+
+                                    <a href="dashboard.html" type="button"
+                                       class=" rounded btn orange darken-3 mx-auto w-100 mt-3 mb-1">Sign Up</a>
+                                    <span class="small">Already have an account?</span>
+                                    <a id="loginLink" class="small font-weight-bold deep-orange-text"><span>Sign In</span></a>
+                                </div>
+                            </div>
+
+                            <div id="loginPage" class="w-100 my-auto" style="display: none;">
+                                <div class="text-center pb-3">
+                                    <img style="width: 120px"
+                                         src="http://shiptimev3.appspaces.ca/images/theme/logo-square-p-500x500.png">
+                                </div>
+                                <!--<h4 class="card-title text-center pb-2 grey-text">Login to your ShipTime account</h4>-->
+
+                                <div class="md-form form-lg px-3">
+                                    <div>
+                                        <span class="small">Username / Email</span>
+                                        <input type="text" id="inputLGEx"
+                                               class="sign-in-input mt-0 mb-0 form-control form-control-lg border-gray rounded">
+
+                                        <div class="col-12 pb-2 pr-0 small"><a class="float-right blue-text">Forgot your
+                                            username?</a></div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="small">Password</span>
+                                        <input type="text" id="inputLGEx1"
+                                               class="sign-in-input mt-0 mb-0 form-control form-control-lg border-gray rounded">
+                                        <a class="float-right blue-text small">Forgot your password?</a>
+                                    </div>
+
+                                    <a href="dashboard.html" type="button" class=" rounded btn orange darken-3 mx-auto w-100 mt-3 mb-1">Sign In</a>
+                                    <span class="small">Do not have a Shiptime account?</span>
+                                    <a class="small font-weight-bold deep-orange-text" id="signupLink">
+                                        <span>Sign up now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,14 +123,28 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <script type="text/javascript" src="js/custom/main.js"></script>
 <script type="text/javascript" src="js/custom/steps.js"></script>
+<script type="text/javascript" src="js/custom/tilt.jquery.min.js"></script>
 
 <!-- Initializations -->
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
-</script>
 
+    $('#signupLink').on('click', function() {
+        $( "#loginPage" ).fadeOut();
+        setTimeout(function(){
+            $( "#signupPage" ).fadeIn();
+        }, 400);
+    });
+
+    $('#loginLink').on('click', function() {
+        $( "#signupPage" ).fadeOut();
+        setTimeout(function(){
+            $( "#loginPage" ).fadeIn();
+        }, 400);
+    });
+</script>
 
 
 </body>
