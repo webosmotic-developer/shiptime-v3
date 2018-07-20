@@ -33,4 +33,8 @@ $(document).ready(function() {
     $('#en-btn').addClass('grey lighten-2');
     $('#fr-btn').removeClass('grey lighten-2');
   });
+
+  $('#batchShipLink a').on('click', function() {
+
+  });
 });

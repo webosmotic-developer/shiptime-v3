@@ -10,7 +10,7 @@ $(document).ready(function () {
     allPrevBtn = $('.prevBtn-2');
 
 
-  $('.prevBtn-2').addClass("d-none")
+  $('.prevBtn-2').addClass("d-none");
   // allWells.hide();
   fnMakeActive(currentIndex);
   navListItems.click(function (e) {
@@ -26,8 +26,10 @@ $(document).ready(function () {
       console.log(currentIndex);
       if(currentIndex == 1){
         $('.prevBtn-2').addClass("d-none");
+        $('#batchShipLink').removeClass('d-none');
       } else{
         $('.prevBtn-2').removeClass("d-none");
+        $('#batchShipLink').addClass('d-none');
       }
       $item.addClass('active btn-amber visited');
       allWells.hide();
@@ -114,6 +116,11 @@ $(document).ready(function () {
     allWells.hide();
     $target.show();
       // button content change logic..
+      if(currentIndex == 1) {
+          $('#batchShipLink').removeClass('d-none');
+      } else {
+          $('#batchShipLink').addClass('d-none');
+      }
       if(currentIndex != 1) {
           $('.prevBtn-2').empty();
           $('.prevBtn-2').append($("a[href^='#step-"+(currentIndex-1)+"']").attr('data-original-title'));
