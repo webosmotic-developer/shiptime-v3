@@ -435,6 +435,10 @@ table.table-history-info th {
     margin-top: 6px !important;
 }
 
+.steps-number {
+  margin-top: -3px !important;
+  opacity: 0.7;
+}
 /* Mehul--------------------------------------------------------------------------------*/
 .c-pointer{
   cursor: pointer;
