@@ -35,6 +35,6 @@ $(document).ready(function() {
   });
 
   $('#batchShipLink a').on('click', function() {
-
+    $('#batchShipmentModal').modal('show');
   });
 });

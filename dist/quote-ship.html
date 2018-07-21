@@ -1968,7 +1968,7 @@
                                 </div>
                             </form>
                             <div class="row mt-2 px-3" id="batchShipLink">
-                                <span>Want to create a batch shipment to multiple addresses?</span><a class="deep-orange-text" href="batch-shipment.html"><span class="pl-1">Click here</span></a>
+                                <span>Want to create a batch shipment to multiple addresses?</span><a class="deep-orange-text"><span class="pl-1">Click here</span></a>
                             </div>
                         </div>
                     </div>
@@ -2144,6 +2144,83 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" style="z-index: 10000;" id="batchShipmentModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
+    <div class="modal-dialog modal-md pt-5" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <h5 class="modal-title grey-text font-weight-bold pl-2" id="BatchShipModalLabel">How do you want to ship?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body border-0">
+                <div class="row">
+                    <div class="col-6 border-right py-3 text-center my-auto" id="selectAddresses">
+                        <a href="addressbook.html" class="black-text">
+                            <i class="fa fa-address-book fa-4x grey-text"></i>
+                            <span class="pt-2 d-block">Choose multiple existing address book contacts</span>
+                        </a>
+                    </div>
+                    <div class="col-6 py-3 text-center my-auto" id="uploadCSV">
+                        <a>
+                            <i class="fa fa-cloud-upload fa-4x grey-text"></i>
+                            <span class="pt-2 d-block ">Upload a CSV file</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" style="z-index: 10000;" id="uploadFileModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
+    <div class="modal-dialog modal-md pt-5" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <h5 class="modal-title grey-text font-weight-bold pl-2" id="uploadFileModealLabel">Upload CSV file</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Clos">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body border-0">
+                <div class="row pb-2 px-4">
+                    <span class="grey-text">Using a CSV file to create shipments can be confusing. Let us help you start by showing you a sample.</span>
+                    <div class="col-12 text-right pr-0">
+                        <button class="btn btn-info btn-md text-capitalize mr-0">Download Sample</button>
+                    </div>
+                </div>
+                <hr class="mx-2">
+                <div class="row">
+                    <div class="col-12 mt-2 px-4">
+                        <form class="md-form">
+                            <div class="file-field">
+                                <a class="btn-floating btn-info mt-3 float-left btn-sm" >
+                                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                    <input type="file">
+                                </a>
+                                <span class="grey-text pl-2">Select a .csv file to upload</span>
+
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Upload your file">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 text-right mb-3">
+                        <a class="btn btn-info text-capitalize btn-md" href="batch-shipment.html" id="btnImReady">I’m Ready</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -2288,6 +2365,16 @@
 
     $('.15-add-item-btn').click(function() {
         $('.15-item-row').last().clone(true).appendTo('.15-item-container');
+    });
+
+    $(document).ready(function() {
+        $('#uploadCSV').on('click', function() {
+            $('#batchShipmentModal').modal('hide');
+            $('#uploadFileModal').modal('show');
+        });
+       $('#btnImReady').on('click', function() {
+
+       });
     });
 </script>
 </body>
