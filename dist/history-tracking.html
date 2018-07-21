@@ -519,14 +519,15 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header p-2">
-                    <h5 class="modal-title" id="exampleModalLabel">Ship ID #124587</h5>
-                    <div class="w-75 text-right ">
-                        <a class="btn-floating btn-blue-grey m-0 btn-sm z-depth-1"><i class="fa fa-step-backward"></i></a>
-                        <a class="btn-floating btn-blue-grey m-0 btn-sm z-depth-1 ml-2"><i class="fa fa-step-forward"></i></a>
+                    <img class="ml-4 mr-3 package-type history-icon-img my-auto" src="http://shiptimev3.appspaces.ca/images/icon-envelope.png" tooltipster="top">
+                    <h5 class="modal-title my-auto border-left pl-3" id="exampleModalLabel">Ship ID #124587</h5>
+                    <div class="w-75 pl-3">
+                        <a class="btn-floating btn-fb m-0 btn-sm z-depth-1"><i class="fa fa-repeat"></i></a>
+                        <a class="btn-floating btn-yt m-0 btn-sm z-depth-1 ml-2"><i class="fa fa-stop-circle"></i></a>
                     </div>
                     <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -536,22 +537,6 @@
                     <div class="row pt-2">
                         <div class="col-sm-8 my-auto mx-auto row">
                             <div class="col-sm-6">
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Ship ID #
-                                    </div>
-                                    <div class="col-sm-8">
-                                         2861575
-                                    </div>
-                                </div>
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
-                                        Packaging
-                                    </div>
-                                    <div class="col-sm-8">
-                                         Package
-                                    </div>
-                                </div>
                                 <div class="row py-1">
                                     <div class="col-sm-4 font-weight-bold">
                                         Processed
@@ -566,6 +551,14 @@
                                     </div>
                                     <div class="col-sm-8">
                                          12-03-2018
+                                    </div>
+                                </div>
+                                <div class="row py-1">
+                                    <div class="col-sm-4 font-weight-bold">
+                                        Insurance
+                                    </div>
+                                    <div class="col-sm-8">
+                                        Carrier
                                     </div>
                                 </div>
                             </div>
@@ -588,14 +581,6 @@
                                 </div>
                                 <div class="row py-1">
                                     <div class="col-sm-4 font-weight-bold">
-                                        Insurance
-                                    </div>
-                                    <div class="col-sm-8">
-                                         Carrier
-                                    </div>
-                                </div>
-                                <div class="row py-1">
-                                    <div class="col-sm-4 font-weight-bold">
                                         Your References
                                     </div>
                                     <div class="col-sm-8">
@@ -607,22 +592,22 @@
                         <div class="col-sm-4 my-auto">
                             <div class="row">
                                 <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Print labels</button>
+                                    <button type="button" class="btn btn-warning btn-md btn-history text-capitalize">Print labels</button>
                                 </div>
                                 <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Print invoice</button>
+                                    <button type="button" class="btn btn-warning btn-md btn-history text-capitalize">Print invoice</button>
                                 </div>
                                 <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Customs Invoice</button>
+                                    <button type="button" class="btn btn-info btn-md btn-history text-capitalize">Customs Invoice</button>
                                 </div>
                                 <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Email this</button>
+                                    <button type="button" class="btn btn-info btn-md btn-history text-capitalize">Email this</button>
                                 </div>
                                 <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Make claim</button>
+                                    <button type="button" class="btn btn-default btn-md btn-history text-capitalize">Make claim</button>
                                 </div>
                                 <div class="col-sm-6 p-0">
-                                    <button type="button" class="btn btn-tw btn-md btn-history text-capitalize">Claim status</button>
+                                    <button type="button" class="btn btn-default btn-md btn-history text-capitalize">Claim status</button>
                                 </div>
                             </div>
                         </div>
@@ -830,90 +815,89 @@
             </div>
         </div>
     </div>
-</main>
-<!--Main layout-->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <input placeholder="From - city, postal code, country" type="text"
-                                       class="form-control">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input placeholder="From - city, postal code, country" type="text"
+                                           class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input placeholder="To - city, postal code, country" type="text"
+                                           class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <select class="mdb-select colorful-select dropdown-orange mb-0">
+                                        <option value="1" disabled selected>All Carriers</option>
+                                        <option value="2">Back Door</option>
+                                        <option value="3">Basement</option>
+                                        <option value="4">Front Door</option>
+                                        <option value="5">Service Counter</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select class="mdb-select colorful-select dropdown-orange mb-0">
+                                        <option value="1" disabled selected>All Package Types</option>
+                                        <option value="2">Back Door</option>
+                                        <option value="3">Basement</option>
+                                        <option value="4">Front Door</option>
+                                        <option value="5">Service Counter</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col-sm-6">
-                                <input placeholder="To - city, postal code, country" type="text"
-                                       class="form-control">
-                            </div>
-                            <div class="col-sm-6">
-                                <select class="mdb-select colorful-select dropdown-orange mb-0">
-                                    <option value="1" disabled selected>All Carriers</option>
-                                    <option value="2">Back Door</option>
-                                    <option value="3">Basement</option>
-                                    <option value="4">Front Door</option>
-                                    <option value="5">Service Counter</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-6">
-                                <select class="mdb-select colorful-select dropdown-orange mb-0">
-                                    <option value="1" disabled selected>All Package Types</option>
-                                    <option value="2">Back Door</option>
-                                    <option value="3">Basement</option>
-                                    <option value="4">Front Door</option>
-                                    <option value="5">Service Counter</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <input placeholder="Tracking #" type="text" class="form-control">
-                            </div>
-                            <div class="col-sm-6">
-                                <input placeholder="Selected date" type="text"
-                                       class="form-control">
-                            </div>
-                            <div class="col-sm-12 my-auto">
-                                <div class="row mt-1">
-                                    <div class="col-sm-3">
-                                        <div class="form-check checkbox-info-filled p-0">
-                                            <input type="checkbox"
-                                                   class="filled-in form-check-input"
-                                                   id="checkbox10"
-                                                   checked="checked">
-                                            <label class="form-check-label"
-                                                   for="checkbox10"> Cancelled</label>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input placeholder="Tracking #" type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input placeholder="Selected date" type="text"
+                                           class="form-control">
+                                </div>
+                                <div class="col-sm-12 my-auto">
+                                    <div class="row mt-1">
+                                        <div class="col-sm-3">
+                                            <div class="form-check checkbox-info-filled p-0">
+                                                <input type="checkbox"
+                                                       class="filled-in form-check-input"
+                                                       id="checkbox10"
+                                                       checked="checked">
+                                                <label class="form-check-label"
+                                                       for="checkbox10"> Cancelled</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="form-check checkbox-info-filled p-0">
-                                            <input type="checkbox"
-                                                   class="filled-in form-check-input"
-                                                   id="checkbox11"
-                                                   checked="checked">
-                                            <label class="form-check-label small"
-                                                   for="checkbox11">Pending</label>
+                                        <div class="col-sm-3">
+                                            <div class="form-check checkbox-info-filled p-0">
+                                                <input type="checkbox"
+                                                       class="filled-in form-check-input"
+                                                       id="checkbox11"
+                                                       checked="checked">
+                                                <label class="form-check-label small"
+                                                       for="checkbox11">Pending</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="form-check checkbox-info-filled p-0">
-                                            <input type="checkbox"
-                                                   class="filled-in form-check-input"
-                                                   id="checkbox12"
-                                                   checked="checked">
-                                            <label class="form-check-label"
-                                                   for="checkbox12">In Transit</label>
+                                        <div class="col-sm-3">
+                                            <div class="form-check checkbox-info-filled p-0">
+                                                <input type="checkbox"
+                                                       class="filled-in form-check-input"
+                                                       id="checkbox12"
+                                                       checked="checked">
+                                                <label class="form-check-label"
+                                                       for="checkbox12">In Transit</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="form-check checkbox-info-filled p-0">
-                                            <input type="checkbox"
-                                                   class="filled-in form-check-input"
-                                                   id="checkbox13"
-                                                   checked="checked">
-                                            <label class="form-check-label"
-                                                   for="checkbox13">Delivered</label>
+                                        <div class="col-sm-3">
+                                            <div class="form-check checkbox-info-filled p-0">
+                                                <input type="checkbox"
+                                                       class="filled-in form-check-input"
+                                                       id="checkbox13"
+                                                       checked="checked">
+                                                <label class="form-check-label"
+                                                       for="checkbox13">Delivered</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -921,15 +905,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer border-0 py-2">
-                <button type="button" class="btn white z-depth-0 btn-md clear" data-dismiss="modal">Clear</button>
-                <button type="button" class="btn btn-primary btn-md"  data-dismiss="modal">Search</button>
+                <div class="modal-footer border-0 py-2">
+                    <button type="button" class="btn white z-depth-0 btn-md clear" data-dismiss="modal">Clear</button>
+                    <button type="button" class="btn btn-primary btn-md"  data-dismiss="modal">Search</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
+</main>
+<!--Main layout-->
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
