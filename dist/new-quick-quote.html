@@ -260,48 +260,61 @@
                                          role="tabpanel">
                                         <div class="row border border-gray small m-0 tab-contant-top-border">
                                             <div class="col-sm-12 p-3 11-item-container">
-                                                <div class="row my-auto 11-item-row py-2">
-                                                    <div class="col-8 my-2">
+                                                <div class="row my-auto 11-item-row">
+                                                    <div class="col-8">
                                                         <div class="row">
                                                             <div class="px-2 my-auto border-right">
                                                                 #1
                                                             </div>
                                                             <div class="col-6 pl-0">
                                                                 <div class="row">
-                                                                    <div class="col-5 my-auto ml-3">
-                                                                        <select class="mdb-select colorful-select dropdown-info" id="d-dimensions">
-                                                                            <option value="" disabled selected>Dimensions (Cm)</option>
-                                                                            <option value="1">17x18x14</option>
-                                                                            <option value="2">12x17x11</option>
-                                                                            <option value="3">21x07x07</option>
-                                                                        </select>
+                                                                    <div class="col-3 ml-3 my-auto">
+                                                                        <span class="float-right">Dimensions</span>
                                                                     </div>
-                                                                    <div class="col-2">
-                                                                        <input class="form-control text-center" type="text" placeholder="l">
+                                                                    <div class="col-2 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="l">
                                                                     </div>
                                                                     <span class="my-auto">x</span>
-                                                                    <div class="col-2">
-                                                                        <input class="form-control text-center" type="text" placeholder="b">
+                                                                    <div class="col-2 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="b">
                                                                     </div>
                                                                     <span class="my-auto">x</span>
-                                                                    <div class="col-2">
-                                                                        <input class="form-control text-center" type="text" placeholder="h">
+                                                                    <div class="col-2 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="h">
+                                                                    </div>
+                                                                    <div class="col-1 my-auto pl-0">
+                                                                        <a data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalbox">
+                                                                            <i class="fa fa-pencil-square-o ml-1 m-t-6 fa-lg grey-text"></i>
+                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-5">
                                                                 <div class="row">
-                                                                    <div class="col-3 my-auto">
-                                                                        <span class="float-right">Weight (kg)</span>
+                                                                    <div class="col-3 my-auto"><span
+                                                                            class="float-right">Weight (kg)</span>
                                                                     </div>
-                                                                    <div class="col-3 pl-0">
-                                                                        <input class="form-control text-center" type="text" placeholder="Wt">
+                                                                    <div class="col-3 pl-0 p-2">
+                                                                        <input class="form-control text-center "
+                                                                               type="text"
+                                                                               placeholder="Wt">
                                                                     </div>
-                                                                    <div class="col-3 my-auto">
+                                                                    <div class="col-3 my-auto ">
                                                                         <span class="float-right">Ins. Value</span>
                                                                     </div>
-                                                                    <div class="col-3 pl-0">
-                                                                        <input class="form-control text-center" type="text" placeholder="Ins. Val">
+                                                                    <div class="col-3 pl-0 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="Ins. Val"
+                                                                               data-toggle="tooltip" data-html="true"
+                                                                               title="<strong>Enter the total declared value for the contents of this package.</strong> This is the value referenced if we ever have to file a claim with your chosen carrier. Declared Value represents the maximum liability for the courier chosen. Additional fees will apply for any amount above the standard liability of the courier."
+                                                                               data-placement="top">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -309,8 +322,12 @@
                                                     </div>
                                                     <div class="col-4 pl-0">
                                                         <div class="row">
-                                                            <div class="col-10 border-right">
-                                                                <textarea class="form-control h-100 mb-1 mt-0" row="10" placeholder="Description"></textarea>
+                                                            <div class="col-10 border-right p-2">
+                                                                                    <textarea class="form-control h-100 mb-1 mt-0" row="10"
+                                                                                              placeholder="Description"
+                                                                                              data-toggle="tooltip" data-html="true"
+                                                                                              title="<strong>Describe the contents of your shipment.</strong> This field is mandatory for international shipments, and can also be a big help in tracking down past shipments when reviewing your shipping history."
+                                                                                              data-placement="top"></textarea>
                                                             </div>
                                                             <div class="col-2 my-auto grey-text pr-0">
                                                                 <i class="fa fa-copy mr-2 c-pointer" style="font-size: 20px;"></i>
@@ -388,56 +405,68 @@
                                     <div class="tab-pane fade" id="panel1014" role="tabpanel">
                                         <div class="row border border-gray small m-0 tab-contant-top-border">
                                             <div class="col-sm-12 p-3 14-item-container">
-                                                <div class="row my-auto 14-item-row py-2">
-                                                    <div class="col-8 my-2">
+                                                <div class="row my-auto 14-item-row">
+                                                    <div class="col-8">
                                                         <div class="row">
                                                             <div class="px-2 my-auto border-right">
                                                                 #1
                                                             </div>
                                                             <div class="col-6 pl-0">
                                                                 <div class="row">
-                                                                    <div class="col-5 my-auto ml-3">
-                                                                        <select class="mdb-select colorful-select dropdown-info" id="d-dimensions">
-                                                                            <option value="" disabled selected>Dimensions (Cm)</option>
-                                                                            <option value="1">17x18x14</option>
-                                                                            <option value="2">12x17x11</option>
-                                                                            <option value="3">21x07x07</option>
-                                                                        </select>
+                                                                    <div class="col-3 ml-3 my-auto">
+                                                                        <span class="float-right">Dimensions</span>
                                                                     </div>
-                                                                    <div class="col-2">
-                                                                        <input class="form-control text-center" type="text" placeholder="l">
+                                                                    <div class="col-2 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="l">
                                                                     </div>
                                                                     <span class="my-auto">x</span>
-                                                                    <div class="col-2">
-                                                                        <input class="form-control text-center" type="text" placeholder="b">
+                                                                    <div class="col-2 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="b">
                                                                     </div>
                                                                     <span class="my-auto">x</span>
-                                                                    <div class="col-2">
-                                                                        <input class="form-control text-center" type="text" placeholder="h">
+                                                                    <div class="col-2 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="h">
+                                                                    </div>
+                                                                    <div class="col-1 my-auto pl-0">
+                                                                        <a data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalbox">
+                                                                            <i class="fa fa-pencil-square-o ml-1 m-t-6 fa-lg grey-text"></i>
+                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-5">
                                                                 <div class="row">
-                                                                    <div class="col-3 my-auto">
-                                                                        <span class="float-right">Weight (kg)</span></div>
-                                                                    <div class="col-3 pl-0">
-                                                                        <input class="form-control text-center "type="text" placeholder="Wt">
+                                                                    <div class="col-3 my-auto"><span
+                                                                            class="float-right">Weight (kg)</span>
                                                                     </div>
-                                                                    <div class="col-3 my-auto">
+                                                                    <div class="col-3 p-2">
+                                                                        <input class="form-control text-center "
+                                                                               type="text"
+                                                                               placeholder="Wt">
+                                                                    </div>
+                                                                    <div class="col-3 my-auto ">
                                                                         <span class="float-right">Ins. Value</span>
                                                                     </div>
-                                                                    <div class="col-3 pl-0">
-                                                                        <input class="form-control text-center" type="text" placeholder="Ins. Val">
+                                                                    <div class="col-3 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="Ins. Val">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-4 pl-0">
+                                                    <div class="col-4 p-2">
                                                         <div class="row">
                                                             <div class="col-10 border-right">
-                                                                <textarea class="form-control h-100 mb-1 mt-0" row="10" placeholder="Description"></textarea>
+                                                                                    <textarea class="form-control h-100 mb-1 mt-0" row="10"
+                                                                                              placeholder="Description"></textarea>
                                                             </div>
                                                             <div class="col-2 my-auto grey-text pr-0">
                                                                 <i class="fa fa-copy mr-2 c-pointer" style="font-size: 20px;"></i>
@@ -453,62 +482,79 @@
                                     <!--Panel 5-->
                                     <div class="tab-pane fade" id="panel1015" role="tabpanel">
                                         <div class="row border border-gray small m-0 tab-contant-top-border">
-                                            <div class="col-sm-12 px-3 pt-3">
-                                                <div class="row pt-2">
-                                                    <div class="col-8 border-bottom py-2">
+                                            <div class="col-sm-12 p-3 15-item-container">
+                                                <div class="row my-auto 15-item-row">
+                                                    <div class="col-8">
                                                         <div class="row">
                                                             <div class="px-2 my-auto border-right">
                                                                 #1
                                                             </div>
                                                             <div class="col-6 pl-0">
                                                                 <div class="row">
-                                                                    <div class="col-5 my-auto ml-3">
-                                                                        <select class="mdb-select colorful-select dropdown-info" id="d-dimensions">
-                                                                            <option value="" disabled selected>Dimensions (Cm)</option>
-                                                                            <option value="1">17x18x14</option>
-                                                                            <option value="2">12x17x11</option>
-                                                                            <option value="3">21x07x07</option>
-                                                                        </select>
+                                                                    <div class="col-3 ml-3 my-auto">
+                                                                        <span class="float-right">Dimensions</span>
                                                                     </div>
-                                                                    <div class="col-2">
-                                                                        <input class="form-control text-center" type="text" placeholder="l">
+                                                                    <div class="col-2 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="l">
                                                                     </div>
                                                                     <span class="my-auto">x</span>
-                                                                    <div class="col-2">
-                                                                        <input class="form-control text-center" type="text" placeholder="b">
+                                                                    <div class="col-2 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="b">
                                                                     </div>
                                                                     <span class="my-auto">x</span>
-                                                                    <div class="col-2">
-                                                                        <input class="form-control text-center" type="text" placeholder="h">
+                                                                    <div class="col-2 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="h">
+                                                                    </div>
+                                                                    <div class="col-1 my-auto pl-0">
+                                                                        <a data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalbox">
+                                                                            <i class="fa fa-pencil-square-o ml-1 m-t-6 fa-lg grey-text"></i>
+                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-5">
                                                                 <div class="row">
-                                                                    <div class="col-3 my-auto">
-                                                                        <span class="float-right">Weight (kg)</span>
+                                                                    <div class="col-3 my-auto"><span
+                                                                            class="float-right">Weight (kg)</span>
                                                                     </div>
-                                                                    <div class="col-3 pl-0">
-                                                                        <input class="form-control text-center" type="text" placeholder="Wt">
+                                                                    <div class="col-3 p-2">
+                                                                        <input class="form-control text-center "
+                                                                               type="text"
+                                                                               placeholder="Wt">
                                                                     </div>
-                                                                    <div class="col-3 my-auto">
+                                                                    <div class="col-3 my-auto ">
                                                                         <span class="float-right">Ins. Value</span>
                                                                     </div>
-                                                                    <div class="col-3 pl-0">
-                                                                        <input class="form-control text-center" type="text" placeholder="Ins. Val">
+                                                                    <div class="col-3 p-2">
+                                                                        <input class="form-control text-center"
+                                                                               type="text"
+                                                                               placeholder="Ins. Val">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="row mt-2">
-                                                            <div class="col-md-4 ml-5 pl-0">
-                                                                <select class="mdb-select colorful-select dropdown-orange">
-                                                                    <option value="0" selected disabled>Select</option>
-                                                                    <option value="1">50</option>
-                                                                    <option value="2">100</option>
-                                                                    <option value="3">150</option>
-                                                                    <option value="4">200</option>
-                                                                    <option value="5">250</option>
+                                                            <div class="col-md-3 ml-4">
+                                                                <select class="mdb-select colorful-select dropdown-orange pl-2">
+                                                                    <option value="0" selected
+                                                                            disabled>Select
+                                                                    </option>
+                                                                    <option value="1">50
+                                                                    </option>
+                                                                    <option value="2">100
+                                                                    </option>
+                                                                    <option value="3">150
+                                                                    </option>
+                                                                    <option value="4">200
+                                                                    </option>
+                                                                    <option value="5">250
+                                                                    </option>
                                                                 </select>
                                                             </div>
                                                             <div class="col-md-1 pl-0">
@@ -516,7 +562,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-4 border-bottom pl-0">
+                                                    <div class="col-4 p-2">
                                                         <div class="row">
                                                             <div class="col-10 border-right">
                                                                 <textarea class="form-control h-100 mb-1 mt-0" row="10" placeholder="Description"></textarea>
@@ -524,29 +570,6 @@
                                                             <div class="col-2 my-auto grey-text pr-0">
                                                                 <i class="fa fa-copy mr-2 c-pointer" style="font-size: 20px;"></i>
                                                                 <i class="fa fa-trash c-pointer" style="font-size: 20px;"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="offset-md-6 col-sm-12 col-md-6 pr-0">
-                                                        <div class="d-flex flex-row float-right pt-2 pb-2">
-                                                            <label class="my-auto mr-2">Lift gate </label>
-                                                            <div class="my-auto pr-3 border-right">
-                                                                <select name="example_length" aria-controls="example"
-                                                                        class="mdb-select colorful-select dropdown-info">
-                                                                    <option value="10" selected disabled>None</option>
-                                                                    <option value="25">@Origin</option>
-                                                                    <option value="50">@Dest'n</option>
-                                                                    <option value="100">@Origin & Dest'n</option>
-                                                                </select>
-                                                            </div>
-                                                            <label class="pt-2 pl-3 mr-3 font-bold">Delivery Apt. :</label>
-                                                            <div class="switch blue-white-switch mt-2 d-inline-block">
-                                                                <label>
-                                                                    Yes
-                                                                    <input type="checkbox" checked="checked">
-                                                                    <span class="lever"></span>
-                                                                    No
-                                                                </label>
                                                             </div>
                                                         </div>
                                                     </div>
