@@ -139,8 +139,7 @@
 </header>
 <!--Main layout-->
 <main>
-    <div class="main-conainter">
-        <div class="main-content p-3">
+    <div class="main-content p-3">
             <div class="card">
                 <div class="card-body">
                     <div class="row">
@@ -1053,7 +1052,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </main>
 <!--Main layout-->
 <div class="modal fade" style="z-index: 10000;" id="modalCart" tabindex="-1" role="dialog"
@@ -1105,16 +1103,6 @@
 
 <!-- Initializations -->
 <script>
-    function isChecked(cb) {
-        $("input:checkbox").prop("checked", false);
-        document.getElementById(cb.id).checked = true;
-        document.getElementById('my-own-packaging-penal').classList.add('d-none');
-        document.getElementById('courier-envelope-penal').classList.add('d-none');
-        document.getElementById('courier-pak-penal').classList.add('d-none');
-        document.getElementById('my-own-envelope-penal').classList.add('d-none');
-        document.getElementById('ltl-freight-penal').classList.add('d-none');
-        document.getElementById(cb.id + '-penal').classList.remove('d-none');
-    }
     // SideNav Initialization
     $(".button-collapse").sideNav();
     $(".hm-btn").click(function () {

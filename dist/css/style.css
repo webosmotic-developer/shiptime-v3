@@ -139,10 +139,6 @@ body:not(.fixed-sn) main {
 
 /*----*/
 
-.main-conainter {
-  /*padding: 25px 0px 0px 0px;*/
-}
-
 .switch.primary-switch label input[type=checkbox]:checked + .lever {
   background-color: #689DF6;
 }

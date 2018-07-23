@@ -155,8 +155,7 @@
 
 <!--Main layout-->
 <main>
-    <div class="main-conainter">
-        <div class="main-content">
+    <div class="main-content">
             <div class="container-fluid">
                 <br>
                 <!--Section: Table-->
@@ -243,9 +242,6 @@
                 <!--Section: Table-->
             </div>
         </div>
-
-    </div>
-
 </main>
 <!--Main layout-->
 <div class="modal fade" style="z-index: 10000;" id="addCardModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
@@ -387,10 +383,6 @@
 
 <!-- Initializations -->
 <script>
-    $('.step-main-body').height($(window).height() - 175)
-    $('.step-main-body').css('overflow-y', 'auto')
-    $('body').css('overflow-y', 'hidden');
-
     // SideNav Initialization
     $(".button-collapse").sideNav();
     $(".hm-btn").click(function () {
@@ -424,10 +416,6 @@
 
 
     $(window).resize(function () {
-        $('.step-main-body').height($(window).height() - 215)
-        $('.step-main-body').css('overflow-y', 'auto')
-        $('body').css('overflow-y', 'hidden');
-
         if ($(window).width() > 1200) {
             $(".side-nav").removeClass('fixed');
         } else {
