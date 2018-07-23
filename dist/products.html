@@ -24,25 +24,20 @@
 </head>
 
 <body class="grey lighten-3">
-
 <!--Main Navigation-->
 <header>
-
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top white fixed">
-
         <!-- SideNav slide-out button -->
         <div class="float-left">
             <a href="#" data-activates="slide-out" class="hm-btn">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-
         <!-- Breadcrumb-->
         <div class="breadcrumb-dn mr-auto">
             <img src="img/logo-horizontal-en.png" width="165" height="50"/>
         </div>
-
         <h4 class="border-right p-2 mb-1 screen-name">My Account</h4>
         <!-- Links -->
         <ul class="nav navbar-nav nav-flex-icons">
@@ -84,10 +79,8 @@
                 </div>
             </li>
         </ul>
-
     </nav>
     <!--/.Navbar-->
-
     <!-- Sidebar navigation -->
     <div id="slide-out" class="side-nav blue-gradient darken-2">
         <ul class="custom-scrollbar list-unstyled">
@@ -152,26 +145,25 @@
         </ul>
     </div>
     <!--/. Sidebar navigation -->
-
 </header>
 <!--Main Navigation-->
-
 <!--Main layout-->
 <main>
     <div class="main-conainter">
         <div class="main-content p-3">
             <div class="row">
                 <div class="col-sm-4 grey-text p-3">
-                    <h2>Define Standard Products</h2>
-                    <span>Set up standard box sizes to make your shipping experience as fast as possible.</span>
-                    <div class="grey-text mt-3">
-                        <span class="justify-content-center">
-                            You can define any number of box sizes to the right, allowing you to easily load those box dimensions when shipping.
-                        </span>
-                    </div>
+                    <h2>Your Shipped Products</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                    </p>
                 </div>
                 <div class="col-sm-8 row justify-content-center">
-                    <div class="card col-12 m-3" data-toggle="modal" data-target="#modalCart">
+                    <div class="card col-12 m-3">
                         <div class="card-header white border-bottom-0">
                             <div class="row">
                                 <div class="col-6 my-auto">
@@ -179,83 +171,131 @@
                                         <span>Products</span>
                                     </h4>
                                 </div>
-                                <div class="col-6 text-right">
-                                    <button class="btn btn-md btn-tw mr-0" data-target="#newAddressModal" data-toggle="modal">Add Box</button>
-                                </div>
                             </div>
                         </div>
                         <div class="card-body pt-0">
-                            <table class="table history-table table-striped border-top">
+                            <table class="table table-striped border-top">
                                 <thead>
                                 <tr>
-                                    <th></th>
+                                    <th class="border-right">
+                                        <span>Qty</span>
+                                    </th>
                                     <th class="border-right">
                                         <span>Name</span>
                                     </th>
-                                    <th>
-                                        <span>Dimensions</span>
+                                    <th class="border-right">
+                                        <span>Country</span>
+                                    </th>
+                                    <th class="border-right">
+                                        <span>Unit Price</span>
+                                    </th>
+                                    <th class="border-right">
+                                        <span>HS Code</span>
                                     </th>
                                     <th>
-
+                                        <span>Description</span>
                                     </th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr class="carrier-row">
+                                <tr>
                                     <td>
-                                        <i class="fa fa-dropbox fa-2x grey-text"></i>
-                                    </td>
-                                    <td>Large square box</td>
-                                    <td>
-                                        <span>25  X  30  X  35</span>
+                                        <span>1</span>
                                     </td>
                                     <td>
-                                        <div class="btn-select d-none">
-                                              <span data-toggle="modal" data-target="#newAddressModal" type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light" data-placement="top" title="edit">
-                                                <i class="fa fa-edit"></i>
-                                            </span>
-                                            <span type="button" class="btn-floating btn-sm btn-yt m-0 waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cancel">
-                                                <i class="fa fa-trash-o"></i>
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="carrier-row">
-                                    <td>
-                                        <i class="fa fa-dropbox fa-2x grey-text"></i>
-                                    </td>
-                                    <td>Small square box</td>
-                                    <td>
-                                        <span>25  X  30  X  35</span>
+                                        <span>Name 1</span>
                                     </td>
                                     <td>
-                                        <div class="btn-select d-none">
-                                              <span data-toggle="modal" data-target="#newAddressModal" type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light" data-placement="top" title="edit">
-                                                <i class="fa fa-edit"></i>
-                                            </span>
-                                            <span type="button" class="btn-floating btn-sm btn-yt m-0 waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cancel">
-                                                <i class="fa fa-trash-o"></i>
-                                            </span>
-                                        </div>
+                                        <span>India</span>
+                                    </td>
+                                    <td>
+                                        <span>10</span>
+                                    </td>
+                                    <td>
+                                        <span>HS1245</span>
+                                    </td>
+                                    <td>
+                                        <span>Test description</span>
                                     </td>
                                 </tr>
-                                <tr class="carrier-row">
+                                <tr>
                                     <td>
-                                        <i class="fa fa-dropbox fa-2x grey-text"></i>
-                                    </td>
-                                    <td>Medium square box</td>
-                                    <td>
-                                        <span>10  X  20  X  13</span>
+                                        <span>2</span>
                                     </td>
                                     <td>
-                                        <div class="btn-select d-none">
-                                              <span data-toggle="modal" data-target="#newAddressModal" type="button" class="btn-floating btn-sm btn-li m-0 waves-effect waves-light" data-placement="top" title="edit">
-                                                <i class="fa fa-edit"></i>
-                                            </span>
-                                            <span type="button" class="btn-floating btn-sm btn-yt m-0 waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cancel">
-                                                <i class="fa fa-trash-o"></i>
-                                            </span>
-                                        </div>
+                                        <span>Name 2</span>
+                                    </td>
+                                    <td>
+                                        <span>India</span>
+                                    </td>
+                                    <td>
+                                        <span>20</span>
+                                    </td>
+                                    <td>
+                                        <span>HS1245</span>
+                                    </td>
+                                    <td>
+                                        <span>Test description 2</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>8</span>
+                                    </td>
+                                    <td>
+                                        <span>Name 3</span>
+                                    </td>
+                                    <td>
+                                        <span>India</span>
+                                    </td>
+                                    <td>
+                                        <span>50</span>
+                                    </td>
+                                    <td>
+                                        <span>HS1245</span>
+                                    </td>
+                                    <td>
+                                        <span>Test description 3</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>Beautify</span>
+                                    </td>
+                                    <td>
+                                        <span>India</span>
+                                    </td>
+                                    <td>
+                                        <span>10</span>
+                                    </td>
+                                    <td>
+                                        <span>HS1245</span>
+                                    </td>
+                                    <td>
+                                        <span>Test description</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>10</span>
+                                    </td>
+                                    <td>
+                                        <span>Shipping</span>
+                                    </td>
+                                    <td>
+                                        <span>India</span>
+                                    </td>
+                                    <td>
+                                        <span>100</span>
+                                    </td>
+                                    <td>
+                                        <span>HS1245</span>
+                                    </td>
+                                    <td>
+                                        <span>Test description</span>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -268,50 +308,6 @@
     </div>
 </main>
 <!--Main layout-->
-<div class="modal fade" style="z-index: 10000;" id="modalCart" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog pt-5" role="document">
-        <div class="modal-content">
-            <!--Header-->
-            <div class="modal-header pb-0">
-                <h4 class="modal-title pt-1 pl-3 grey-text" id="myModalLabel">Add new Box</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <!--Body-->
-            <div class="modal-body border-0">
-                <div class="card" style="box-shadow:none">
-                    <div class="card-body grey-text pb-0 pt-0">
-                        <label class="mb-0">Name</label>
-                        <input type="text" class="form-control" for="name" aria-describedby="basic-addon2" placeholder="Box name">
-                        <label class="mb-0 mt-1">Dimensions</label>
-                        <div class="row">
-                            <div class="col-3 pr-0">
-                                <input type="text" class="form-control" aria-describedby="basic-addon2" placeholder="Length">
-                            </div>
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-3 my-auto text-center">X</div>
-                                    <div class="col-6 px-2">
-                                        <input type="text" class="form-control" aria-describedby="basic-addon2"
-                                               placeholder="Width">
-                                    </div>
-                                    <div class="col-3 my-auto text-center">X</div>
-                                </div>
-                            </div>
-                            <div class="col-3 pl-0">
-                                <input type="text" class="form-control" aria-describedby="basic-addon2" placeholder="Height">
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-tw text-capitalize btn-md float-right mr-0 mt-2">Save Box</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -365,24 +361,6 @@
             $(".side-nav").addClass('fixed');
         }
     });
-
-    $(document).ready(function () {
-        $('.addr-select').on('click', function () {
-            $('.modal').trigger('click');
-        });
-    });
-
-
-    $('.carrier-row').mouseover(function () {
-        $(this).find('.btn-select, .trash-btn').removeClass('d-none');
-
-    });
-
-    $('.carrier-row').mouseout(function () {
-        $(this).find('.btn-select, .trash-btn').addClass('d-none');
-
-    });
 </script>
 </body>
-
 </html>
