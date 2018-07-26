@@ -546,19 +546,19 @@
                                                                                             <div class="col-2 p-2">
                                                                                                 <input class="form-control text-center"
                                                                                                        type="text"
-                                                                                                       placeholder="l">
+                                                                                                       placeholder="L">
                                                                                             </div>
                                                                                             <span class="my-auto">x</span>
                                                                                             <div class="col-2 p-2">
                                                                                                 <input class="form-control text-center"
                                                                                                        type="text"
-                                                                                                       placeholder="b">
+                                                                                                       placeholder="W">
                                                                                             </div>
                                                                                             <span class="my-auto">x</span>
                                                                                             <div class="col-2 p-2">
                                                                                                 <input class="form-control text-center"
                                                                                                        type="text"
-                                                                                                       placeholder="h">
+                                                                                                       placeholder="H">
                                                                                             </div>
                                                                                             <div class="col-1 my-auto pl-0">
                                                                                                     <a data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalbox">
@@ -814,19 +814,19 @@
                                                                                             <div class="col-2 p-2">
                                                                                                 <input class="form-control text-center"
                                                                                                        type="text"
-                                                                                                       placeholder="l">
+                                                                                                       placeholder="L">
                                                                                             </div>
                                                                                             <span class="my-auto">x</span>
                                                                                             <div class="col-2 p-2">
                                                                                                 <input class="form-control text-center"
                                                                                                        type="text"
-                                                                                                       placeholder="b">
+                                                                                                       placeholder="W">
                                                                                             </div>
                                                                                             <span class="my-auto">x</span>
                                                                                             <div class="col-2 p-2">
                                                                                                 <input class="form-control text-center"
                                                                                                        type="text"
-                                                                                                       placeholder="h">
+                                                                                                       placeholder="H">
                                                                                             </div>
                                                                                             <div class="col-1 my-auto pl-0">
                                                                                                 <a data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalbox">
@@ -932,19 +932,19 @@
                                                                                             <div class="col-2 p-2">
                                                                                                 <input class="form-control text-center"
                                                                                                        type="text"
-                                                                                                       placeholder="l">
+                                                                                                       placeholder="L">
                                                                                             </div>
                                                                                             <span class="my-auto">x</span>
                                                                                             <div class="col-2 p-2">
                                                                                                 <input class="form-control text-center"
                                                                                                        type="text"
-                                                                                                       placeholder="b">
+                                                                                                       placeholder="W">
                                                                                             </div>
                                                                                             <span class="my-auto">x</span>
                                                                                             <div class="col-2 p-2">
                                                                                                 <input class="form-control text-center"
                                                                                                        type="text"
-                                                                                                       placeholder="h">
+                                                                                                       placeholder="H">
                                                                                             </div>
                                                                                             <div class="col-1 my-auto pl-0">
                                                                                                 <a data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalbox">
@@ -1011,7 +1011,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-12 pb-3">
-                                                                        <div class="row">
+                                                                        <div class="row pb-2">
                                                                             <div class="col-md-6">
                                                                                 <a href="#" class="btn m-0 ml-3 btn-md orange darken-3 15-add-item-btn"><i
                                                                                         class="fa fa-plus mr-1 mt-0"></i>Add
@@ -1068,6 +1068,11 @@
                                                                                     </label>
                                                                                 </div>
                                                                             </div>
+                                                                            <div class="col-12 position-absolute fixed-bottom">
+                                                                                <div class="mt-auto text-right pl-0">
+                                                                                    <span class="small">By selecting this service you agree to <a class="text-danger border-bottom border-danger">terms and conditions</a> for LTL insurance.</span>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1121,7 +1126,7 @@
                                                 <!-- Switch -->
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <table class="table table-striped border-top">
+                                                        <table class="table table-striped border-top" id="quoteDetailsTbl">
                                                             <!--Table head-->
                                                             <thead>
                                                             <tr>
@@ -1173,6 +1178,9 @@
                                                                     <div><i class="fa fa-truck cyan-text fa-lg mr-2"
                                                                             aria-hidden="true"></i>Free Pickup
                                                                     </div>
+                                                                    <div><i class="fa fa-certificate cyan-text fa-lg mr-2"
+                                                                            aria-hidden="true"></i>Guaranteed
+                                                                    </div>
                                                                 </td>
                                                                 <td>
                                                                     <img class="irc_mi"
@@ -1184,9 +1192,11 @@
                                                                 <td>Standard Overnight</td>
                                                                 <td>
                                                                     <span class="position-static float-left">$33</span>
-                                                                    <a type="button"
-                                                                       class="ml-2 btn btn-light-green waves-effect btn-md d-none select-btn"
-                                                                       onclick="fnSelect()">Select</a>
+                                                                    <div class="position-absolute text-center d-none select-btn" style="width: inherit">
+                                                                        <a type="button"
+                                                                           class="ml-2 btn btn-light-green waves-effect btn-md  "
+                                                                           onclick="fnSelect()">Select</a>
+                                                                    </div>
                                                                     <i class="fa fa-info-circle fa-lg float-right mt-1 text-info"
                                                                        data-toggle="tooltip" data-html="true"
                                                                        title="<div style=width:150px;>
@@ -1229,6 +1239,9 @@
                                                                     <div><i class="fa fa-truck cyan-text fa-lg mr-2"
                                                                             aria-hidden="true"></i>Free Pickup
                                                                     </div>
+                                                                    <div><i class="fa fa-certificate cyan-text fa-lg mr-2"
+                                                                            aria-hidden="true"></i>Guaranteed
+                                                                    </div>
                                                                 </td>
                                                                 <td>
                                                                     <img class="irc_mi"
@@ -1240,9 +1253,11 @@
                                                                 <td>Express</td>
                                                                 <td>
                                                                     <span class="float-left">$15</span>
-                                                                    <a type="button"
-                                                                       class="ml-2 btn btn-light-green waves-effect btn-md d-none select-btn"
-                                                                       onclick="fnSelect()">Select</a>
+                                                                    <div class="position-absolute text-center d-none select-btn" style="width: inherit">
+                                                                        <a type="button"
+                                                                           class="ml-2 btn btn-light-green waves-effect btn-md  "
+                                                                           onclick="fnSelect()">Select</a>
+                                                                    </div>
                                                                     <i class="fa fa-info-circle fa-lg float-right mt-1 text-info"
                                                                        data-toggle="tooltip" data-html="true"
                                                                        title="<div style=width:150px;>
@@ -1284,6 +1299,9 @@
                                                                     <div><i class="fa fa-truck cyan-text fa-lg mr-2"
                                                                             aria-hidden="true"></i>Free Pickup
                                                                     </div>
+                                                                    <div><i class="fa fa-certificate cyan-text fa-lg mr-2"
+                                                                            aria-hidden="true"></i>Guaranteed
+                                                                    </div>
                                                                 </td>
                                                                 <td>
                                                                     <img class="irc_mi"
@@ -1293,11 +1311,13 @@
                                                                          style="margin-top: 0px;height: 20px; width: 70px;">
                                                                 </td>
                                                                 <td>Priority Overnight</td>
-                                                                <td style="width: 170px">
+                                                                <td>
                                                                     <span class="float-left">$63</span>
-                                                                    <a type="button"
-                                                                       class="ml-2 btn btn-light-green waves-effect btn-md d-none select-btn"
-                                                                       onclick="fnSelect()">Select</a>
+                                                                    <div class="position-absolute text-center d-none select-btn" style="width: inherit">
+                                                                        <a type="button"
+                                                                           class="ml-2 btn btn-light-green waves-effect btn-md  "
+                                                                           onclick="fnSelect()">Select</a>
+                                                                    </div>
                                                                     <i class="fa fa-info-circle fa-lg float-right mt-1 text-info"
                                                                        data-toggle="tooltip" data-html="true"
                                                                        title="<div style=width:150px;>
@@ -1482,103 +1502,108 @@
                                                 <div class="col-12">
                                                     <div class="mx-auto">
                                                         <div class="pt-2 pl-0 font-weight-bold">
-                                                            <span>Goods Sold To</span>
-                                                            <span class="small ml-1 grey-text">Goods are sold to different than the Ship To</span>
-                                                            <span>
-                                                                <a data-placement="right" title="you can change it by click here">
-                                                                    <i class="fa fa-pencil-square-o ml-1 small grey-text"></i>
-                                                                </a>
-                                                            </span>
+                                                            <span>Goods are sold to</span>
+                                                            <span class="small ml-1 grey-text">Ontario, L1Z 1L6,Canada</span>
                                                         </div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-sm-6">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="Company Name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6 my-auto">
+                                                        <div class="mb-2">
                                                             <div class="form-check checkbox-info-filled p-0">
                                                                 <input type="checkbox" class="filled-in form-check-input"
-                                                                       id="checkbox1022" checked="checked">
-                                                                <label class="form-check-label" for="checkbox1022">Save to address book</label>
+                                                                       id="checkbox191" checked="checked"
+                                                                       onclick="$('#step5AddressFields').toggleClass('d-none')">
+                                                                <label class="form-check-label" for="checkbox191">Same as Ship To address</label>
                                                             </div>
                                                         </div>
-                                                        <!-- Material input -->
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="First Name">
+                                                    </div>
+                                                    <div class="d-none" id="step5AddressFields">
+                                                        <div class="row mb-2">
+                                                            <div class="col-sm-6">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="Company Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 my-auto">
+                                                                <div class="form-check checkbox-info-filled p-0">
+                                                                    <input type="checkbox" class="filled-in form-check-input"
+                                                                           id="checkbox1022" checked="checked">
+                                                                    <label class="form-check-label" for="checkbox1022">Save to address book</label>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Material input -->
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="First Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="Last Name">
+                                                                </div>
+                                                            </div>
+                                                            <!-- Material input -->
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="Email">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="Phone">
+                                                                </div>
+                                                            </div>
+                                                            <!-- Material input -->
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="Street">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="Apt. Unit, P.O. Box etc.">
+                                                                </div>
+                                                            </div>
+                                                            <!-- Material input -->
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="City">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" id="toPostal" placeholder="Postal">
+                                                                </div>
+                                                            </div>
+                                                            <!-- Material input -->
+                                                            <div class="col-sm-3">
+                                                                <select name="example_length" aria-controls="example"
+                                                                        class="mdb-select colorful-select dropdown-info">
+                                                                    <option value="10" disabled selected>Province</option>
+                                                                    <option value="25">Ontario</option>
+                                                                    <option value="50">California</option>
+                                                                    <option value="100">Arizona</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <select name="example_length" aria-controls="example"
+                                                                        class="mdb-select colorful-select dropdown-info">
+                                                                    <option value="10" disabled selected>Country</option>
+                                                                    <option value="25">Canada</option>
+                                                                    <option value="50">USA</option>
+                                                                    <option value="100">India</option>
+                                                                </select>
+                                                            </div>
+                                                            <!-- Material input -->
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="Consignee Tax ID">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="md-form form-group m-0">
+                                                                    <input type="text" class="form-control" placeholder="Customs Broker">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="Last Name">
-                                                            </div>
-                                                        </div>
-                                                        <!-- Material input -->
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="Email">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="Phone">
-                                                            </div>
-                                                        </div>
-                                                        <!-- Material input -->
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="Street">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="Apt. Unit, P.O. Box etc.">
-                                                            </div>
-                                                        </div>
-                                                        <!-- Material input -->
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="City">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" id="toPostal" placeholder="Postal">
-                                                            </div>
-                                                        </div>
-                                                        <!-- Material input -->
-                                                        <div class="col-sm-3">
-                                                            <select name="example_length" aria-controls="example"
-                                                                    class="mdb-select colorful-select dropdown-info">
-                                                                <option value="10" disabled selected>Province</option>
-                                                                <option value="25">Ontario</option>
-                                                                <option value="50">California</option>
-                                                                <option value="100">Arizona</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <select name="example_length" aria-controls="example"
-                                                                    class="mdb-select colorful-select dropdown-info">
-                                                                <option value="10" disabled selected>Country</option>
-                                                                <option value="25">Canada</option>
-                                                                <option value="50">USA</option>
-                                                                <option value="100">India</option>
-                                                            </select>
-                                                        </div>
-                                                        <!-- Material input -->
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="Consignee Tax ID">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <div class="md-form form-group m-0">
-                                                                <input type="text" class="form-control" placeholder="Customs Broker">
-                                                            </div>
-                                                        </div>
-                                                </div>
+                                                    </div>
 
                                                     <div class="border-bottom row mx-auto">
                                                         <div class="col-sm-5 pl-0 my-auto">
@@ -1694,8 +1719,7 @@
                                                 <div class="card-body p-3">
                                                     <div class="card-header back p-0 border-bottom-0 white">
                                                         <div class="row col-sm-12 small grey-text pb-2 mr-0 pr-0 ">
-                                                            <span> You're shipping from : S C M P Test,69 Warwick Ave, Ontario, L1Z1L6,Canada to San Diego, California 92129
-                                                             <i class="fa fa-pencil-square-o fa-lg ml-1 grey-text"></i>
+                                                            <span><span class="font-weight-bold"> You're shipping from </span>: S C M P Test,69 Warwick Ave, Ontario, L1Z1L6,Canada <span class="font-weight-bold">to</span> San Diego, California 92129
                                                             </span>
                                                         </div>
                                                         <div class="row">
@@ -1896,15 +1920,15 @@
                                                     <hr class="m-0">
                                                     <div class="my-2">
                                                         <div class="small">
-                                                            <span class="mr-2 font-weight-bold">Carrier Tracking Number</span>
-                                                            <div class="mt-1">D420917200000000244011</div>
+                                                            <span class="mr-2 font-weight-bold">Pickup Confirmation</span>
+                                                            <div class="mt-1">258978</div>
                                                         </div>
                                                     </div>
                                                     <hr class="m-0">
                                                     <div class="my-2">
                                                         <div class="small">
-                                                            <span class="mr-2 font-weight-bold">Pickup Confirmation</span>
-                                                            <div class="mt-1">258978</div>
+                                                            <span class="mr-2 font-weight-bold">Carrier Tracking Number</span>
+                                                            <div class="mt-1">D420917200000000244011</div>
                                                         </div>
                                                     </div>
                                                     <hr class="m-0">
@@ -1917,13 +1941,13 @@
                                                     <hr class="m-0">
                                                     <div class="my-2">
                                                         <div class="small">
-                                                            <span class="mr-2 font-weight-bold">Ship Id #</span>
+                                                            <span class="mr-2 font-weight-bold">Ship ID</span>
                                                             <div class="mt-1 deep-orange-text">12879458</div>
                                                         </div>
                                                     </div>
                                                     <hr class="m-0">
                                                     <div class="my-2">
-                                                        <div class="small">Process another Shipments?</div>
+                                                        <div class="small">Process another Shipment?</div>
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <button type="button" class=" ml-0 btn btn-tw btn-md w-100 px-2 py-2 text-capitalize">New Shipment </button>
@@ -1987,8 +2011,9 @@
             <!--Header-->
             <div class="modal-header">
                 <h4 class="modal-title" id="myModalLabel">Box Library</h4>
-                <div class="my-auto ml-4">
-                    <a href="boxes.html" class="text-primary">Add Box+</a>
+                <div class="col">
+                    <!--<button class="btn btn-sm btn-info">Add Box</button>-->
+                    <a href="boxes.html" class="btn btn-info btn-sm float-right">Add Box</a>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
@@ -2033,6 +2058,9 @@
             <!--Header-->
             <div class="modal-header">
                 <h4 class="modal-title" id="myModalLabel">Your Addresses</h4>
+                <div class="col">
+                    <button class="btn btn-info btn-sm float-right" data-target="#newAddressModal">Add new</button>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -2220,6 +2248,222 @@
         </div>
     </div>
 </div>
+
+<!-- Modal: Add new address modal-->
+<div class="modal fade" id="newAddressModal" tabindex="-1" role="dialog" aria-labelledby="newAddressModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content mt-5">
+            <div class="modal-header px-3 pt-2 pb-0 border-0">
+                <h5 class="modal-title mt-3 grey-text font-weight-bold pl-4" id="newAddressLabel">Add New Contact</h5>
+                <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body small pt-0">
+                <div class="mt-1 px-4">
+                    <!-- Material form group -->
+                    <form>
+                        <div class="row px-3 mt-2">
+                            <div class="col-12 border-bottom p-0 mb-2">
+                                <span class="font-weight-bold">Basic contact details</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Company Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-3 mt-3">
+                            <div class="col-12 border-bottom p-0 mb-2">
+                                <span class="font-weight-bold">Account default setting details</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <select class="mdb-select colorful-select dropdown-orange">
+                                        <option value="" disabled selected>Select Category
+                                        </option>
+                                        <option value="1">Create New Category</option>
+                                        <option value="2">New Test</option>
+                                        <option value="3">Personal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Category">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form form-group m-0">
+                                    <textarea class="form-control h-100 my-2 px-1" placeholder="Special Intruction"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <div class="row">
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check checkbox-info-filled p-0">
+                                            <input type="checkbox"
+                                                   class="filled-in form-check-input"
+                                                   id="checkbox105"
+                                                   checked="checked">
+                                            <label class="form-check-label"
+                                                   for="checkbox105">Residential</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check checkbox-info-filled p-0">
+                                            <input type="checkbox"
+                                                   class="filled-in form-check-input"
+                                                   id="checkbox104"
+                                                   checked="checked">
+                                            <label class="form-check-label"
+                                                   for="checkbox104">Default Ship from</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-2">
+                                        <div class="form-check checkbox-info-filled p-0">
+                                            <input type="checkbox"
+                                                   class="filled-in form-check-input"
+                                                   id="checkbox103"
+                                                   checked="checked">
+                                            <label class="form-check-label"
+                                                   for="checkbox103">Send Notification Emails</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-3 px-3 mb-2">
+                            <dev class="col-12 border-bottom p-0">
+                                <span class="font-weight-bold">Address details</span>
+                            </dev>
+                        </div>
+                        <div class="row" id="addressType" >
+                            <div class="col-12">
+                                <div class="md-form form-group m-0">
+                                    <input type="text" class="form-control"
+                                           placeholder="Search for your address here">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <span>Can't find your address? </span><a class="deep-orange-text"
+                                                                         onclick="$('#addressType').addClass('d-none');
+                                                                        $('#addressFields').removeClass('d-none');
+                                                                        $('#address2').removeClass('d-none');"><span>Click here</span></a><span> to type it in.</span>
+                            </div>
+                        </div>
+
+                        <div id="addressFields" class="d-none">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="md-form form-group m-0">
+                                        <input type="text" class="form-control"
+                                               placeholder="Street">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="md-form form-group m-0">
+                                        <input type="text" class="form-control"
+                                               placeholder="Appt. Unit, P.O., Box, etc">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="md-form form-group m-0">
+                                        <input type="text" class="form-control"
+                                               placeholder="City">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="md-form form-group m-0">
+                                        <input type="text" class="form-control"
+                                               placeholder="Postal">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="md-form form-group m-0">
+                                        <select class="mdb-select colorful-select dropdown-orange">
+                                            <option value="" disabled selected>Province
+                                            </option>
+                                            <option value="1">Ontario</option>
+                                            <option value="2">California</option>
+                                            <option value="3">Arizona</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="md-form form-group m-0">
+                                        <select class="mdb-select colorful-select dropdown-orange">
+                                            <option value="" disabled selected>Country
+                                            </option>
+                                            <option value="1">Canada</option>
+                                            <option value="2">USA</option>
+                                            <option value="3">India</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pl-0">
+                                <span>Want to enter your address easier? <a class="deep-orange-text"
+                                                                            onclick="$('#addressType').removeClass('d-none');
+                                                                        $('#addressFields').addClass('d-none');
+                                                                        $('#address2').addClass('d-none');">Click here</a> to let us help</span>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12 text-right">
+                                <button class="btn btn-blue btn-md btn-info mr-0">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Material input -->
+            </div>
+        </div>
+    </div>
+</div>
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -2373,6 +2617,10 @@
         });
        $('#btnImReady').on('click', function() {
 
+       });
+       $('[data-target="#newAddressModal"]').on('click', function() {
+           $('#modalCart').modal('hide');
+           $('#newAddressModal').modal('show');
        });
     });
 </script>

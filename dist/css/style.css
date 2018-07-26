@@ -358,6 +358,14 @@ input.select-dropdown {
   width: 15%;
 }
 
+#quoteDetailsTbl td:first-child {
+  width: 12%;
+}
+
+#quoteDetailsTbl td:last-child {
+  width: 18%;
+}
+
 table td {
   font-size: 0.8rem;
 }
