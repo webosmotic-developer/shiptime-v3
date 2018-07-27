@@ -227,66 +227,80 @@
                                     </div>
                                 </div>
                                 <hr class="mt-1">
-                                <div class="row">
-                                    <div class="col-12 small">
-                                        <span class="font-weight-bold">Your default address is </span>
-                                        <span>Ontario, L1Z 1L6,Canada </span>
-                                        <span>
-                                            <a data-placement="right"
-                                               title="you can change it by click here" data-toggle="modal"
-                                               data-target="#modalCart" onclick="$('#addressContainer').removeClass('d-none')"><i
-                                                    class="fa fa-pencil-square-o ml-1 grey-text"></i></a>
-                                        </span>
+                                <div class="row" id="addressType" >
+                                    <div class="col-12">
+                                        <div class="md-form form-group m-0">
+                                            <input type="text" class="form-control"
+                                                   placeholder="Search for your address here">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <span>Can't find your address? </span><a class="deep-orange-text"
+                                                                                 onclick="$('#addressType').addClass('d-none');
+                                                                        $('#addressFields').removeClass('d-none');
+                                                                        $('#address2').removeClass('d-none');"><span>Click here</span></a><span> to type it in.</span>
                                     </div>
                                 </div>
-                                <div class="d-none" id="addressContainer">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="md-form form-group m-0">
-                                            <input type="text" class="form-control" placeholder="Street">
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="md-form form-group m-0">
-                                            <input type="text" class="form-control" placeholder="Appt. Unit, P.O., Box, etc">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="md-form form-group m-0">
-                                            <input type="text" class="form-control" placeholder="City">
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="md-form form-group m-0">
-                                            <input type="text" class="form-control" placeholder="Postal">
-                                        </div>
 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="md-form form-group m-0">
-                                            <select class="mdb-select colorful-select dropdown-orange">
-                                                <option value="" disabled selected>Province</option>
-                                                <option value="1">Ontario</option>
-                                                <option value="2">California</option>
-                                                <option value="3">Arizona</option>
-                                            </select>
+                                <div id="addressFields" class="d-none">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Street">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Appt. Unit, P.O., Box, etc">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="md-form form-group m-0">
-                                            <select class="mdb-select colorful-select dropdown-orange">
-                                                <option value="" disabled selected>Country</option>
-                                                <option value="1">Canada</option>
-                                                <option value="2">USA</option>
-                                                <option value="3">India</option>
-                                            </select>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="City">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="md-form form-group m-0">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Postal">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="md-form form-group m-0">
+                                                <select class="mdb-select colorful-select dropdown-orange">
+                                                    <option value="" disabled selected>Province
+                                                    </option>
+                                                    <option value="1">Ontario</option>
+                                                    <option value="2">California</option>
+                                                    <option value="3">Arizona</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="md-form form-group m-0">
+                                                <select class="mdb-select colorful-select dropdown-orange">
+                                                    <option value="" disabled selected>Country
+                                                    </option>
+                                                    <option value="1">Canada</option>
+                                                    <option value="2">USA</option>
+                                                    <option value="3">India</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pl-0">
+                                <span>Want to enter your address easier? <a class="deep-orange-text"
+                                                                            onclick="$('#addressType').removeClass('d-none');
+                                                                        $('#addressFields').addClass('d-none');
+                                                                        $('#address2').addClass('d-none');">Click here</a> to let us help</span>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 text-right">
