@@ -152,13 +152,12 @@
     <div class="main-content p-3">
             <div class="row">
                 <div class="col-sm-4 grey-text p-3">
-                    <h2>Your Shipped Products</h2>
+                    <h2>Your Products</h2>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged.
+                        Set up frequently shipped products to make your life easier when filling out commercial invoices.
+                    </p>
+                    <p>
+                        You can define any number of products to the right, and don’t worry, if you forgot to add one, we will automatically add it for you when you fill out a commercial invoice.
                     </p>
                 </div>
                 <div class="col-sm-8 row justify-content-center">
@@ -169,6 +168,9 @@
                                     <h4>
                                         <span>Products</span>
                                     </h4>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <button class="btn btn-sm btn-info" data-target="#addProductsModal" data-toggle="modal">Add Product</button>
                                 </div>
                             </div>
                         </div>
@@ -306,6 +308,64 @@
         </div>
 </main>
 <!--Main layout-->
+
+<!-- Modal: Add products modal -->
+<div class="modal fade" style="z-index: 10000;" id="addProductsModal" tabindex="-1" role="dialog" aria-labelledby="addProductsModal" aria-hidden="true">
+    <div class="modal-dialog modal-md pt-5" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <h5 class="modal-title grey-text font-weight-bold pl-2" id="addProductsModalLabel">Add Product</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body border-0 px-4">
+                <div class="row">
+                    <!--<div class="col-3">
+                        <input type="text" class="form-control" placeholder="Qty">
+                    </div>-->
+                    <div class="col-10">
+                        <input type="text" class="form-control" placeholder="Product Name">
+                    </div>
+                    <div class="col-2">
+                        <input type="text" class="form-control" placeholder="Qty">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="HS Code">
+                        <i class="fa fa-lg fa-calculator grey-text" style="position: absolute; right: 1.1rem; top: 12px;"></i>
+                    </div>
+                    <div class="col-4">
+                        <select name="example_length" aria-controls="example"
+                                class="mdb-select colorful-select dropdown-info">
+                            <option value="10" disabled selected>Country</option>
+                            <option value="25">Canada</option>
+                            <option value="50">USA</option>
+                            <option value="100">India</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Unit price">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <textarea class="form-control mb-1 h-100" row="10"
+                                  placeholder="Description"></textarea>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12 text-right mt-2">
+                        <button class="btn btn-md btn-tw mr-0 font-8">Save</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
