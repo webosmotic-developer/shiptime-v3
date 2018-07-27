@@ -105,6 +105,7 @@ a, a:hover {
 .side-nav .collapsible .fa {
   font-size: 1.3rem;
   vertical-align: middle;
+  width: 25px;
 }
 
 .side-nav .collapsible a {
