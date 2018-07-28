@@ -60,7 +60,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="global-preferences.html">Global Prefences</a>
-                    <a class="dropdown-item" href="credit-cards.html">Credit Cards</a>
+                    <a class="dropdown-item" href="credit-cards.html">Payments</a>
                     <a class="dropdown-item" href="users.html">Users</a>
                     <a class="dropdown-item" href="carrier.html">Carriers</a>
                     <a class="dropdown-item" href="boxes.html">Boxes</a>
@@ -168,21 +168,24 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <span class="small">Default View on Login</span>
-                                            <select class="mdb-select dropdown-info colorful-select select-dropdown">
+                                            <select class="mdb-select dropdown-info colorful-select select-dropdown"
+                                                    data-toggle="tooltip" title="Select your default view on login">
                                                 <option selected>Dashboard</option>
                                                 <option>Quote & Ship</option>
                                             </select>
                                         </div>
                                         <div class="col-3">
                                             <span class="small">Default Measurement Units</span>
-                                            <select class="mdb-select dropdown-info colorful-select select-dropdown">
+                                            <select class="mdb-select dropdown-info colorful-select select-dropdown"
+                                                    data-toggle="tooltip" data-placement="top" title="Select your default measurement units">
                                                 <option selected>Imperial (lbs / ins)</option>
                                                 <option>Metric (kg / cm)</option>
                                             </select>
                                         </div>
                                         <div class="col-3">
                                             <span class="small">Default Package Type</span>
-                                            <select class="mdb-select dropdown-info colorful-select select-dropdown">
+                                            <select class="mdb-select dropdown-info colorful-select select-dropdown"
+                                                    data-toggle="tooltip" title="Select your default packaging">
                                                 <option selected disabled>No Default</option>
                                                 <option>My Own Packaging</option>
                                                 <option>Courier Envelope</option>
@@ -196,11 +199,13 @@
                                     <div class="row mt-2">
                                         <div class="col-6">
                                             <span class="small">Your Tax ID</span>
-                                            <input type="text" class="form-control" placeholder="Tax Id">
+                                            <input type="text" class="form-control" placeholder="Your Tax ID"
+                                                   data-toggle="tooltip" title="Enter your Tax ID for customs invoices">
                                         </div>
                                         <div class="col-6">
                                             <span class="small">Customs Broker</span>
-                                            <input type="text" class="form-control" placeholder="Customes Broker">
+                                            <input type="text" class="form-control" placeholder="Customs Broker"
+                                                   data-toggle="tooltip" title="Enter name of your customs broker">
                                         </div>
                                     </div>
                                     <div class="row mt-2">
