@@ -166,14 +166,22 @@
                                 <div class="col-6 my-auto">
                                     <h4 class="font-weight-bold mb-0">Payments</h4>
                                 </div>
-                                <div class="col-6 text-right">
-                                    <button class="btn btn-tw btn-md m-0" data-target="#addCardModal" data-toggle="modal">Add Card</button>
-                                </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="row px-3">
                                 <div class="col-12 p-0">
+                                    <div class="row">
+                                        <div class="col-6 my-auto">
+                                            <span class="font-weight-bold grey-text">Credit Cards</span>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <button class="btn btn-tw btn-sm font-8 m-0 text-capitalize" data-target="#addCardModal" data-toggle="modal">Add Card</button>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="mt-2">
+                                        </div>
+                                    </div>
                                     <table id="example"
                                            class="table table-responsive-md table-hover c-pointer"
                                            cellspacing="0" width="100%">
@@ -235,6 +243,58 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <div class="col-12 px-0 mt-3">
+                                    <div class="row">
+                                        <div class="col-12 my-auto">
+                                            <span class="font-weight-bold grey-text">Credit Account</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="mt-2">
+                                        </div>
+                                    </div>
+                                    <div class="row py-2 c-pointer m-0 border mt-2">
+                                        <div class="col-lg-4 my-auto text-center">
+                                            <span class="deep-orange-text font-weight-bold">$200.225</span><br>
+                                            <span>Credit Balance</span>
+                                        </div>
+                                        <div class="col-4 my-auto small text-center">
+                                            <span class="small">Your Credit Usage</span>
+                                            <div class="progress mb-0" style="height: 20px">
+                                                <div class="progress-bar orange darken-2" role="progressbar" style="width: 50%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <span class="deep-orange-text font-weight-bold">$400.45</span><br>
+                                            <span>Credit Limit</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 mt-3 text-center small">
+                                            <span>Want to be billed weekly rather than per transaction? <a class="deep-orange-text">Submit a request</a> to open an account today.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-0 mt-3">
+                                    <div class="row">
+                                        <div class="col-12 my-auto">
+                                            <span class="font-weight-bold grey-text">eCredits</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="mt-2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center small">
+                                            <span>Want to load your account with credit to be used towards shipments? Add credit to your account from a credit card VISA Debit</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -293,9 +353,6 @@
                             </div>
                             <div class="my-auto pl-3 pr-3">
                                 <span class="grey-text">Expires on</span>
-                                <!--<div class="md-form form-group m-0">
-                                    <input type="text" class="form-control" placeholder="Expiry Month">
-                                </div>-->
                             </div>
                             <div class="col pl-0 pr-1">
                                 <div class="md-form form-group m-0">
@@ -332,9 +389,6 @@
                                         <option value="10">2028</option>
                                     </select>
                                 </div>
-                                <!--<div class="md-form form-group m-0">
-                                    <input type="text" class="form-control" placeholder="Expiry Year">
-                                </div>-->
                             </div>
                             <div class="col-3 pl-4">
                                 <div class="md-form form-group m-0">
@@ -343,7 +397,6 @@
                             </div>
                             <div class="col-2 my-auto pr-3 pl-2">
                                 <i class="fa fa-credit-card fa-2x py-1 grey-text"></i>
-                                <!--<img width="50px" src="https://www.digitaloptionen.com/wp-content/uploads/2014/06/mastercard-logo.gif">-->
                             </div>
                             <div class="col-lg-12">
                                 <div class="md-form form-group m-0">
@@ -417,6 +470,25 @@
 <script type="text/javascript" src="js/custom/steps.js"></script>
 
 <!-- Initializations -->
+<script>
+    var ctxD = document.getElementById("doughnutChart").getContext('2d');
+    var myLineChart = new Chart(ctxD, {
+        type: 'doughnut',
+        data: {
+            labels: ["Credit used $160", "Credit remain $240"],
+            datasets: [
+                {
+                    data: [40, 60],
+                    backgroundColor: ["#f44336", "#ff9800"],
+                    hoverBackgroundColor: ["#ef5350", "#ffa726"]
+                }
+            ]
+        },
+        options: {
+            responsive: true
+        }
+    });
+</script>
 <script>
     // SideNav Initialization
     $(".button-collapse").sideNav();
