@@ -816,6 +816,11 @@ input.select-dropdown {
   width: 500px;
   left: unset;
   right: 0px;
+
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  border-radius: 0.3rem;
+  border: none;
 }
 
 .dropdown-menu.notify-drop .drop-content li:hover {
