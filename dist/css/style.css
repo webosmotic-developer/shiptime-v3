@@ -138,6 +138,14 @@ body:not(.fixed-sn) main {
   background: transparent;
 }
 
+#slide-out .bottom-menu a.active{
+  width: 45px;
+}
+
+#slide-out.fixed .bottom-menu a{
+  width: auto;
+}
+
 /*----*/
 
 .switch.primary-switch label input[type=checkbox]:checked + .lever {
