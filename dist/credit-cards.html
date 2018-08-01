@@ -329,12 +329,16 @@
                                             <span>Want to load your account with credit to be used towards shipments? Add credit to your account from a credit card VISA Debit</span>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <button class="btn btn-sm btn-info">Add Funds</button>
+                                    <div class="row mt-2">
+                                        <div class="col-12 text-right ">
+                                            <button class="btn btn-sm btn-info mr-0 font-8 text-capitalize" data-toggle="modal" data-target="#addFundsModal">Add Funds</button>
                                         </div>
                                     </div>
-
+                                    <div class="row mt-3">
+                                        <div class="col-12 small text-center">
+                                            <span>Did you know you can earn eCredits? Check out the <a class="deep-orange-text">ShipTime Rewards</a> section for more.</span>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -346,6 +350,7 @@
         </div>
 </main>
 <!--Main layout-->
+<!-- Add card modal -->
 <div class="modal fade" style="z-index: 10000;" id="addCardModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
     <div class="modal-dialog modal-lg pt-5" role="document">
         <div class="modal-content">
@@ -493,6 +498,28 @@
                     </div>
                 </div>
             </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Add Funds modal -->
+<div class="modal fade" style="z-index: 10000;" id="addFundsModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
+    <div class="modal-dialog modal-md pt-5" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <h5 class="modal-title grey-text font-weight-bold pl-2" id="addFundsModalLabel">Add Funds</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body border-0">
+                <div class="col-8 mx-auto">
+                    <input type="text" class="form-control" placeholder="Type amount">
+                </div>
             </div>
 
         </div>
