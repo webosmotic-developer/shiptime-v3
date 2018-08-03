@@ -206,75 +206,175 @@
       <!--Section: Table-->
       <section class="mb-3">
         <div class="row">
-          <div class="card mx-auto col-6 p-0">
-            <div class="card-header white grey-text">
-              <div class="row">
-                <div class="col-12 my-auto d-flex">
-                  <div>
-                  <h4 class="font-weight-bold mb-0 d-inline-block text-dark my-auto">Start earning Aeroplan with ShipTime today!</h4>
-                    <br>
-                  <span>Convert yor rebate credits to Aeroplan Miles</span>
-                  </div>
-                  <div class="col text-right pr-0">
-                    <img src="img/new-logos/aeroplan.png" class="align-items-end" height="50px">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="row py-2">
-                <div class="px-3 text-center my-auto" style="width: 60px;">
-                  <i class="fa fa-plane fa-2x grey-text"></i>
-                </div>
-                <div class="col">
-                  <span>Aeroplan miles can be redeemed  for more than just shipment. They can be redeem for vacations, hostels, giftcard, and other merchandise.</span>
-                </div>
-              </div>
-              <div class="row py-2">
-                <div class="px-3 text-center my-auto" style="width: 60px;">
-                  <i class="fa fa-history fa-2x grey-text"></i>
-                </div>
-                <div class="col">
-                  <span>No waiting period of one year like with rebate credits! With Aeroplan miles, you have the freedom to redeem then as soon as they're available in your Aeroplan account</span>
-                </div>
-              </div>
-              <div class="row py-2">
-                <div class="px-3 text-center my-auto" style="width: 60px;">
-                  <i class="fa fa-shopping-bag fa-2x grey-text"></i>
-                </div>
-                <div class="col">
-                  <span>Aeroplan miles can be earned from many different retailers. If you have your ete on certain reward, you can earn miles faster with the addition of ShipTime</span>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-12 mt-2">
-                  <div class="row mt-2">
-                    <div class="col-4">
-                      <img class="w-100" src="https://kvantita.info/wp-content/uploads/2017/10/bbt-business-credit-card-pci-support-package-program.png" alt="">
-                    </div>
-                    <div class="col-8 d-flex">
-                      <div class="row my-auto">
-                        <div class="col-10 pr-0">
-                          <div class="row">
-                            <div class="col-12">
-                              <span>What is your Aeroplan number?</span>
-                            </div>
-                            <div class="col-12 d-flex">
-                              <input type="text" id="inputAeroplanNo" class="form-control dark-grey-text font-weight-bold" disabled value="1324567" placeholder="Enter Aeroplan number" style="height: 40px !important;">
-                              <div class="my-auto"><a class="ml-2 grey-text" onclick="$('#inputAeroplanNo').removeAttr('disabled');"><i class="fa fa-lg fa-pencil-square-o"></i></a></div>
-                            </div>
-                          </div>
+          <div class="mx-auto col-6 p-0">
+            <div class="flip h-100">
+              <div class="card w-100 h-100">
+                <div class="face front w-100 h-100">
+                  <div class="card-header white grey-text">
+                    <div class="row">
+                      <div class="col-12 my-auto d-flex">
+                        <div class="my-auto">
+                          <h4 class="font-weight-bold mb-0 d-inline-block my-auto">Start Earning Aeroplan&reg;
+                            Miles with ShipTime Today!</h4>
                         </div>
-                        <div class="col-10 text-center mt-auto pr-0">
-                          <button class="btn btn-tw btn-md font-8 text-capitalize">Convert now</button>
+                        <div class="col text-right pr-0 my-auto">
+                          <img src="img/new-logos/aeroplan.png" class="align-items-end" height="50px">
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="row my-2 pb-2 pt-1">
-                    <div class="col-12 small">
-                      <span>Don't have Aeroplan number? <a class="text-danger border-bottom border-danger">Become a member</a></span>
+                  <div class="card-body">
+                    <div class="row py-2">
+                      <div class="px-3 text-center my-auto" style="width: 60px;">
+                        <i class="fa fa-plane fa-2x grey-text"></i>
+                      </div>
+                      <div class="col">
+                        <span>Aeroplan Miles can be redeemed for vacations, hotels, car rentals, giftcards, and othermerchandise.</span>
+                      </div>
                     </div>
+                    <div class="row py-2">
+                      <div class="px-3 text-center my-auto" style="width: 60px;">
+                        <i class="fa fa-history fa-2x grey-text"></i>
+                      </div>
+                      <div class="col">
+                        <span>WithAeroplan Miles, you have the freedom to redeem them as soon asthey’re available in your Aeroplan account.</span>
+                      </div>
+                    </div>
+                    <div class="row py-2">
+                      <div class="px-3 text-center my-auto" style="width: 60px;">
+                        <i class="fa fa-shopping-bag fa-2x grey-text"></i>
+                      </div>
+                      <div class="col">
+                        <span>Aeroplan Miles can be earned from many different retailers. Ifyou have your eye on a certain reward, you can earn miles fasterwith the addition of ShipTime.</span>
+                      </div>
+                    </div>
+                    <div class="row mt-2" id="aeroplpanConfigure">
+                      <div class="col-12 text-center mt-auto pr-0">
+                        <span class="font-8 font-weight-bold">No Aeroplan card has been configured.</span>
+                      </div>
+                      <div class="col-12 text-center">
+                        <button class="btn btn-sm btn-tw" data-toggle="modal" data-target="#addCardModal">Add Card
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row mt-2 d-none" id="aeroplanCard">
+                      <div class="col-12 mt-2">
+                        <div class="row mt-2">
+                          <div class="col-4">
+                            <img class="w-100" src="https://www.wifihifi.ca/uploads/wearables/AeroplanCard.JPG" alt="">
+                          </div>
+                          <div class="col-8 d-flex">
+                            <div class="row my-auto">
+                              <div class="col-10 pr-0">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <span>What is your Aeroplan number?</span>
+                                  </div>
+                                  <div class="col-12 d-flex">
+                                    <input type="text" id="inputAeroplanNo"
+                                           class="form-control dark-grey-text font-weight-bold" disabled value="1324567"
+                                           placeholder="Enter Aeroplan number" style="height: 40px !important;">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-10 text-center mt-auto pr-0">
+                                <button class="btn btn-tw btn-sm font-8 text-capitalize"
+                                        onclick="$('#inputAeroplanNo').removeAttr('disabled'); $('#inputAeroplanNo').focus();">
+                                  Change
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 position-absolute text-right font-8 small" style="bottom: 8px;">
+                      <span class="">Check who all are using this particular one.
+                    <a class="text-danger border-bottom border-danger" id="flipLink">Check here</a></span>
+                  </div>
+                </div>
+                <div class="face back w-100 h-100">
+                  <div class="card-header white grey-text">
+                    <div class="row">
+                      <div class="col-12 my-auto d-flex">
+                        <div class="my-auto">
+                          <h4 class="font-weight-bold mb-0 d-inline-block my-auto">Friends who have signed up with your code.</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <table id="example" class="table table-striped table-responsive-md c-pointer border-top" cellspacing="0"
+                           width="100%">
+                      <thead>
+                      <tr>
+                        <th class="border-right">
+                           <span> Name
+                            <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                           </span>
+                        </th>
+                        <th class="border-right">
+                          Aeroplan number
+                          <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                        </th>
+                        <th class="">
+                          Status
+                        </th>
+                      </tr>
+                      </thead>
+                      <tbody class="small ">
+                      <tr class="history-row" data-toggle="modal" data-target="#newAddressModal">
+                        <td>
+                          <span>Tannis,attn</span>
+                        </td>
+                        <td>982456 745 157 328</td>
+                        <td>
+                          <span> Signed up</span>
+                        </td>
+                      </tr>
+                      <tr class="history-row" data-toggle="modal" data-target="#newAddressModal">
+                        <td>
+                          <span>Tannis,attn</span>
+                        </td>
+                        <td>148652 452 789 428</td>
+                        <td>
+                          <span> Shipped</span>
+                        </td>
+                      </tr>
+                      <tr class="history-row" data-toggle="modal" data-target="#newAddressModal">
+                        <td>
+                          <span>DaRin,Mary</span>
+                        </td>
+                        <td>453798 489 156 489</td>
+                        <td>
+                          <span>Signed up</span>
+                        </td>
+                      </tr>
+                      <tr class="history-row" data-toggle="modal" data-target="#newAddressModal">
+                        <td>
+                          <span>Tannis,attn</span>
+                        </td>
+                        <td>456789 159 489 756</td>
+                        <td>
+                          <span>Shipped</span>
+                        </td>
+                      </tr>
+                      <tr class="history-row" data-toggle="modal" data-target="#newAddressModal">
+                        <td>
+                          <span>Tannis,attn</span>
+                        </td>
+                        <td>123456 789 456 789</td>
+                        <td>
+                          <span>Signed up</span>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-12 position-absolute text-right font-8 small" style="bottom: 8px;">
+                      <span>
+                    <a class="text-danger border-bottom border-danger" id="flipBackLink">Go back</a></span>
                   </div>
                 </div>
               </div>
@@ -336,7 +436,7 @@
 <!--Main layout-->
 <!-- Add card modal -->
 <div class="modal fade" style="z-index: 10000;" id="addCardModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
-  <div class="modal-dialog modal-lg pt-5" role="document">
+  <div class="modal-dialog modal-md pt-5" role="document">
     <div class="modal-content">
       <!--Header-->
       <div class="modal-header">
@@ -347,162 +447,18 @@
       </div>
       <!--Body-->
       <div class="modal-body border-0">
-        <div class="col-12 card z-depth-0 mb-3" id="addCardDiv">
-          <div class="row">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-6">
-                  <div class="form-check checkbox-info-filled p-0">
-                    <input type="checkbox" class="filled-in form-check-input" id="checkbox103" checked="checked">
-                    <label class="form-check-label" for="checkbox103">Make Default</label>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-check checkbox-info-filled p-0">
-                    <input type="checkbox" class="filled-in form-check-input"
-                           id="checkbox101" checked="checked">
-                    <label class="form-check-label"
-                           for="checkbox101">Same as my Contact Address</label>
-                  </div>
-                  <div class="form-check checkbox-info-filled p-0">
-                    <input type="checkbox" class="filled-in form-check-input"
-                           id="checkbox102" checked="checked">
-                    <label class="form-check-label" for="checkbox102">
-                      Same as Shipping Address</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="row">
-                <div class="col-12">
-                  <div class="md-form form-group m-0">
-                    <input type="text" class="form-control" placeholder="Card Number">
-                  </div>
-                </div>
-                <div class="my-auto pl-3 pr-3">
-                  <span class="grey-text">Expires on</span>
-                </div>
-                <div class="col pl-0 pr-1">
-                  <div class="md-form form-group m-0">
-                    <select class="mdb-select colorful-select dropdown-orange">
-                      <option value="" disabled selected>MM</option>
-                      <option value="1">01</option>
-                      <option value="2">02</option>
-                      <option value="3">03</option>
-                      <option value="4">04</option>
-                      <option value="5">05</option>
-                      <option value="6">06</option>
-                      <option value="7">07</option>
-                      <option value="8">08</option>
-                      <option value="9">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col pl-1 pr-0">
-                  <div class="md-form form-group m-0">
-                    <select class="mdb-select colorful-select dropdown-orange">
-                      <option value="" disabled selected>YYYY</option>
-                      <option value="1">2018</option>
-                      <option value="2">2019</option>
-                      <option value="3">2020</option>
-                      <option value="4">2021</option>
-                      <option value="5">2022</option>
-                      <option value="6">2023</option>
-                      <option value="7">2024</option>
-                      <option value="8">2025</option>
-                      <option value="9">2027</option>
-                      <option value="10">2028</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-3 pl-4">
-                  <div class="md-form form-group m-0">
-                    <input type="text" class="form-control" placeholder="CVV">
-                  </div>
-                </div>
-                <div class="col-2 my-auto pr-3 pl-2">
-                  <i class="fa fa-credit-card fa-2x py-1 grey-text"></i>
-                </div>
-                <div class="col-lg-12">
-                  <div class="md-form form-group m-0">
-                    <input type="text" class="form-control" placeholder="Name on the Card">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="row">
-                <div class="col-12">
-                  <div class="md-form form-group m-0">
-                    <input type="text" class="form-control" placeholder="Billing Address">
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="md-form form-group m-0">
-                    <input type="text" class="form-control" placeholder="City">
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="md-form form-group m-0">
-                    <input type="text" class="form-control" placeholder="Postal code">
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="md-form form-group m-0">
-                    <select class="mdb-select colorful-select dropdown-orange">
-                      <option value="" disabled selected>State / Province</option>
-                      <option value="1">Ontario</option>
-                      <option value="2">California</option>
-                      <option value="3">Arizona</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <select class="mdb-select colorful-select dropdown-orange" id="toCountry">
-                    <option value="" disabled selected>Country</option>
-                    <option value="1">Canada</option>
-                    <option value="2">USA</option>
-                    <option value="3">India</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12 mb-2">
-              <div class="rounded-bottom lighten-5 text-center">
-                <button class="btn btn-sm light-blue darken-2 float-right waves-effect waves-light mr-0"
-                        type="button">Submit
-                </button>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-12">
+            <label class="mb-0">What is your Aeroplan number?</label>
+            <input type="text" class="form-control dark-grey-text font-weight-bold" placeholder="Please make sure to enter all 15 digits of the card number" style="height: 40px !important;">
           </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Add Funds modal -->
-<div class="modal fade" style="z-index: 10000;" id="addFundsModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
-  <div class="modal-dialog modal-md pt-5" role="document">
-    <div class="modal-content">
-      <!--Header-->
-      <div class="modal-header">
-        <h5 class="modal-title grey-text font-weight-bold pl-2" id="addFundsModalLabel">Add Funds</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <!--Body-->
-      <div class="modal-body border-0">
-        <div class="col-8 mx-auto">
-          <input type="text" class="form-control" placeholder="Type amount">
+        <div class="row mt-2">
+          <div class="col-12 text-right">
+            <button class="btn btn-md btn-info mr-0" onclick="$('#addCardModal').modal('hide');
+            $('#aeroplanCard').removeClass('d-none');
+            $('#aeroplpanConfigure').addClass('d-none');">Submit</button>
+          </div>
         </div>
       </div>
 
@@ -523,25 +479,6 @@
 <script type="text/javascript" src="js/custom/steps.js"></script>
 
 <!-- Initializations -->
-<script>
-  var ctxD = document.getElementById("doughnutChart").getContext('2d');
-  var myLineChart = new Chart(ctxD, {
-    type: 'doughnut',
-    data: {
-      labels: ["Credit used $160", "Credit remain $240"],
-      datasets: [
-        {
-          data: [40, 60],
-          backgroundColor: ["#f44336", "#ff9800"],
-          hoverBackgroundColor: ["#ef5350", "#ffa726"]
-        }
-      ]
-    },
-    options: {
-      responsive: true
-    }
-  });
-</script>
 <script>
   // SideNav Initialization
   $(".button-collapse").sideNav();
@@ -587,6 +524,13 @@
   $('[data-toggle="tooltip"]').tooltip();
   $('.datepicker').pickadate();
 
+  $('#flipLink').click(function(){
+      $('.flip').find('.card').toggleClass('flipped');
+  });
+
+  $('#flipBackLink').click(function(){
+      $('.flip').find('.card').toggleClass('flipped');
+  });
 </script>
 </body>
 
