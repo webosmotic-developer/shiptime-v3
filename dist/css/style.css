@@ -859,8 +859,8 @@ table.pickup-table tr td:last-child {
 
 /* flip speed goes here */
 .flip {
-  -webkit-perspective: 800;
-  perspective: 800;
+  -webkit-perspective: 800px;
+  perspective: 800px;
   position: relative;
 }
 .flip .card.flipped {
