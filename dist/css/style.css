@@ -812,11 +812,18 @@ input.select-dropdown {
   background: #cccccc;
 }
 
+table.pickup-table tr td:last-child {
+  width: 10%;
+}
+
 .bottom-menu {
   min-width: 100%;
   bottom: 0px;
 }
 
+.w-inherit {
+  width: inherit;
+}
 
 /* Notification logic... */
 
