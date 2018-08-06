@@ -418,14 +418,48 @@
                         </div>
                         <div class="row mt-1">
                             <div class="col-12">
-                                <label for="carriers" class="mb-0 font-weight-bold">Carrier</label>
-                                <div class="md-form form-group m-0">
-                                    <select class="mdb-select colorful-select dropdown-primary" multiple id="carriers">
-                                        <option value="1">Any</option>
-                                        <option value="2">Canpar</option>
-                                        <option value="3">Dicom</option>
-                                        <option value="4">FedEx</option>
-                                    </select>
+                                <label for="checkbox110" class="mb-0 font-weight-bold">Carrier</label>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-check checkbox-info-filled p-0">
+                                            <input type="checkbox"
+                                                   class="filled-in form-check-input"
+                                                   id="checkbox110"
+                                                   checked="checked">
+                                            <label class="form-check-label"
+                                                   for="checkbox110">Any</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check checkbox-info-filled p-0">
+                                            <input type="checkbox"
+                                                   class="filled-in form-check-input"
+                                                   id="checkbox112"
+                                                   checked="checked">
+                                            <label class="form-check-label"
+                                                   for="checkbox112">Canpar</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check checkbox-info-filled p-0">
+                                            <input type="checkbox"
+                                                   class="filled-in form-check-input"
+                                                   id="checkbox113"
+                                                   checked="checked">
+                                            <label class="form-check-label"
+                                                   for="checkbox113">Dicom</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check checkbox-info-filled p-0">
+                                            <input type="checkbox"
+                                                   class="filled-in form-check-input"
+                                                   id="checkbox114"
+                                                   checked="checked">
+                                            <label class="form-check-label"
+                                                   for="checkbox114">FedEx</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -530,22 +564,6 @@
     $('#exampleModal .modal-content').blur(function () {
         $('#exampleModal').modal('hide');
     });
-    modalStyling(0);
-    function modalStyling(timeout) {
-        $('#exampleModal .modal-dialog').css('opacity', 0);
-        setTimeout(function () {
-            var searchWidth = $('.search-div');
-            console.log('top : ' + searchWidth.offset().top + "searchWidth.position().left " + searchWidth.offset().left);
-            $('#exampleModal .modal-dialog').offset({
-                top: searchWidth.offset().top + 35,
-                left: searchWidth.offset().left
-            });
-            $('#exampleModal .modal-dialog').css('max-width', 'none');
-            $('#exampleModal .modal-dialog').css('width', searchWidth.width());
-            $('#exampleModal .modal-dialog').css('margin', 0);
-            $('#exampleModal .modal-dialog').css('opacity', 1);
-        }, timeout);
-    }
 
     $('[data-target="#latestShipmentModal"]').on('click', function (e) {
         e.preventDefault();
