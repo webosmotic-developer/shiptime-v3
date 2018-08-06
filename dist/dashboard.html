@@ -229,8 +229,8 @@
                                     </a>
                                 </span>
                             </div>
-                            <div class="col-8">
-                                <div class="row border-left pl-3">
+                            <div class="col-8 border-left">
+                                <div class="row pl-3 d-none" id="manualAddress">
                                     <div class="col-sm-1 my-auto p-0">
                                         <h5 class="text-dark mb-0">
                                             <span>Ship To:</span>
@@ -261,6 +261,34 @@
                                                data-placement="top" title="Click to quick quote">Quick Quote
                                             </a>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row pl-3" id="autoAddress">
+                                    <div class="col-sm-1 my-auto p-0 ">
+                                        <h5 class="text-dark mb-0">
+                                            <span>Ship To:</span>
+                                        </h5>
+                                    </div>
+                                    <div class="col-sm-9 my-auto">
+                                        <input type="text" class="form-control"
+                                               placeholder="Search by Name, Address or Zip">
+                                    </div>
+                                    <div class="col-sm-2 mt-auto p-0">
+                                        <div class="float-right">
+                                            <a href="new-quick-quote.html" type="button"
+                                               class="btn btn-blue-grey btn-sm mr-0 px-3 text-capitalize font-8" data-toggle="tooltip"
+                                               data-placement="top" title="Click to quick quote">Quick Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: -8px;">
+                                    <div class="col-6 small offset-1">
+                                        <span class="grey-text small pl-3">Still not found your address
+                                            <a class="text-danger border-bottom border-danger" onclick="$('#manualAddress').removeClass('d-none');
+                                            $('#autoAddress').addClass('d-none');
+                                            $(this).parent().parent().parent().addClass('d-none');">click here</a>
+                                            to enter manually.</span>
                                     </div>
                                 </div>
                             </div>
