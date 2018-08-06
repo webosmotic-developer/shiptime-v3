@@ -269,38 +269,37 @@
                     </div>
                     <div class="row mt-2 d-none" id="aeroplanCard">
                       <div class="col-12 mt-2">
-                        <div class="row mt-2">
-                          <div class="col-4">
-                            <img class="w-100" src="https://www.wifihifi.ca/uploads/wearables/AeroplanCard.JPG" alt="">
-                          </div>
-                          <div class="col-8 d-flex">
-                            <div class="row my-auto">
-                              <div class="col-10 pr-0">
-                                <div class="row">
-                                  <div class="col-12">
-                                    <span>Aeroplan number</span>
+
+                          <div class="row c-pointer m-0 my-auto border rounded p-3">
+                            <div class="col-3 my-auto">
+                              <img width="" class="w-100"
+                                   src="https://www.wifihifi.ca/uploads/wearables/AeroplanCard.JPG">
+                            </div>
+                            <div class="col-md-9 my-auto">
+                              <div class="row">
+                                <div class="col-lg-8 my-auto">
+                                  <span><span class="font-weight-bold">Aeroplan No</span><br> 789453 456 789 123</span>
+                                </div>
+                                <div class="col-lg-4 my-auto">
+                                  <div class="md-form form-group m-0">
+                                    <select class="mdb-select colorful-select dropdown-orange">
+                                      <option value="1" selected>All Time</option>
+                                      <option value="2">Last Month</option>
+                                      <option value="3">This Month</option>
+                                    </select>
                                   </div>
-                                  <div class="col-12 d-flex">
-                                    <input type="text" id="inputAeroplanNo"
-                                           class="form-control dark-grey-text font-weight-bold" disabled value="1324567"
-                                           placeholder="Enter Aeroplan number" style="height: 40px !important;">
-                                  </div>
+                                  <span class="font-weight-bold">Amount </span><span class="pl-2">$123</span>
                                 </div>
                               </div>
-                              <div class="col-10 text-center mt-auto pr-0">
-                                <button class="btn btn-tw btn-sm font-8 text-capitalize"
-                                        onclick="$('#inputAeroplanNo').removeAttr('disabled'); $('#inputAeroplanNo').focus();">
-                                  Change
-                                </button>
-                              </div>
                             </div>
-                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 position-absolute text-right font-8 small pr-5" style="bottom: 8px;">
-                        <span class="">Check who all are using this particular one.
-                          <a class="text-danger border-bottom border-danger" id="flipLink">Check here</a></span>
+                    <div class="col-12 position-absolute text-right font-8 small pr-4" style="bottom: -20px;">
+                      <a class="btn-md btn-floating btn-deep-orange" id="flipLink" data-toggle="tooltip"
+                         title="Check all Aeroplan transactions.">
+                        <i class="fa fa-share-square fa-2x"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -382,9 +381,10 @@
                       </tr>
                       </tbody>
                     </table>
-                    <div class="col-12 position-absolute text-right font-8 small pr-5" style="bottom: 8px;">
-                      <span>
-                      <a class="text-danger border-bottom border-danger" id="flipBackLink">Go back</a></span>
+                    <div class="col-12 position-absolute text-right font-8 small pr-4" id="flipBackLink" style="bottom: -20px;">
+                      <a class="btn-md btn-floating btn-deep-orange" data-toggle="tooltip" title="Go back">
+                        <i class="fa fa-share-square fa-2x"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -445,9 +445,11 @@
                         <span class="grey-text small">You'll see a preview before you post!</span>
                       </div>
                     </div>
-                    <div class="col-12 position-absolute text-right font-8 small pr-5" style="bottom: 8px;">
-                       <span>Check who all are using this particular one.
-                      <a class="text-danger border-bottom border-danger" id="rewardsLink">check here</a></span>
+                    <div class="col-12 position-absolute text-right font-8 small pr-4" style="bottom: 2px;">
+                      <a class="btn-md btn-floating btn-deep-orange" id="rewardsLink" data-toggle="tooltip"
+                         title="Check who all are using this particular one.">
+                        <i class="fa fa-share-square fa-2x"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -530,9 +532,10 @@
                       </tr>
                       </tbody>
                     </table>
-                    <div class="col-12 position-absolute text-right font-8 small pr-5" style="bottom: 8px;">
-                      <span>
-                      <a class="text-danger border-bottom border-danger" id="rewardsBackLink">Go back</a></span>
+                    <div class="col-12 position-absolute text-right font-8 small pr-4" style="bottom: -20px;">
+                      <a class="btn-md btn-floating btn-deep-orange" id="rewardsBackLink" data-toggle="tooltip" title="Go back">
+                        <i class="fa fa-share-square fa-2x"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
