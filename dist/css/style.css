@@ -897,3 +897,7 @@ table.pickup-table tr td:last-child {
   width: 270px;
 }
 
+.ac-no {
+  cursor: pointer!important;
+  background: #daddda !important;
+}

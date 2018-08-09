@@ -117,6 +117,7 @@
         </a>
 
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
+            <a class="dropdown-item disabled ac-no"><span class="text-dark">Account #</span><span class="font-weight-bold text-dark pl-2 deep-orange-text">4567895</span></a>
           <a class="dropdown-item" href="my-info.html">My Info</a>
           <a class="dropdown-item" href="index.html">Logout</a>
         </div>
@@ -217,7 +218,7 @@
       <!--Section: Table-->
       <section class="mb-3">
         <div class="row">
-          <div class="mx-auto col-md-6 p-0">
+          <div style="max-width: 45%; flex: 0 0 45%" class="mx-auto col-md-5 p-0">
             <div class="flip h-100" id="aeroplanFlip">
               <div class="card w-100">
                 <div class="face front w-100">
@@ -279,7 +280,10 @@
                             <div class="col-md-9 my-auto">
                               <div class="row">
                                 <div class="col-lg-8 my-auto">
-                                  <span><span class="font-weight-bold">Aeroplan No</span><br> 789453 456 789 123</span>
+                                  <span><span class="font-weight-bold">Aeroplan No</span><br> 789453 456 789 123
+                                      <a data-toggle="modal" data-target="#addCardModal">
+                                          <i class="fa fa-pencil-square-o grey-text ml-2" data-toggle="tooltip" title="Edit Aeroplan number"></i>
+                                      </a></span>
                                 </div>
                                 <div class="col-lg-4 my-auto">
                                   <div class="md-form form-group m-0">
@@ -392,7 +396,7 @@
               </div>
             </div>
           </div>
-          <div class=" mx-auto col-md-5 p-0">
+          <div style="max-width: 45%; flex: 0 0 45%" class=" mx-auto col-md-5 p-0">
             <div class="flip h-100" id="rewardsFlip">
               <div class="card w-100">
                 <div class="face front w-100">
